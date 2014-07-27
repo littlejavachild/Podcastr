@@ -1,0 +1,236 @@
+{
+	"podcasts" : [
+		{
+			"title" : "TED Talks",
+			"description" : " Each year, TED hosts 80 of the world's most fascinating people: Trusted voices and convention-breaking mavericks, icons and geniuses. These podcasts (also available in audio format) capture the most extraordinary presentations delivered from the TED stage. Each week, we'll release a new talk to inspire, intrigue and stir the imagination. For best effect, plan to listen to at least three, start to finish. (They have a cumulative effect.) If you have a curious soul and an open mind, we think you'll be hooked....",
+			"host" : "TED",
+			"category" : "Ideas",
+			"logo" : "http://ted.streamguys.net/TEDTalksvideo_tile_144.jpg",
+			"feed" : "http://feeds.feedburner.com/TEDTalks_video"
+		},
+		{
+			"title" : "TWiT",
+			"description" : "Tom Merritt brings you \"Tech News Today\" with co-hosts Sarah Lane (TechTV, Revision3), Iyaz Akhtar (PC Mag, TechVi) and others.  Get up to speed, with a fun and friendly ride through the need-to-know tech news of the day. Your calls and emails welcome at 260-TNT-SHOW or tnt@twit.tv.  Recorded live Mon-Fri at 2:30pm PT/5:30pm ET on http://live.twit.tv.",
+			"host" : "Tom Merritt, Sarah Lane, Iyaz Akhtar and others",
+			"category" : "Technology",
+			"logo" : "http://feeds.twit.tv/coverart/twitfeed144audio.jpg",
+			"feed" : "http://feeds.twit.tv/brickhouse.xml"
+		},
+		{
+			"title" : "All About Android",
+			"description" : "All About Android delivers everything you want to know about Android each week--the biggest news, freshest hardware, best apps and geekiest how-to's --  with Android enthusiasts Jason Howell, Gina Trapani, Ron Richards, and a variety of special guests along the way.  Viewers have a voice by sending emails to aaa@twit.tv or calling 347-SHOW-AAA.  Records live every Tuesday at 5:00pm PT/8:00pm ET on http://live.twit.tv.",
+			"host" : "Ron Richards, Gina Trapani and Iyaz Akhtar",
+			"category" : "Technology",
+			"logo" : "http://leo.am/podcasts/coverart/aaa144audio.jpg",
+			"feed" : "http://feeds.twit.tv/aaa"
+		},
+		{
+			"title" : "Before You Buy",
+			"description" : "Before You Buy is a product reviews show on the TWiT Network. TWiT staff get together to test out the latest gadgets--everything from phones to cameras--to help consumers make wise buying decisions. Make sure you watch... Before You Buy! Send feedback to byb@twit.tv and subscribe to @bybreviews on Twitter for the latest updates. For individual reviews on YouTube, please go to youtube.com/twit and look for the BYB Full Reviews channel.",
+			"host" : "Leo Laporte",
+			"category" : "Technology",
+			"logo" : "http://leoville.tv/podcasts/coverart/byb600audio.jpg",
+			"feed" : "http://feeds.twit.tv/byb_video_large"
+		},
+		{
+			"title" : "FLOSS Weekly",
+			"description" : "Each Wednesday we talk about Free Libre and Open Source Software with the people who are writing it. Part of the TWiT Netcast Network.",
+			"host" : "Randal Schwartz and Gareth Greenaway",
+			"category" : "Technology",
+			"logo" : "http://feeds.twit.tv/coverart/floss144audio.jpg",
+			"feed" : "http://leo.am/podcasts/floss_video_large"
+		},
+		{
+			"title" : "HAM Nation",
+			"description" : "HAM Nation is the new TWIT show about ham radio. Bob Heil, with various co-hosts and guests will cover the excitement and importance of ham radio - from tossing an antenna wire in a tree allowing you to talk to the world, to the importance of ham radio operators in time of disasters. HAM Nation airs live each Tuesday at 6:00 PT/ 9:00ET on http://live.twit.tv.",
+			"host" : "Bob Heil, George Thomas, Gordon West, and Don Wilbanks",
+			"category" : "Technology",
+			"logo" : "http://feeds.twit.tv/coverart/hn144audio.jpg",
+			"feed" : "http://leo.am/podcasts/hn_video_large"
+		},
+		{
+			"title" : "Frame Rate",
+			"description" : "The best ways to watch Internet TV and the best stuff to watch. Tom Merritt and Brian Brushwood scour everything from Hollywood to Hackers to help you get closer to cutting the cord.",
+			"host" : "Tom Merritt and Scott Johnson",
+			"category" : "Technology",
+			"logo" : "http://leoville.tv/podcasts/coverart/fr600audio.jpg",
+			"feed" : "http://leo.am/podcasts/fr_video_large"
+		},
+		{
+			"title" : "Security Now",
+			"description" : "Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, creator of Spinrite and ShieldsUP, discusses the hot topics in security today with Leo Laporte.",
+			"host" : "Leo Laporte and Steve Gibson",
+			"category" : "Security",
+			"logo" : "http://leoville.tv/podcasts/coverart/sn144audio.jpg",
+			"feed" : "http://leo.am/podcasts/sn_video_large"
+		},
+		{
+			"title" : "Home Theater Geeks",
+			"description" : "Scott Wilkinson, online editor of UltimateAVmag.com and HomeTheaterMag.com, interviews the leaders, pioneers behind today's Home Theater technology. A regular on The Tech Guy with Leo Laporte, ach week Scott explores the technologies behind your screen. Recorded live every Monday at 215pm Pacific/2115 UTC at http://live.twit.tv.",
+			"host" : "Scott Wilkinson",
+			"category" : "Technology",
+			"logo" : "http://leoville.tv/podcasts/coverart/htg144audio.jpg",
+			"feed" : "http://leo.am/podcasts/htg_video_large"
+		},
+		{
+			"title" : "iFive for the iPhone",
+			"description" : "iFive for the iPhone is your top five list of the best the iPhone has to offer. Find the hottest new apps and learn helpful tricks to get the most out of your iPhone. Hosted by Sarah Lane, this fast-paced show will make you an iPhone master in no time.",
+			"host" : "Sarah Lane",
+			"category" : "iPhone",
+			"logo" : "http://feeds.twit.tv/podcasts/coverart/ifive144audio.jpg",
+			"feed" : "http://feeds.twit.tv/ifive"
+		},
+		{
+			"title" : "Know How",
+			"description" : "Get the know how to make technology work for you. Iyaz Akhtar and Leo Laporte show you tech projects that you can do yourself and explain everything from tech basics to advanced techniques",
+			"host" : "Iyaz Akhtar",
+			"category" : "Technology",
+			"logo" : "http://feeds.twit.tv/coverart/kh144.jpg",
+			"feed" : "http://feeds.twit.tv/kh_video_large"
+		},
+		{
+			"title" : "OMGCraft",
+			"description" : "OMGcraft is your one-stop-shop for everything Minecraft. Discover the big new tips, tricks, and stuff you should know about Minecraft. Hosted by Chad Johnson, this show will make you a Minecraft expert in no time.",
+			"host" : "Chad \"OMGchad\" Johnson",
+			"category" : "Games",
+			"logo" : "http://feeds.twit.tv/coverart/omgcraft144audio.jpg",
+			"feed" : "http://feeds.twit.tv/omgcraft_video_large"
+		},
+		{
+			"title" : "This Week In Computer Hardware",
+			"description" : "Building a new computer? This Week in Computer Hardware is the show where you'll find out the latest info on the motherboards, CPUs, GPUs, and RAM you'll want to use when designing your machine. TWiCH gives you the latest in hardware benchmarks and what not-yet-released products might be on the horizon. Hosted by Ryan Shrout of PC Perspective, Patrick Norton of Tekzilla and Leo Laporte of the TWiT netcast network. Recorded live every Thursday at 6pm Pacific/0100 UTC at http://live.twit.tv.",
+			"host" : "Patrick Norton, Ryan Shrout",
+			"category" : "Computer Hardware",
+			"logo" : "http://leo.am/podcasts/coverart/twich144audio.jpg",
+			"feed" : "http://leo.am/podcasts/twich_video_large"
+		},
+		{
+			"title" : "This Week In Google",
+			"description" : "Leo Laporte, Gina Trapani, Jeff Jarvis and their guests talk about the latest Google and cloud computing news.  Recorded live at 4 p.m. Eastern/1 p.m. Pacific/2000 UTC on Wednesdays and released later that evening. Part of the TWiT Netcast Network.",
+			"host" : "Jeff Jarvis, Leo Laporte, Gina Trapani",
+			"category" : "Google",
+			"logo" : "http://leoville.tv/podcasts/coverart/twig144audio.jpg",
+			"feed" : "http://feeds.twit.tv/twig_video_large"
+		},
+		{
+			"title" : "HAK5",
+			"description" : "Put together by a band of IT ninjas, security professionals and hardcore gamers, Hak5 isn't your typical tech show. We take on hacking in the old-school sense, covering everything from network security, open source and forensics, to DIY modding and the homebrew scene. Then we wrap it all up with a healthy dose of cocktails and geek comedy. Damn the warranties, it's time to Trust your Technolust.",
+			"host" : "Darren Kitchen, Shannon",
+			"category" : "Security",
+			"logo" : "http://videos.revision3.com/revision3/images/shows/hak5/hak5_100x100.jpg",
+			"feed" : "http://feeds2.feedburner.com/hak5hd"
+		},
+		{
+			"title" : "Techzing",
+			"description" : "TechZing is an informal chat show hosted by Justin Vincent & Jason Roberts. We release two shows per week. Midweek Interview Show – We interview people that we find interesting such as John C Dvorak, Peldi from Balsamiq, Pete Michaud etc. Weekend Discussion Show – We have a ‘no agenda’ style discussion ruminating on tech, startups and other HN-like topics, we’ll even on occasion take a risk and venture into the unknown. We also talk about the progression of our businesses Pluggio, AppIgnite & Swarm SG.",
+			"host" : "Justin Vincent and Jason Roberts",
+			"category" : "Geek Talk",
+			"logo" : "http://techzinglive.com/img/techzing-cover.png",
+			"feed" : "http://techzinglive.com/feed"
+		},
+		{
+			"title" : "Unfilter",
+			"description" : "We're living in historic times. Don't waste it on TV. Unplug from the distractions and propaganda, and unfilter your life! Learn the story behind the stories, and bust media propaganda.",
+			"host" : "Chris Fisher",
+			"category" : "Geek Talk",
+			"logo" : "http://www.jupiterbroadcasting.com/images/itunes-badge144.jpg",
+			"feed" : "http://www.jupiterbroadcasting.com/feeds/unfilterMob.xml"
+		},
+		{
+			"title" : "Big Red Barrel",
+			"description" : "We drop (somewhat) informative entertainment bombs across the landscape of your ears.",
+			"host" : "Dave, PacmanPolarBear, and Kev",
+			"category" : "Geek Talk",
+			"logo" : "http://static.giantbomb.com/uploads/original/0/27/2473033-2470604-bombcast-art.png",
+			"feed" : "http://feeds.feedburner.com/BigRedBarrel"
+		},
+		{
+			"title" : "The Indoor Kids",
+			"description" : "The Indoor Kids isn't just about video games, but it isn't not about video games.  The Indoor Kids is all about the kind of lifestyle you have to lead in order to be a proper Gamer, capital G. Join hosts Kumail Nanjiani and Emily V. Gordon  as they take a journey from childhood Shinobi obsessions, up through the best and worst video game adaptations of movies.  Grab your Energy Swords(Mountain Dew liter bottles)!",
+			"host" : "Kumail Nanjiani, Emily V Gordon, Matthew Burnside",
+			"category" : "Games",
+			"logo" : "http://assets.libsyn.com/content/5463414.jpg",
+			"feed" : "http://theindoorkids.libsyn.com/rss"
+		},
+		{
+			"title" : "ChemistryWorld",
+			"description" : "A weekly tour of the periodic table, from Chemistry World, the magazine of the Royal Society of Chemistry.",
+			"host" : "Royal Society of Chemistry",
+			"category" : "Science",
+			"logo" : "http://www.rsc.org/images/CWElementPod.jpg",
+			"feed" : "http://www.rsc.org/chemistryworld/podcasts/elements_podcast.xml"
+		},
+		{
+			"title" : "Al Jazeera World",
+			"description" : "A series of one-hour documentaries showcasing films from across the Al Jazeera Network.",
+			"host" : "Al Jazeera Network",
+			"category" : "Documentaries",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/aljazeeraworld_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/aljazeeraworld"
+		},
+		{
+			"title" : "Al Jazeera Correspondent",
+			"description" : "From remote corners of Tibet to the mines of Chile, Al Jazeera's correspondents take us on their journey of discovery.",
+			"host" : "Al Jazeera Network",
+			"category" : "Documentaries",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/aljazeeracorrespondent_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/aljazeeracorrespondent"
+		},
+		{
+			"title" : "The Cure",
+			"description" : "Journey to the frontiers of world health, from cutting-edge breakthroughs to advances in affordable care.",
+			"host" : "Al Jazeera Network",
+			"category" : "News",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/thecure_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/thecure"
+		},
+		{
+			"title" : "Artscape",
+			"description" : "Artscape gives expression to the creative forces behind many of the world's headline stories.",
+			"host" : "Al Jazeera Network",
+			"category" : "Documentaries",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/artscape_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/artscape"
+		},
+		{
+			"title" : "earthrise",
+			"description" : "An upbeat new series exploring the solutions to today's environmental challenges.",
+			"host" : "Al Jazeera Network",
+			"category" : "Documentaries",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/earthrise_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/earthrise"
+		},
+		{
+			"title" : "Fault Lines",
+			"description" : "Looking deeper into the US and its place in the world.",
+			"host" : "Al Jazeera Network",
+			"category" : "Documentaries",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/faultlines_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/faultlines"
+		},
+		{
+			"title" : "The Cafe",
+			"description" : "A talk show set in cafes around the world in which we hear the explosive conversations of local leaders and experts.",
+			"host" : "Al Jazeera Network",
+			"category" : "Ideas",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/thecafe_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/thecafe"
+		},
+		{
+			"title" : "Activate",
+			"description" : "Telling the stories of activists around the world as they challenge authority and stand up for what they believe in.",
+			"host" : "Al Jazeera Network",
+			"category" : "Ideas",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/activate_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/activate"
+		},
+		{
+			"title" : "Listening Post",
+			"description" : "A weekly programme that examines and dissects the world's media.",
+			"host" : "Al Jazeera Network",
+			"category" : "News",
+			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/listeningpost_600x600_logo.jpg",
+			"feed" : "http://feeds.aljazeera.net/podcasts/listeningpost"
+		}
+	]
+}

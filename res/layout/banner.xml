@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <ImageView android:layout_width="match_parent"
+        android:id="@+id/bannerImage"
+        android:layout_height="80dp"
+        android:scaleType="center"
+        android:src="@drawable/chimp" />
+    
+    <TextView android:id="@+id/bannerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:typeface="monospace"
+        android:textSize="24sp" />
+
+</FrameLayout>

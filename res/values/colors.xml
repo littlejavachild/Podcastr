@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navigation_drawer_background">#E5E5E5</color>
+    
+    <color name="google_io_blue">#293576</color>
+    <color name="translucent_google_io_blue">#BF293576</color>
+    <color name="google_io_green">#658357</color>
+    <color name="translucent_google_io_green">#BF658357</color>
+    <color name="google_io_turquoise">#3D7F79</color>
+    <color name="translucent_google_io_turquoise">#BF3D7F79</color>
+    <color name="google_io_purple">#700D39</color>
+    <color name="translucent_google_io_purple">#BF700D39</color>
+</resources>

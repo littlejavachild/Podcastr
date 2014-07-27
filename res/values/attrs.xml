@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Tag">
+        <attr name="tagText" format="reference|string"/>
+        <attr name="dotColor" format="reference|color" />
+        <attr name="dotVisible" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="TintedImageView">
+        <attr name="tint" format="reference|color" />
+        <attr name="title" format="reference|string" />
+	</declare-styleable>
+    
+</resources>
