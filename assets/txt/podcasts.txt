@@ -2,11 +2,19 @@
 	"podcasts" : [
 		{
 			"title" : "TED Talks",
-			"description" : " Each year, TED hosts 80 of the world's most fascinating people: Trusted voices and convention-breaking mavericks, icons and geniuses. These podcasts (also available in audio format) capture the most extraordinary presentations delivered from the TED stage. Each week, we'll release a new talk to inspire, intrigue and stir the imagination. For best effect, plan to listen to at least three, start to finish. (They have a cumulative effect.) If you have a curious soul and an open mind, we think you'll be hooked....",
+			"description" : "Each year, TED hosts 80 of the world's most fascinating people: Trusted voices and convention-breaking mavericks, icons and geniuses. These podcasts (also available in audio format) capture the most extraordinary presentations delivered from the TED stage. Each week, we'll release a new talk to inspire, intrigue and stir the imagination. For best effect, plan to listen to at least three, start to finish. (They have a cumulative effect.) If you have a curious soul and an open mind, we think you'll be hooked....",
 			"host" : "TED",
 			"category" : "Ideas",
 			"logo" : "http://ted.streamguys.net/TEDTalksvideo_tile_144.jpg",
 			"feed" : "http://feeds.feedburner.com/TEDTalks_video"
+		},
+		{
+			"title" : "StackExchange Podcasts",
+			"description" : "Hosted by Joel Spolsky with Jay Hanlon and David Fullerton, the Stack Exchange podcast lets you listen in on discussions and decisions about the Stack Exchange Network. The Stack Exchange podcast gives you an unparalleled view into how a startup is created and built.",
+			"host" : "Joel Spolsky, Jay Hanlon and David Fullerton",
+			"category" : "Geek Talk",
+			"logo" : "http://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png",
+			"feed" : "http://blog.stackoverflow.com/feed/"
 		},
 		{
 			"title" : "TWiT",

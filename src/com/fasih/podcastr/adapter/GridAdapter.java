@@ -13,12 +13,14 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
 
 import com.fasih.podcastr.PodcastrApplication;
 import com.fasih.podcastr.R;
 import com.fasih.podcastr.util.Podcast;
 import com.fasih.podcastr.util.PodcastUtil;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 public class GridAdapter extends BaseAdapter {
@@ -60,8 +62,7 @@ public class GridAdapter extends BaseAdapter {
 		Point size = new Point();
 		display.getSize(size);
 		int width = size.x;
-		
-		Picasso.with(c).load(uri).error(R.drawable.ic_launcher).resize(width/2, width/2).into(logo);
+		Picasso.with(c).load(uri).resize(width/2, width/2).into(logo);
 		title.setWidth(width/2);
 		
 		return convertView;

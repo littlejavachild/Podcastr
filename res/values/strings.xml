@@ -11,4 +11,7 @@
     
     <!--  -->
     <string name="search_hint">Search Podcasts</string>
+    
+    <!--  -->
+    <string name="watch_this_podcast">Watch This Podcast</string>
 </resources>

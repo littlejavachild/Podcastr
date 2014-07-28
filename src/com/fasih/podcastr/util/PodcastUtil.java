@@ -6,6 +6,8 @@ import java.util.List;
 public class PodcastUtil {
 	private static List<Podcast> podcasts = new ArrayList<Podcast>();
 	private static List<CharSequence> categories = new ArrayList<CharSequence>();
+	// Used to hold all those podcasts that do not match a given search text
+	private static List<Podcast> exclude = new ArrayList<Podcast>();
 	//------------------------------------------------------------------------------
 	/**
 	 * Used to add a list of retrieved podcasts after parsing the JSON
@@ -57,4 +59,34 @@ public class PodcastUtil {
 		podcasts.addAll(0, matches);
 	}
 	//------------------------------------------------------------------------------
+	/**
+	 * used to search for podcasts that match a given criteria
+	 * @param text
+	 */
+	public static void searchFor(String text){
+		restoreAll();
+		text = text.toLowerCase();
+		// We first add the results of the previosu searches
+		// to the main list of podcasts
+		podcasts.addAll(exclude);
+		// Then we look for "excludes"
+		for(int i = podcasts.size()-1; i >= 0; i--){
+			Podcast podcast = podcasts.get(i);
+			if(podcast.getTitle().toLowerCase().contains(text) ||
+			   podcast.getDescription().toLowerCase().contains(text) ||
+			   podcast.getHost().toLowerCase().contains(text) ||
+			   podcast.getCategory().toLowerCase().contains(text)){
+				// IGNORE
+			}else{
+				podcasts.remove(podcast);
+				if(!exclude.contains(podcast))
+					exclude.add(podcast);
+			}
+		}
+	}
+	//------------------------------------------------------------------------------
+	public static void restoreAll(){
+		podcasts.addAll(exclude);
+		exclude.clear();
+	}
 }

@@ -9,12 +9,15 @@ import android.os.CountDownTimer;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -23,14 +26,16 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.fasih.podcastr.adapter.CategorySpinnerAdapter;
 import com.fasih.podcastr.adapter.NavigationDrawerAdapter;
 import com.fasih.podcastr.fragment.PodcastGridFragment;
+import com.fasih.podcastr.fragment.PodcastGridFragment.OnPodcastClickedListener;
 import com.fasih.podcastr.util.ActionBarUtil;
 import com.fasih.podcastr.util.PodcastUtil;
 
-public class HomeActivity extends FragmentActivity {
+public class HomeActivity extends FragmentActivity implements OnPodcastClickedListener{
 	private PodcastGridFragment fragment = null;
 	private NavigationDrawerAdapter adapter = null;
 	private ListView leftDrawer = null;
@@ -45,8 +50,12 @@ public class HomeActivity extends FragmentActivity {
     private EditText searchString = null;
     // Used to know whether the user is in search mode
     private boolean searchModeEnabled = false;
-    
+    // Used to keep track of the spinner item
     private int spinnerPosition = -1;
+    
+    private static final String SPINNER_POSITION_KEY = "spinner_position_key";
+    private static final String SEARCH_MODE_ENABLED_KEY = "search_mode_enabled_key";
+    private static final String SEARCH_TEXT_KEY = "search_text_key";
 	//------------------------------------------------------------------------------
 	@Override
 	public void onCreate(Bundle savedInstanceState){
@@ -67,7 +76,7 @@ public class HomeActivity extends FragmentActivity {
 		// Ideally, notifying the data set change should happen
 		// in the AsyncTask. But I am too lazy to code
 		// and thus this work around
-		new CountDownTimer(4000, 4000) {
+		new CountDownTimer(1000, 1000) {
 		     public void onTick(long millisUntilFinished) { /** NOTHING */ }
 		     public void onFinish() {
 		    	 spinnerAdapter.notifyDataSetChanged(); 
@@ -79,6 +88,19 @@ public class HomeActivity extends FragmentActivity {
 		setSearchButtonListener();
 		// Set the listener for the cancel button
 		setCancelButtonListener();
+		// Listen for keypresses
+		setEditTextEditorActionListener();
+		
+		if(savedInstanceState != null){
+			spinnerPosition = savedInstanceState.getInt(SPINNER_POSITION_KEY);
+			String searchText = savedInstanceState.getString(SEARCH_TEXT_KEY);
+			searchModeEnabled = savedInstanceState.getBoolean(SEARCH_MODE_ENABLED_KEY);
+			categories.setSelection(spinnerPosition);
+			if(searchModeEnabled){
+				search.performClick();
+				searchString.setText(searchText);
+			}
+		}
 		
 	}
 	//------------------------------------------------------------------------------
@@ -252,6 +274,7 @@ public class HomeActivity extends FragmentActivity {
 				searchString.setText("");
 				// Hide keyboard
 				hideKeybaord();
+				fragment.restoreAll();
 			}
 		});
 	}
@@ -270,6 +293,31 @@ public class HomeActivity extends FragmentActivity {
 		imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
 	}
 	//------------------------------------------------------------------------------
+	private void setEditTextEditorActionListener(){
+		TextView.OnEditorActionListener editorListener = new TextView.OnEditorActionListener(){
+			@Override
+			public boolean onEditorAction(TextView textView, int actionId, KeyEvent event) {
+				if(actionId == EditorInfo.IME_ACTION_SEARCH
+						|| event != null){
+					String text = searchString.getText().toString();
+					if(!text.trim().isEmpty()){
+						 fragment.searchFor(text.trim());
+					}
+				}
+				return true;
+			}
+		};
+		searchString.setOnEditorActionListener(editorListener);
+	}
+	//------------------------------------------------------------------------------
+	@Override
+	public void onSaveInstanceState(Bundle outState){
+		outState.putBoolean(SEARCH_MODE_ENABLED_KEY, searchModeEnabled);
+		outState.putInt(SPINNER_POSITION_KEY, spinnerPosition);
+		outState.putString(SEARCH_TEXT_KEY, searchString.getText().toString());
+		super.onSaveInstanceState(outState);
+	}
+	//------------------------------------------------------------------------------
 	@Override
 	public void onBackPressed(){
 		if(searchModeEnabled){
@@ -280,4 +328,8 @@ public class HomeActivity extends FragmentActivity {
 		}
 	}
 	//------------------------------------------------------------------------------
+	@Override
+	public void onPodcastClicked(int index) {
+		System.out.println("Podcast Clicked: " + index);
+	}
 }
