@@ -7,11 +7,16 @@
     android:layout_height="match_parent">
     
     <!-- The main content view -->
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:layout_width="match_parent"
-	    android:id="@+id/gridFragment"
-	    android:name="com.fasih.podcastr.fragment.PodcastGridFragment"
-	    android:layout_height="match_parent" />
+    <FrameLayout android:id="@+id/fragment_container"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+		    android:layout_width="match_parent"
+		    android:id="@+id/gridFragment"
+		    android:name="com.fasih.podcastr.fragment.PodcastGridFragment"
+		    android:layout_height="match_parent" />
+    </FrameLayout>
 
     
     <!-- The navigation drawer -->

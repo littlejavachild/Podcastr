@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+    <!-- Video Player -->
+     <FrameLayout
+        android:id="@+id/videoSurfaceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="4">
+        <SurfaceView
+            android:id="@+id/videoSurface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <!-- Everything Else -->
+    <!-- Title and Expand/Collapse Button -->
+      <RelativeLayout
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/white">
+       <!--  
+	       <ImageButton android:id="@+id/expand"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignParentRight="true"
+	          android:layout_alignParentTop="true"
+	          android:background="@null"
+	          android:layout_centerVertical="true"
+	          android:src="@drawable/ic_action_expand" />
+	    -->  
+	       <TextView android:id="@+id/episode_title"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentTop="true"
+	           android:textSize="18sp"
+	           android:singleLine="true"
+	           android:ellipsize="marquee"
+	           android:scrollHorizontally="true"
+	           android:marqueeRepeatLimit="marquee_forever"
+	           android:layout_centerVertical="true"
+	           android:gravity="center_vertical"
+	           android:text="@android:string/unknownName"/>
+	       
+	       <ScrollView android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_below="@id/episode_title"
+	           android:layout_alignParentBottom="true"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentRight="true">
+	           <TextView android:id="@+id/episode_description"
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:textSize="14sp"
+		           android:text="@android:string/unknownName" />
+	       </ScrollView>
+  </RelativeLayout>
+  <!-- 
+  <RelativeLayout
+        android:id="@+id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/white">
+	       <ImageView android:id="@+id/logo"
+	           android:layout_width="40dp"
+	           android:layout_height="40dp" 
+	           android:src="@drawable/chimp"
+	           android:layout_alignParentLeft="true"
+	           android:layout_centerVertical="true"
+	           android:scaleType="fitXY"/>
+	       <TextView android:id="@+id/episode_title"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_toRightOf="@id/logo"
+	           android:layout_alignTop="@id/logo"
+	           android:layout_alignBottom="@id/logo"
+	           android:textSize="14sp"
+	           android:singleLine="true"
+	           android:ellipsize="marquee"
+	           android:marqueeRepeatLimit="marquee_forever"
+	           android:layout_centerVertical="true"
+	           android:layout_marginLeft="10dp"
+	           android:gravity="center_vertical"
+	           android:text="@android:string/unknownName"/>
+  </RelativeLayout>
+  -->
+      
+  <ListView
+        android:id="@+id/listOfEpisodes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/white" />
+</LinearLayout>

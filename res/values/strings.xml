@@ -14,4 +14,10 @@
     
     <!--  -->
     <string name="watch_this_podcast">Watch This Podcast</string>
+    
+    <!--  -->
+    <string name="description">Media Controls</string>
+    
+    <!--  -->
+    <string name="tap_to_see">Tap Here To See The Video Player</string>
 </resources>

@@ -25,16 +25,20 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@android:string/untitled" />
-    <TextView android:id="@+id/description"
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="4"
-        android:textSize="16sp"
-        android:background="@android:color/transparent"
-        android:textColor="@android:color/black"
-        android:typeface="monospace"
-        android:layout_gravity="center"
-        android:text="@android:string/untitled" />
+        android:layout_weight="4">
+        <TextView android:id="@+id/description"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="16sp"
+	        android:background="@android:color/transparent"
+	        android:textColor="@android:color/black"
+	        android:typeface="monospace"
+	        android:text="@android:string/untitled" />
+    </ScrollView>
     <Button android:id="@+id/watch"
         android:layout_width="match_parent"
         android:layout_height="0dp"

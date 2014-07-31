@@ -10,4 +10,5 @@
     <color name="translucent_google_io_turquoise">#BF3D7F79</color>
     <color name="google_io_purple">#700D39</color>
     <color name="translucent_google_io_purple">#BF700D39</color>
+    <color name="background_color">#ECECEC</color>
 </resources>

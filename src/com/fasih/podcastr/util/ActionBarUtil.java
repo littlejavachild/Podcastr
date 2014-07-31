@@ -16,11 +16,20 @@ public class ActionBarUtil {
 		// Set ActionBar color
 		bar.setBackgroundDrawable(new ColorDrawable(context.getResources().getColor(R.color.google_io_blue)));	
 	}
-	
+	//------------------------------------------------------------------------------
 	public static void setActionBarTypeface(Activity activity){
 		int titleId = activity.getResources().getIdentifier("action_bar_title", "id",
 	            "android");
 	    TextView yourTextView = (TextView) activity.findViewById(titleId);
 	    yourTextView.setTypeface(PodcastrApplication.newInstance().getTypeface(),Typeface.BOLD);
 	}
+	//------------------------------------------------------------------------------
+	public static void hideActionBar(ActionBar bar){
+		bar.hide();
+	}
+	//------------------------------------------------------------------------------
+	public static void showActionBar(ActionBar bar){
+		bar.show();
+	}
+	//------------------------------------------------------------------------------
 }

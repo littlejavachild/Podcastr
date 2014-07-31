@@ -1,6 +1,10 @@
 package com.fasih.podcastr;
 
 
+import java.io.File;
+
+import com.fasih.podcastr.util.Constants;
+
 import android.app.Application;
 import android.graphics.Typeface;
 
@@ -8,11 +12,13 @@ public class PodcastrApplication extends Application {
 	private static PodcastrApplication singleton = null;
 	private Typeface roboto = null;
 	private boolean homeActivityVisible = false;
+	private boolean videoFragmentVisible = false;
 	//--------------------------------------------------------------------------------------------------
 	@Override
 	public void onCreate(){
 		singleton = this;
 		createTypeface();
+		createDirectories();
 	}
 	//--------------------------------------------------------------------------------------------------
 	/**
@@ -44,6 +50,27 @@ public class PodcastrApplication extends Application {
 	//--------------------------------------------------------------------------------------------------
 	synchronized public boolean getHomeActivityVisible(){
 		return homeActivityVisible;
+	}
+	//--------------------------------------------------------------------------------------------------
+	synchronized public void setVideoFragmentVisible(boolean visibility){
+		videoFragmentVisible = visibility;
+	}
+	//--------------------------------------------------------------------------------------------------
+	synchronized public boolean getVideoFragmentVisible(){
+		return videoFragmentVisible;
+	}
+	//--------------------------------------------------------------------------------------------------
+	private void createDirectories(){
+		File xml = new File(Constants.DIR_XML);
+		File downloads = new File(Constants.DIR_DOWNLOADS);
+		
+		if(!xml.exists()){
+			xml.mkdirs();
+		}
+		
+		if(!downloads.exists()){
+			downloads.mkdirs();
+		}
 	}
 	//--------------------------------------------------------------------------------------------------
 }

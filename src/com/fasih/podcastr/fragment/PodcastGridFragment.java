@@ -143,14 +143,15 @@ public class PodcastGridFragment extends Fragment {
 			description.setTypeface(roboto, Typeface.BOLD);
 			watch.setTypeface(roboto, Typeface.BOLD);
 		}
+		final AlertDialog dialog = builder.create();
+		dialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 		watch.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				dialog.dismiss();
 				listener.onPodcastClicked(position);
 			}
 		});
-		AlertDialog dialog = builder.create();
-		dialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 		dialog.show();
 		
 	}

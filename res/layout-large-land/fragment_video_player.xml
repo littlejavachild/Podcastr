@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+    <!-- Everything Else -->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+      <!-- TextView to Show Video Player -->
+      <TextView android:id="@+id/tapToShow"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="18sp"
+          android:singleLine="true"
+          android:ellipsize="marquee"
+          android:marqueeRepeatLimit="marquee_forever"
+          android:background="@android:color/white"
+          android:gravity="center"
+          android:text="@string/tap_to_see"/>
+      <!-- Title and Expand/Collapse Button -->
+      <RelativeLayout
+        android:id="@+id/content1"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/white">
+       
+	       <ImageButton android:id="@+id/expand"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignParentRight="true"
+	          android:layout_alignParentTop="true"
+	          android:background="@null"
+	          android:layout_centerVertical="true"
+	          android:src="@drawable/ic_action_expand" />
+	       
+	       <TextView android:id="@+id/episode_title"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_toLeftOf="@id/expand"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentTop="true"
+	           android:layout_alignBottom="@id/expand"
+	           android:textSize="14sp"
+	           android:singleLine="true"
+	           android:ellipsize="marquee"
+	           android:marqueeRepeatLimit="marquee_forever"
+	           android:layout_centerVertical="true"
+	           android:gravity="center_vertical"
+	           android:text="@android:string/unknownName"/>
+	       
+	       <ScrollView android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_below="@id/expand"
+	           android:layout_alignParentBottom="true"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentRight="true">
+	           <TextView android:id="@+id/description"
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:textSize="14sp"
+		           android:visibility="gone"
+		           android:text="@android:string/unknownName" />
+	       </ScrollView>
+  	 </RelativeLayout>
+  	 <!-- List Of Episodes -->
+  	 <ListView
+        android:id="@+id/listOfEpisodes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/white" />
+    </LinearLayout>
+    <!-- Video Player -->
+     <FrameLayout
+        android:id="@+id/videoSurfaceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SurfaceView
+            android:id="@+id/videoSurface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

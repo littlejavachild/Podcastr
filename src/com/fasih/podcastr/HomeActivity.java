@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -32,7 +32,9 @@ import com.fasih.podcastr.adapter.CategorySpinnerAdapter;
 import com.fasih.podcastr.adapter.NavigationDrawerAdapter;
 import com.fasih.podcastr.fragment.PodcastGridFragment;
 import com.fasih.podcastr.fragment.PodcastGridFragment.OnPodcastClickedListener;
+import com.fasih.podcastr.fragment.VideoPlayerFragment;
 import com.fasih.podcastr.util.ActionBarUtil;
+import com.fasih.podcastr.util.Constants;
 import com.fasih.podcastr.util.PodcastUtil;
 
 public class HomeActivity extends FragmentActivity implements OnPodcastClickedListener{
@@ -50,12 +52,18 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
     private EditText searchString = null;
     // Used to know whether the user is in search mode
     private boolean searchModeEnabled = false;
+    // Used to know if VideoPlayerFragment is currently being displayed
+    private boolean videoPlayerFragmentShown = false;
     // Used to keep track of the spinner item
     private int spinnerPosition = -1;
     
     private static final String SPINNER_POSITION_KEY = "spinner_position_key";
     private static final String SEARCH_MODE_ENABLED_KEY = "search_mode_enabled_key";
     private static final String SEARCH_TEXT_KEY = "search_text_key";
+    private static final String VIDEO_PLAYER_FRAGMENT_SHOWN_KEY = "video_fragment_shown";
+    
+    private Bundle argsToVideoPlayerFragment = null;
+    
 	//------------------------------------------------------------------------------
 	@Override
 	public void onCreate(Bundle savedInstanceState){
@@ -95,6 +103,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 			spinnerPosition = savedInstanceState.getInt(SPINNER_POSITION_KEY);
 			String searchText = savedInstanceState.getString(SEARCH_TEXT_KEY);
 			searchModeEnabled = savedInstanceState.getBoolean(SEARCH_MODE_ENABLED_KEY);
+			videoPlayerFragmentShown = savedInstanceState.getBoolean(VIDEO_PLAYER_FRAGMENT_SHOWN_KEY);
 			categories.setSelection(spinnerPosition);
 			if(searchModeEnabled){
 				search.performClick();
@@ -313,6 +322,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 	@Override
 	public void onSaveInstanceState(Bundle outState){
 		outState.putBoolean(SEARCH_MODE_ENABLED_KEY, searchModeEnabled);
+		outState.putBoolean(VIDEO_PLAYER_FRAGMENT_SHOWN_KEY, videoPlayerFragmentShown);
 		outState.putInt(SPINNER_POSITION_KEY, spinnerPosition);
 		outState.putString(SEARCH_TEXT_KEY, searchString.getText().toString());
 		super.onSaveInstanceState(outState);
@@ -321,8 +331,15 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 	@Override
 	public void onBackPressed(){
 		if(searchModeEnabled){
-			// Programatically click the cancel button
+			searchModeEnabled = false;
 			cancel.performClick();
+		}else if(videoPlayerFragmentShown){
+			// VideoPlayerFragment now officially shown
+			videoPlayerFragmentShown = false;
+			cancel.performClick();
+			setDrawerClosedCustomActionBarView();
+			ActionBarUtil.showActionBar(getActionBar());
+			super.onBackPressed();
 		}else{
 			super.onBackPressed();
 		}
@@ -330,6 +347,39 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 	//------------------------------------------------------------------------------
 	@Override
 	public void onPodcastClicked(int index) {
-		System.out.println("Podcast Clicked: " + index);
+		fragment.restoreAll();
+		// Set Arguments
+		if(argsToVideoPlayerFragment == null){
+			argsToVideoPlayerFragment = new Bundle();
+			argsToVideoPlayerFragment.putInt(Constants.PODCAST_INDEX, index);
+			VideoPlayerFragment videoPlayerFragment = VideoPlayerFragment.newInstance();
+			videoPlayerFragment.setArguments(argsToVideoPlayerFragment);
+		}else{
+			argsToVideoPlayerFragment.putInt(Constants.PODCAST_INDEX, index);
+		}
+		// Show just the title, yo!
+//		setDrawerOpenedCustomActionBarView();
+		// Display VideoPlayerFragment
+		displayVideoPlayerFragment();
+		// VideoPlayerFragment now officially shown
+		videoPlayerFragmentShown = true;
+		// Hide the ActionBar
+		ActionBarUtil.hideActionBar(getActionBar());
 	}
+	//------------------------------------------------------------------------------
+	private void displayVideoPlayerFragment(){
+		VideoPlayerFragment videoPlayerFragment = VideoPlayerFragment.newInstance();
+		// Save the fragment across configuration changes
+		videoPlayerFragment.setRetainInstance(true);
+		FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+		// Replace whatever is in the fragment_container view with this fragment,
+		// and add the transaction to the back stack
+		transaction.replace(R.id.fragment_container, videoPlayerFragment);
+		transaction.addToBackStack(null);
+		// add some eye candy
+		transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+		// Commit the transaction
+		transaction.commit();
+	}
+	//------------------------------------------------------------------------------
 }
