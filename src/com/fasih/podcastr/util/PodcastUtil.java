@@ -1,6 +1,7 @@
 package com.fasih.podcastr.util;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PodcastUtil {
@@ -8,6 +9,8 @@ public class PodcastUtil {
 	private static List<CharSequence> categories = new ArrayList<CharSequence>();
 	// Used to hold all those podcasts that do not match a given search text
 	private static List<Podcast> exclude = new ArrayList<Podcast>();
+	// To sort alphabetically
+	private static AlphaComparator comparator = new AlphaComparator();
 	//------------------------------------------------------------------------------
 	/**
 	 * Used to add a list of retrieved podcasts after parsing the JSON
@@ -55,6 +58,8 @@ public class PodcastUtil {
 				System.out.println(podcast.getTitle() + " is " + category);
 			}
 		}
+		// Sort alphabetically
+		Collections.sort(matches, comparator);
 		// We then add the matches to the front of the list
 		podcasts.addAll(0, matches);
 	}
@@ -83,6 +88,7 @@ public class PodcastUtil {
 					exclude.add(podcast);
 			}
 		}
+		Collections.sort(podcasts, comparator);
 	}
 	//------------------------------------------------------------------------------
 	public static void restoreAll(){

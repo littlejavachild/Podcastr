@@ -236,7 +236,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 			public void onItemSelected(AdapterView<?> parentView, View selectedItemView,
 					int position, long id) {
 				spinnerPosition = position;
-				String category = (String) PodcastUtil.getCategories().get(position);
+				String category = (String) PodcastUtil.getCategories().get(spinnerPosition);
 				fragment.sortByCategory(category);
 			}
 			@Override
@@ -336,6 +336,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 		}else if(videoPlayerFragmentShown){
 			// VideoPlayerFragment now officially shown
 			videoPlayerFragmentShown = false;
+			PodcastrApplication.newInstance().setVideoFragmentVisible(videoPlayerFragmentShown);
 			cancel.performClick();
 			setDrawerClosedCustomActionBarView();
 			ActionBarUtil.showActionBar(getActionBar());
@@ -363,6 +364,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 		displayVideoPlayerFragment();
 		// VideoPlayerFragment now officially shown
 		videoPlayerFragmentShown = true;
+		PodcastrApplication.newInstance().setVideoFragmentVisible(videoPlayerFragmentShown);
 		// Hide the ActionBar
 		ActionBarUtil.hideActionBar(getActionBar());
 	}

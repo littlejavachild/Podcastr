@@ -85,6 +85,7 @@ public class VideoPlayerFragment extends Fragment implements
 	@Override
 	public void onStop(){
 		super.onStop();
+		loadEpisodes.cancel(true);
 		player.stop();
 		player.reset();
 		// onStop, we keep the snapshot state. Not a complete reset
