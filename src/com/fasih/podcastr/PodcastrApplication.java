@@ -3,10 +3,12 @@ package com.fasih.podcastr;
 
 import java.io.File;
 
-import com.fasih.podcastr.util.Constants;
-
 import android.app.Application;
 import android.graphics.Typeface;
+
+import com.fasih.podcastr.util.Constants;
+import com.fasih.podcastr.util.FavoriteUtil;
+import com.parse.Parse;
 
 public class PodcastrApplication extends Application {
 	private static PodcastrApplication singleton = null;
@@ -17,8 +19,13 @@ public class PodcastrApplication extends Application {
 	@Override
 	public void onCreate(){
 		singleton = this;
+		// The following line enables localdatastore
+		Parse.enableLocalDatastore(this);
+		// The following line initialized Parse
+		Parse.initialize(this, "juecnERSHJiESim4for8CWwT5o7LUWCvgyOzYdx7", "VeJvVnI7B9llgRrc72ywYK14kI6C47aMeeY9nbqg");
 		createTypeface();
 		createDirectories();
+		FavoriteUtil.loadFavoritesFromDatabase();
 	}
 	//--------------------------------------------------------------------------------------------------
 	/**

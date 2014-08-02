@@ -9,4 +9,9 @@ public interface Constants {
 	
 	String DIR_XML = "/data/data/com.fasih.podcastr/files/xml";
 	String DIR_DOWNLOADS = "/data/data/com.fasih.podcastr/files/downloads";
+	
+	String FAVORITES_CLASS_NAME = "Favorites";
+	String RECENTS_CLASS_NAME = "Recents";
+	String PODCAST = "podcast";
+	String EPISODE = "episode";
 }

@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewOverlay;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.EditorInfo;
@@ -43,7 +44,12 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 	private ListView leftDrawer = null;
 	private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
+    // The following view is for when the 
+    // grid fragment is displayed
     private View customActionBarView = null;
+    // The following view is for when the 
+    // video fragment is displayed
+    private View videoFragmentActionBarView = null;
     private Spinner categories = null;
     private CategorySpinnerAdapter spinnerAdapter = null;
     private ImageButton search = null;
@@ -116,6 +122,9 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 	@Override
 	public void onResume(){
 		super.onResume();
+		if(videoPlayerFragmentShown){
+			setVideoFragmentActionBarView();
+		}
 	}
 	//------------------------------------------------------------------------------
 	@Override
@@ -207,6 +216,8 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 		if(customActionBarView == null){
 			LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			customActionBarView = inflator.inflate(R.layout.activity_home_action_bar,null);
+		}
+		if(!videoPlayerFragmentShown){
 			ab.setCustomView(customActionBarView);
 		}
 		// If the user was in search mode when the drawer was opened,
@@ -228,6 +239,20 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 		ab.setDisplayShowCustomEnabled(false);
 		ActionBarUtil.setActionBarTypeface(HomeActivity.this);
 		cancel.performClick();
+	}
+	//------------------------------------------------------------------------------
+	private void setVideoFragmentActionBarView(){
+		ActionBar ab = getActionBar();
+		ab.setDisplayHomeAsUpEnabled(true);
+		ab.setDisplayShowTitleEnabled(false);
+		ab.setDisplayShowCustomEnabled(true);
+		if(videoFragmentActionBarView == null){
+			LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			videoFragmentActionBarView = inflator.inflate(R.layout.fragment_video_player_action_bar,null);
+		}
+		ab.setCustomView(videoFragmentActionBarView);
+		// No need to retrieve any references as 
+		// we will let the video fragment do that
 	}
 	//------------------------------------------------------------------------------
 	private void setSpinnerItemSelectionListener(){
@@ -339,7 +364,6 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 			PodcastrApplication.newInstance().setVideoFragmentVisible(videoPlayerFragmentShown);
 			cancel.performClick();
 			setDrawerClosedCustomActionBarView();
-			ActionBarUtil.showActionBar(getActionBar());
 			super.onBackPressed();
 		}else{
 			super.onBackPressed();
@@ -358,15 +382,13 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 		}else{
 			argsToVideoPlayerFragment.putInt(Constants.PODCAST_INDEX, index);
 		}
-		// Show just the title, yo!
-//		setDrawerOpenedCustomActionBarView();
+		// Show the custom view for the video fragment context, yo!
+		setVideoFragmentActionBarView();
 		// Display VideoPlayerFragment
 		displayVideoPlayerFragment();
 		// VideoPlayerFragment now officially shown
 		videoPlayerFragmentShown = true;
 		PodcastrApplication.newInstance().setVideoFragmentVisible(videoPlayerFragmentShown);
-		// Hide the ActionBar
-		ActionBarUtil.hideActionBar(getActionBar());
 	}
 	//------------------------------------------------------------------------------
 	private void displayVideoPlayerFragment(){

@@ -20,4 +20,21 @@
     
     <!--  -->
     <string name="tap_to_see">Tap Here To See The Video Player</string>
+    
+    <!--  -->
+    <string name="contact_form">Contact Form</string>
+	<string name="message">Message (500 Characters Only)</string>
+	<string name="email_address">Email Address</string>
+	<string name="do_not_share">We Do Not Share Your Email Address With Anybody. Period.</string>
+	<string name="send">Send</string>
+	<string name="message_empty">Please Enter A Message</string>
+	<string name="email_invalid">Please Enter A Valid Email Address</string>
+	<string name="message_sent">Message Successfully Sent</string>
+	<string name="message_not_sent">Message Could Not Be Sent. Please Try Again.</string>
+	<string name="not_a_bot">Are You A Bot? Try Again After 15 Seconds</string>
+	
+	<!--  -->
+	<string name="proceed_to_download">Proceed To Download?</string>
+	<string name="yes_download">Yes, Download</string>
+	<string name="no_download">No, Don\'t Download</string>
 </resources>

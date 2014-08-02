@@ -2,11 +2,21 @@ package com.fasih.podcastr.fragment;
 
 import java.io.IOException;
 
+import android.app.AlertDialog;
+import android.app.DownloadManager;
+import android.content.ActivityNotFoundException;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -17,21 +27,24 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.fasih.podcastr.PodcastrApplication;
 import com.fasih.podcastr.R;
 import com.fasih.podcastr.adapter.EpisodeAdapter;
-import com.fasih.podcastr.util.ActionBarUtil;
 import com.fasih.podcastr.util.Constants;
 import com.fasih.podcastr.util.Episode;
 import com.fasih.podcastr.util.EpisodeUtil;
+import com.fasih.podcastr.util.FavoriteUtil;
 import com.fasih.podcastr.util.LoadEpisodesTask;
 import com.fasih.podcastr.util.Podcast;
 import com.fasih.podcastr.util.PodcastUtil;
 import com.fasih.podcastr.util.PrefUtils;
 import com.fasih.podcastr.view.VideoControllerView;
+import com.parse.ParseObject;
 
 public class VideoPlayerFragment extends Fragment implements 
 													SurfaceHolder.Callback, 
@@ -53,6 +66,11 @@ public class VideoPlayerFragment extends Fragment implements
     private TextView episodeTitle;
     private TextView episodeDescription;
     
+    private ImageButton download;
+    private ImageButton addToFavorites;
+    private ImageButton share;
+    private TextView podcastTitle;
+    
     private LoadEpisodesTask loadEpisodes;
     private EpisodeAdapter adapter = new EpisodeAdapter();
     
@@ -60,7 +78,7 @@ public class VideoPlayerFragment extends Fragment implements
     
   //------------------------------------------------------------------------------
 	public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-		ActionBarUtil.hideActionBar(getActivity().getActionBar());
+		
 		View view = null;
 		view = inflater.inflate(R.layout.fragment_video_player, container, false);
 		contentView = view;
@@ -80,6 +98,10 @@ public class VideoPlayerFragment extends Fragment implements
 		}
 		retrieveArguments();
 		getEpisodes();
+		setDownloadClickListener();
+		setAddToFavoritesClickListener();
+		setShareOnClickListener();
+		setPodcastTitle();
 	}
 	//------------------------------------------------------------------------------
 	@Override
@@ -100,6 +122,14 @@ public class VideoPlayerFragment extends Fragment implements
     	videoHolder.addCallback(this);
     	player = new MediaPlayer();
     	player.setOnPreparedListener(this); 
+    	
+    	// Because these are in the ActionBar,
+    	// we get them from the Activity
+    	download = (ImageButton) getActivity().findViewById(R.id.download);
+    	addToFavorites = (ImageButton) getActivity().findViewById(R.id.add_to_favorite);
+    	share = (ImageButton) getActivity().findViewById(R.id.share);
+    	podcastTitle = (TextView) getActivity().findViewById(R.id.podcast_title);
+    	podcastTitle.setTypeface(roboto, Typeface.BOLD);
     	
     	controller = new VideoControllerView(getActivity());
     	listOfEpisodes = (ListView) contentView.findViewById(R.id.listOfEpisodes);
@@ -191,7 +221,9 @@ public class VideoPlayerFragment extends Fragment implements
 	    } catch (IllegalArgumentException e) { e.printStackTrace(); }
 	      catch (SecurityException e) { e.printStackTrace(); } 
 		  catch (IllegalStateException e) { e.printStackTrace(); } 
-		  catch (IOException e) { e.printStackTrace(); } 
+		  catch (IOException e) { e.printStackTrace(); }
+		
+		setInitialButtonColor();
 	}
 	//------------------------------------------------------------------------------
 	@Override
@@ -315,6 +347,157 @@ public class VideoPlayerFragment extends Fragment implements
 				playEpisode(index);
 			}
 		});
+	}
+	//------------------------------------------------------------------------------
+	private void setDownloadClickListener(){
+		download.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Episode episode = EpisodeUtil.getEpisodes().get(videoIndex);
+				String uri = episode.getEnclosureURL();
+				if(uri == null || uri.isEmpty()){
+					uri = episode.getGuid();
+				}
+				final String _uri = uri; // cheating :P
+				if(isWifiConnected()){
+					// If WiFi is connected, 
+					// we download directly
+					download(uri);
+				}else if(isMobileDataConnected()){
+					// If the user is on mobile data,
+					// we let them choose if they want to download
+					DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+					    @Override 
+					    public void onClick(DialogInterface dialog, int which) {
+					        switch (which){
+					        case DialogInterface.BUTTON_POSITIVE:
+					            download(_uri);
+					            break; 
+					 
+					        case DialogInterface.BUTTON_NEGATIVE:
+					            //No button clicked, ignore
+					            break; 
+					        } 
+					    } 
+					};
+					buildAndShowDownloadYesNoDialog(dialogClickListener);
+				}
+			}
+		});
+	}
+	//------------------------------------------------------------------------------
+	private void download(String uri){
+		String fileName = uri.substring(uri.lastIndexOf("/") + 1);
+		DownloadManager.Request r = new DownloadManager.Request(Uri.parse(uri));
+		 
+		// This put the download in the same Download dir the browser uses 
+		r.setDestinationInExternalPublicDir(Environment.DIRECTORY_PODCASTS, fileName);
+		 
+		// When downloading music and videos they will be listed in the player 
+		// (Seems to be available since Honeycomb only) 
+		r.allowScanningByMediaScanner();
+		
+		// Notify user when download is completed 
+		// (Seems to be available since Honeycomb only)
+		r.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+		 
+		// Start download 
+		DownloadManager dm = (DownloadManager) getActivity().getSystemService(Context.DOWNLOAD_SERVICE);
+		
+		dm.enqueue(r);
+	}
+	//------------------------------------------------------------------------------
+	private boolean isWifiConnected(){
+		ConnectivityManager m = (ConnectivityManager) 
+				getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo wifi = m.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+		return wifi.isConnected();
+	}
+	//------------------------------------------------------------------------------
+	private boolean isMobileDataConnected(){
+		ConnectivityManager m = (ConnectivityManager) 
+				getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo net = m.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+		return net.isConnectedOrConnecting();
+	}
+	//------------------------------------------------------------------------------
+	private void buildAndShowDownloadYesNoDialog(DialogInterface.OnClickListener listener){
+		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+		Resources res = getActivity().getResources();
+		String proceed = res.getString(R.string.proceed_to_download);
+		String yes = res.getString(R.string.yes_download);
+		String no = res.getString(R.string.no_download);
+		builder.setMessage(proceed);
+		builder.setPositiveButton(yes, listener);
+		builder.setNegativeButton(no, listener);
+		builder.show();
+	}
+	//------------------------------------------------------------------------------
+	private void setPodcastTitle(){
+		podcastTitle.setText(podcast.getTitle());
+	}
+	//------------------------------------------------------------------------------
+	private void setAddToFavoritesClickListener(){
+		addToFavorites.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Episode episode = EpisodeUtil.getEpisodes().get(videoIndex);
+				ParseObject favorite = new ParseObject(Constants.FAVORITES_CLASS_NAME);
+				favorite.put(Constants.PODCAST, podcast.getFeed());
+				favorite.put(Constants.EPISODE, episode.getEnclosureURL());
+				if(FavoriteUtil.containsFavorite(favorite)){
+					// If it contains it already,
+					// we remove
+					FavoriteUtil.removeFromFavorites(favorite);
+					// and set the logo to normal
+					addToFavorites.setImageResource(R.drawable.ic_action_important);
+				}else{
+					// else, we add
+					FavoriteUtil.addToFavorites(favorite);
+					// and set the logo to highlighted
+					addToFavorites.setImageResource(R.drawable.ic_action_important_yellow);
+				}
+			}
+		});
+	}
+	//------------------------------------------------------------------------------
+	private void setInitialButtonColor(){
+		Episode episode = EpisodeUtil.getEpisodes().get(videoIndex);
+		ParseObject favorite = new ParseObject(Constants.FAVORITES_CLASS_NAME);
+		favorite.put(Constants.PODCAST, podcast.getFeed());
+		favorite.put(Constants.EPISODE, episode.getEnclosureURL());
+		if(FavoriteUtil.containsFavorite(favorite)){
+			// If it is already in favorites,
+			// we show the highlighted logo
+			addToFavorites.setImageResource(R.drawable.ic_action_important_yellow);
+		}else{
+			// else we show the normal logo
+			addToFavorites.setImageResource(R.drawable.ic_action_important);
+		}
+	}
+	//------------------------------------------------------------------------------
+	private void setShareOnClickListener(){
+		share.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				shareEpisode();
+			}
+		});
+	}
+	//------------------------------------------------------------------------------
+	private void shareEpisode(){
+		Episode episode = EpisodeUtil.getEpisodes().get(videoIndex);
+		String message = "Watch " + episode.getTitle() + " [" + episode.getEnclosureURL() + "] " + "on Podcastr";
+		Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+		sharingIntent.setType("text/plain");
+		sharingIntent.putExtra(Intent.EXTRA_TEXT, message);
+		try{
+			startActivity(Intent.createChooser(sharingIntent, "Share Using"));
+		}catch(ActivityNotFoundException e){
+			Toast.makeText(getActivity(), 
+					"Unable To Share Event. No Suitable Application Found", 
+					Toast.LENGTH_SHORT).show();
+		}
 	}
 	//------------------------------------------------------------------------------
 }

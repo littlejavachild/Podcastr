@@ -45,8 +45,10 @@ public class EpisodeAdapter extends BaseAdapter {
 			tv.setEllipsize(TextUtils.TruncateAt.END);
 		}
 		TextView tv = (TextView) convertView;
-		String _title = episodes.get(position).getTitle();
-		tv.setText(_title);
+		if(!episodes.isEmpty()){
+			String _title = episodes.get(position).getTitle();
+			tv.setText(_title);
+		}
 		return convertView;
 	}
 	//------------------------------------------------------------------------------
