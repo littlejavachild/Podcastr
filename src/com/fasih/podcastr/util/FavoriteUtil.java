@@ -45,10 +45,12 @@ public class FavoriteUtil {
 	}
 	//------------------------------------------------------------------------------
 	public static void addToFavorites(ParseObject favorite){
-		favorites.add(favorite);
-		favorite.pinInBackground(callback);
-		System.out.println("Added: " + favorite.getString(Constants.EPISODE));
-		System.out.println("***SIZE: " + favorites.size() + "***");
+		if(!containsFavorite(favorite)){
+			favorites.add(favorite);
+			favorite.pinInBackground(callback);
+			System.out.println("Added: " + favorite.getString(Constants.EPISODE));
+			System.out.println("***SIZE: " + favorites.size() + "***");
+		}
 	}
 	//------------------------------------------------------------------------------
 	public static void removeFromFavorites(ParseObject favorite){
@@ -79,7 +81,7 @@ public class FavoriteUtil {
 			String episode = (String) each.get(Constants.EPISODE);
 			String podcast = (String) each.get(Constants.PODCAST);
 			if(_podcast.equals(podcast) && _episode.equals(episode))
-				contains = true;
+				contains = true; break;
 		}
 		return contains;
 	}

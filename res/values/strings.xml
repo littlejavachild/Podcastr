@@ -37,4 +37,9 @@
 	<string name="proceed_to_download">Proceed To Download?</string>
 	<string name="yes_download">Yes, Download</string>
 	<string name="no_download">No, Don\'t Download</string>
+	
+	<!--  -->
+	<string name="check_for_update">Check For Updates To Podcast?</string>
+	<string name="yes_check_for_update">Yes, Check For Updates</string>
+	<string name="no_check_for_updates">No, Don\'t Check For Updates</string>
 </resources>

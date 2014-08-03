@@ -149,9 +149,7 @@ public class PodcastGridFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				dialog.dismiss();
-				if(!PodcastrApplication.newInstance().getVideoFragmentVisible()){
-					listener.onPodcastClicked(position);
-				}
+				listener.onPodcastClicked(position);
 			}
 		});
 		dialog.show();

@@ -14,7 +14,6 @@ public class PodcastrApplication extends Application {
 	private static PodcastrApplication singleton = null;
 	private Typeface roboto = null;
 	private boolean homeActivityVisible = false;
-	private boolean videoFragmentVisible = false;
 	//--------------------------------------------------------------------------------------------------
 	@Override
 	public void onCreate(){
@@ -25,7 +24,6 @@ public class PodcastrApplication extends Application {
 		Parse.initialize(this, "juecnERSHJiESim4for8CWwT5o7LUWCvgyOzYdx7", "VeJvVnI7B9llgRrc72ywYK14kI6C47aMeeY9nbqg");
 		createTypeface();
 		createDirectories();
-		FavoriteUtil.loadFavoritesFromDatabase();
 	}
 	//--------------------------------------------------------------------------------------------------
 	/**
@@ -57,14 +55,6 @@ public class PodcastrApplication extends Application {
 	//--------------------------------------------------------------------------------------------------
 	synchronized public boolean getHomeActivityVisible(){
 		return homeActivityVisible;
-	}
-	//--------------------------------------------------------------------------------------------------
-	synchronized public void setVideoFragmentVisible(boolean visibility){
-		videoFragmentVisible = visibility;
-	}
-	//--------------------------------------------------------------------------------------------------
-	synchronized public boolean getVideoFragmentVisible(){
-		return videoFragmentVisible;
 	}
 	//--------------------------------------------------------------------------------------------------
 	private void createDirectories(){

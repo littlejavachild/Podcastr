@@ -35,12 +35,25 @@
         android:layout_centerVertical="true"
         android:src="@drawable/ic_action_download"/>
     
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/download"
+        android:background="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_action_refresh"/>
+    
     <TextView android:id="@+id/podcast_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@android:string/untitled"
         android:layout_toLeftOf="@id/download"
         android:textColor="@android:color/white"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
         android:layout_centerVertical="true"
         android:textSize="18sp"
         android:typeface="monospace" />

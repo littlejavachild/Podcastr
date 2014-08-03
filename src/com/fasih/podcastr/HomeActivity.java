@@ -15,7 +15,6 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewOverlay;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.EditorInfo;
@@ -36,7 +35,9 @@ import com.fasih.podcastr.fragment.PodcastGridFragment.OnPodcastClickedListener;
 import com.fasih.podcastr.fragment.VideoPlayerFragment;
 import com.fasih.podcastr.util.ActionBarUtil;
 import com.fasih.podcastr.util.Constants;
+import com.fasih.podcastr.util.FavoriteUtil;
 import com.fasih.podcastr.util.PodcastUtil;
+import com.fasih.podcastr.util.PrefUtils;
 
 public class HomeActivity extends FragmentActivity implements OnPodcastClickedListener{
 	private PodcastGridFragment fragment = null;
@@ -116,7 +117,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 				searchString.setText(searchText);
 			}
 		}
-		
+		FavoriteUtil.loadFavoritesFromDatabase();
 	}
 	//------------------------------------------------------------------------------
 	@Override
@@ -355,13 +356,18 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 	//------------------------------------------------------------------------------
 	@Override
 	public void onBackPressed(){
+		
+		// Reset Everything
+		PrefUtils.setSeekTo(this, 0);
+		PrefUtils.setVideoIndex(this, 0);
+		System.out.println("VIDEO INDEX AFTER BACK: " + PrefUtils.getSeekTo(this));
+		
 		if(searchModeEnabled){
 			searchModeEnabled = false;
 			cancel.performClick();
 		}else if(videoPlayerFragmentShown){
 			// VideoPlayerFragment now officially shown
 			videoPlayerFragmentShown = false;
-			PodcastrApplication.newInstance().setVideoFragmentVisible(videoPlayerFragmentShown);
 			cancel.performClick();
 			setDrawerClosedCustomActionBarView();
 			super.onBackPressed();
@@ -378,6 +384,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 			argsToVideoPlayerFragment = new Bundle();
 			argsToVideoPlayerFragment.putInt(Constants.PODCAST_INDEX, index);
 			VideoPlayerFragment videoPlayerFragment = VideoPlayerFragment.newInstance();
+			videoPlayerFragment.setRetainInstance(true);
 			videoPlayerFragment.setArguments(argsToVideoPlayerFragment);
 		}else{
 			argsToVideoPlayerFragment.putInt(Constants.PODCAST_INDEX, index);
@@ -388,7 +395,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 		displayVideoPlayerFragment();
 		// VideoPlayerFragment now officially shown
 		videoPlayerFragmentShown = true;
-		PodcastrApplication.newInstance().setVideoFragmentVisible(videoPlayerFragmentShown);
+		
 	}
 	//------------------------------------------------------------------------------
 	private void displayVideoPlayerFragment(){

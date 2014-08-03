@@ -1,5 +1,6 @@
 package com.fasih.podcastr.fragment;
 
+import java.io.File;
 import java.io.IOException;
 
 import android.app.AlertDialog;
@@ -18,6 +19,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -69,12 +71,11 @@ public class VideoPlayerFragment extends Fragment implements
     private ImageButton download;
     private ImageButton addToFavorites;
     private ImageButton share;
+    private ImageButton refresh;
     private TextView podcastTitle;
     
     private LoadEpisodesTask loadEpisodes;
     private EpisodeAdapter adapter = new EpisodeAdapter();
-    
-    private int videoIndex = 0;
     
   //------------------------------------------------------------------------------
 	public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
@@ -91,16 +92,17 @@ public class VideoPlayerFragment extends Fragment implements
 		init();
 		// Because landscape mode has video player only.
 		// Hence, ListView will be null after init()
-		setTouchEventListener();
 		if(listOfEpisodes != null){
 			setEpisodesListAdapter();
 			setEpisodeOnItemClickListener();
 		}
 		retrieveArguments();
 		getEpisodes();
+		setTouchEventListener();
 		setDownloadClickListener();
 		setAddToFavoritesClickListener();
 		setShareOnClickListener();
+		setRefreshOnClickListener();
 		setPodcastTitle();
 	}
 	//------------------------------------------------------------------------------
@@ -112,7 +114,7 @@ public class VideoPlayerFragment extends Fragment implements
 		player.reset();
 		// onStop, we keep the snapshot state. Not a complete reset
 		PrefUtils.setSeekTo(getActivity(), player.getCurrentPosition());
-		PrefUtils.setVideoIndex(getActivity(), videoIndex);
+		PrefUtils.setVideoIndex(getActivity(), PrefUtils.getVideoIndex(getActivity()));
 	}
 	//------------------------------------------------------------------------------
 	private void init(){
@@ -128,6 +130,7 @@ public class VideoPlayerFragment extends Fragment implements
     	download = (ImageButton) getActivity().findViewById(R.id.download);
     	addToFavorites = (ImageButton) getActivity().findViewById(R.id.add_to_favorite);
     	share = (ImageButton) getActivity().findViewById(R.id.share);
+    	refresh = (ImageButton) getActivity().findViewById(R.id.refresh);
     	podcastTitle = (TextView) getActivity().findViewById(R.id.podcast_title);
     	podcastTitle.setTypeface(roboto, Typeface.BOLD);
     	
@@ -187,11 +190,10 @@ public class VideoPlayerFragment extends Fragment implements
 	}
 	//------------------------------------------------------------------------------
 	private void playEpisode(int position){
-		videoIndex = position;
 		if(EpisodeUtil.getEpisodes().size() == 0){
 			return;
 		}
-		Episode episode = EpisodeUtil.getEpisodes().get(position);
+		Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
 		String title = episode.getTitle();
 		String description = episode.getDescription();
 		String guid = episode.getGuid();
@@ -210,14 +212,24 @@ public class VideoPlayerFragment extends Fragment implements
 			episodeDescription.setText(description);
 		}
 		
-		System.out.println(source);
-		
 		try {
 			player.stop();
 			player.reset();
-			player.setAudioStreamType(AudioManager.STREAM_MUSIC); 
-			player.setDataSource(getActivity(), Uri.parse(source));
-			player.prepareAsync();
+			player.setAudioStreamType(AudioManager.STREAM_MUSIC);
+			
+			if(existsLocally(getFileNameFromEnclosure(enclosure))){
+		        System.out.println("Exists Locally");
+		        String fileName = getFileNameFromEnclosure(enclosure);
+		        File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PODCASTS);
+		        File localFile = new File(path,fileName);
+		        Uri localSource = Uri.parse(localFile.getAbsolutePath());
+		        player.setDataSource(getActivity(), localSource);
+				player.prepare();
+			}else{
+		        System.out.println("Does Not Exist Locally");
+		        player.setDataSource(getActivity(), Uri.parse(source));
+				player.prepareAsync();
+			}
 	    } catch (IllegalArgumentException e) { e.printStackTrace(); }
 	      catch (SecurityException e) { e.printStackTrace(); } 
 		  catch (IllegalStateException e) { e.printStackTrace(); } 
@@ -231,9 +243,6 @@ public class VideoPlayerFragment extends Fragment implements
 		super.onDetach();
 		player.stop();
 		player.reset();
-		// onDetach also, everything is reset to 0
-		PrefUtils.setSeekTo(getActivity(), 0);
-		PrefUtils.setVideoIndex(getActivity(), 0);
 	}
 	//------------------------------------------------------------------------------
     // Implement SurfaceHolder.Callback
@@ -353,35 +362,27 @@ public class VideoPlayerFragment extends Fragment implements
 		download.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Episode episode = EpisodeUtil.getEpisodes().get(videoIndex);
+				Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
 				String uri = episode.getEnclosureURL();
 				if(uri == null || uri.isEmpty()){
 					uri = episode.getGuid();
 				}
 				final String _uri = uri; // cheating :P
-				if(isWifiConnected()){
-					// If WiFi is connected, 
-					// we download directly
-					download(uri);
-				}else if(isMobileDataConnected()){
-					// If the user is on mobile data,
-					// we let them choose if they want to download
-					DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-					    @Override 
-					    public void onClick(DialogInterface dialog, int which) {
-					        switch (which){
-					        case DialogInterface.BUTTON_POSITIVE:
-					            download(_uri);
-					            break; 
-					 
-					        case DialogInterface.BUTTON_NEGATIVE:
-					            //No button clicked, ignore
-					            break; 
-					        } 
-					    } 
-					};
-					buildAndShowDownloadYesNoDialog(dialogClickListener);
-				}
+				DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+				    @Override 
+				    public void onClick(DialogInterface dialog, int which) {
+				        switch (which){
+				        case DialogInterface.BUTTON_POSITIVE:
+				            download(_uri);
+				            break; 
+				 
+				        case DialogInterface.BUTTON_NEGATIVE:
+				            //No button clicked, ignore
+				            break; 
+				        } 
+				    } 
+				};
+				buildAndShowDownloadYesNoDialog(dialogClickListener);
 			}
 		});
 	}
@@ -389,10 +390,14 @@ public class VideoPlayerFragment extends Fragment implements
 	private void download(String uri){
 		String fileName = uri.substring(uri.lastIndexOf("/") + 1);
 		DownloadManager.Request r = new DownloadManager.Request(Uri.parse(uri));
-		 
+		
 		// This put the download in the same Download dir the browser uses 
-		r.setDestinationInExternalPublicDir(Environment.DIRECTORY_PODCASTS, fileName);
+		r.setDestinationInExternalPublicDir(Environment.DIRECTORY_PODCASTS,fileName);
 		 
+		// TODO delete later
+		System.out.println("DOWNLOAD LOCATION: " + 
+				new File(Environment.DIRECTORY_PODCASTS,fileName).getAbsolutePath());
+		
 		// When downloading music and videos they will be listed in the player 
 		// (Seems to be available since Honeycomb only) 
 		r.allowScanningByMediaScanner();
@@ -441,7 +446,7 @@ public class VideoPlayerFragment extends Fragment implements
 		addToFavorites.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Episode episode = EpisodeUtil.getEpisodes().get(videoIndex);
+				Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
 				ParseObject favorite = new ParseObject(Constants.FAVORITES_CLASS_NAME);
 				favorite.put(Constants.PODCAST, podcast.getFeed());
 				favorite.put(Constants.EPISODE, episode.getEnclosureURL());
@@ -462,7 +467,10 @@ public class VideoPlayerFragment extends Fragment implements
 	}
 	//------------------------------------------------------------------------------
 	private void setInitialButtonColor(){
-		Episode episode = EpisodeUtil.getEpisodes().get(videoIndex);
+		if(EpisodeUtil.getEpisodes().size() == 0 ){
+			return;
+		}
+		Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
 		ParseObject favorite = new ParseObject(Constants.FAVORITES_CLASS_NAME);
 		favorite.put(Constants.PODCAST, podcast.getFeed());
 		favorite.put(Constants.EPISODE, episode.getEnclosureURL());
@@ -485,8 +493,32 @@ public class VideoPlayerFragment extends Fragment implements
 		});
 	}
 	//------------------------------------------------------------------------------
+	private void setRefreshOnClickListener(){
+		refresh.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+				    @Override 
+				    public void onClick(DialogInterface dialog, int which) {
+				        switch (which){
+				        case DialogInterface.BUTTON_POSITIVE:
+				            refresh();
+				            break; 
+				 
+				        case DialogInterface.BUTTON_NEGATIVE:
+				            //No button clicked, ignore
+				            break; 
+				        } 
+				    } 
+				};
+				
+				buildAndShowRefreshYesNoDialog(dialogClickListener);
+			}
+		});
+	}
+	//------------------------------------------------------------------------------
 	private void shareEpisode(){
-		Episode episode = EpisodeUtil.getEpisodes().get(videoIndex);
+		Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
 		String message = "Watch " + episode.getTitle() + " [" + episode.getEnclosureURL() + "] " + "on Podcastr";
 		Intent sharingIntent = new Intent(Intent.ACTION_SEND);
 		sharingIntent.setType("text/plain");
@@ -498,6 +530,51 @@ public class VideoPlayerFragment extends Fragment implements
 					"Unable To Share Event. No Suitable Application Found", 
 					Toast.LENGTH_SHORT).show();
 		}
+	}
+	//------------------------------------------------------------------------------
+	private void refresh(){
+		// Step 1. Delete the locally stored XML file
+		String xmlFile = getXmlFileFromFeedUrl();
+		File f = new File(Constants.DIR_XML, xmlFile);
+		if(f.delete())
+			System.out.println("Deleted: " + f.getAbsolutePath());
+		else
+			System.out.println("Could Not Delete: " + f.getAbsolutePath());
+		// Step 2. Execute the LoadEpisodesTask
+		getEpisodes();
+	}
+	//------------------------------------------------------------------------------
+	private void buildAndShowRefreshYesNoDialog(DialogInterface.OnClickListener listener){
+		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+		Resources res = getActivity().getResources();
+		String proceed = res.getString(R.string.check_for_update);
+		String yes = res.getString(R.string.yes_check_for_update);
+		String no = res.getString(R.string.no_check_for_updates);
+		builder.setMessage(proceed);
+		builder.setPositiveButton(yes, listener);
+		builder.setNegativeButton(no, listener);
+		builder.show();
+	}
+	//------------------------------------------------------------------------------
+	private String getFileNameFromEnclosure(String enclosureUrl){
+		int indexOfSlash = enclosureUrl.lastIndexOf("/");
+		String fileName = enclosureUrl.substring(indexOfSlash + 1);
+		return fileName;
+	}
+	//------------------------------------------------------------------------------
+	private boolean existsLocally(String fileName){
+		File path = Environment.getExternalStoragePublicDirectory(
+		        Environment.DIRECTORY_PODCASTS);
+		File f = new File(path, fileName);
+		System.out.println("CHECKED LOCATION: " + f.getAbsolutePath());
+		return f.exists();
+	}
+	//------------------------------------------------------------------------------
+	private String getXmlFileFromFeedUrl(){
+		String feed = podcast.getFeed();
+		int indexOfSlash = feed.lastIndexOf("/");
+		String fileName = feed.substring(indexOfSlash) + ".xml";
+		return fileName;
 	}
 	//------------------------------------------------------------------------------
 }

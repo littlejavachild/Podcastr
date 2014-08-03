@@ -62,9 +62,9 @@ public class LoadEpisodesTask extends AsyncTask<String, Void, Void> {
 		String fileName = getFileNameFromUrl(arg0[0]) + ".xml";
 		File xmlFile = new File(Constants.DIR_XML, fileName);
 		
-		System.out.println("arg0 " + arg0[0]);
-		System.out.println("fileName " + fileName);
-		System.out.println("Absolute Path: " + xmlFile.getAbsolutePath());
+//		System.out.println("arg0 " + arg0[0]);
+//		System.out.println("fileName " + fileName);
+//		System.out.println("Absolute Path: " + xmlFile.getAbsolutePath());
 		
 		if(xmlFile.exists()){
 			// If file exists, we will parse the XML from the file
