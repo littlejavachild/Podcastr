@@ -239,6 +239,54 @@
 			"category" : "News",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/listeningpost_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/listeningpost"
+		},
+		{
+			"title" : "The Tennis Podcast",
+			"description" : "Presented by tennis commentator David Law and featuring Catherine Whitaker, in each episode the The Tennis Podcast features an in-depth interview with a big-name player, a top journalist or influential administrator, and plenty of chat about the sport.",
+			"host" : "David Law",
+			"category" : "Sports",
+			"logo" : "http://assets.libsyn.com/content/4568598.jpg",
+			"feed" : "http://thetennispodcast.libsyn.com/rss"
+		},
+		{
+			"title" : "MotoPod",
+			"description" : "MotoPod, The Motorcycle Roadracing Podcast, is an internet radio show dedicated to MotoGP and motorcycle racing news, interviews, commentary, opinion and rumor! MotoPod's primary focus is MotoGP, the premier class of the FIM World Championship Motorcycle Grand Prix Road Racing Series, but we’ll have occasional sidetrips into the world of FIM SBK World Superbike, Supersport and many other forms of two wheeled motorsport. Find out what’s going on in the sport that is the pinnacle of motorsports, Grand Prix Motorcycle Road Racing! New episodes every week.",
+			"host" : "Bob Hayes, Jim Race, Martin Darlington, Jules Cisek",
+			"category" : "Sports",
+			"logo" : "http://www.motopodcast.com/podcasts/motopod-tall-large_144.jpg",
+			"feed" : "http://feeds.feedburner.com/motopodcast"
+		},
+		{
+			"title" : "NBA.com's Hang Time Podcast",
+			"description" : "NBA news, analysis and commentary from the staff at NBA.com. Sekou Smith hosts the weekly podcast with Rick Fox and Lang Whitaker, with guests from all around the league and the people who cover it.",
+			"host" : "John Schuhmann",
+			"category" : "Sports",
+			"logo" : "http://www.nba.com/2010/images/03/23/Sekou_iTunesPodcast_300x300_v1A.jpg",
+			"feed" : "feeds.feedburner.com/hang-time-podcast"
+		},
+		{
+			"title" : "Tone Control",
+			"description" : "Steve Gaynor of The Fullbright Company sits down with noteworthy video game developers for an in-depth conversation about their career and creative process, and the tricky work of establishing and maintaining a cohesive tone in their games.",
+			"host" : "Steve Gaynor",
+			"category" : "Games",
+			"logo" : "http://static.idlethumbs.net/img/feeds/6__feed.jpg",
+			"feed" : "https://www.idlethumbs.net/feeds/tonecontrol"
+		},
+		{
+			"title" : "Dota Insight",
+			"description" : "A Dota 2 Podcast.",
+			"host" : "Skythor, Loudmetal, and Finch",
+			"category" : "Games",
+			"logo" : "http://www.dotainsight.com/wp-content/uploads/2013/04/dota-insight-logo-final-1400opt.jpg",
+			"feed" : "http://www.dotainsight.com/podcast"
+		},
+		{
+			"title" : "Game Scoop!",
+			"description" : "IGN.com shoots a week’s worth of gaming news straight into your ear",
+			"host" : "IGN Staff",
+			"category" : "Games",
+			"logo" : "http://assets.libsyn.com/content/4993006.jpg",
+			"feed" : "feeds.ign.com/ignfeeds/podcasts/gamescoop"
 		}
 	]
 }

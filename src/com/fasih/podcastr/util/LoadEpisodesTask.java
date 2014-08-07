@@ -258,7 +258,6 @@ public class LoadEpisodesTask extends AsyncTask<String, Void, Void> {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		System.out.println(_description);
 	    return Jsoup.parse(_description).text();
 	}
 	//------------------------------------------------------------------------------

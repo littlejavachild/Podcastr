@@ -49,12 +49,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@android:string/untitled"
-        android:layout_toLeftOf="@id/download"
+        android:layout_toLeftOf="@id/refresh"
         android:textColor="@android:color/white"
-        android:ellipsize="marquee"
+        android:ellipsize="end"
         android:scrollHorizontally="true"
-        android:marqueeRepeatLimit="marquee_forever"
         android:layout_centerVertical="true"
+        android:singleLine="true"
         android:textSize="18sp"
         android:typeface="monospace" />
     

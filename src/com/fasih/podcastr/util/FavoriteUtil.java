@@ -3,6 +3,10 @@ package com.fasih.podcastr.util;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Context;
+import android.widget.Toast;
+
+import com.fasih.podcastr.HomeActivity;
 import com.parse.DeleteCallback;
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -39,6 +43,8 @@ public class FavoriteUtil {
 				if( e == null){
 					favorites.addAll(faves);
 					System.out.println("***FAVORITES: " + faves.size() + "***");
+				}else{
+					System.out.println(e.getMessage());
 				}
 			}
 		});
@@ -80,8 +86,12 @@ public class FavoriteUtil {
 		for(ParseObject each : favorites){
 			String episode = (String) each.get(Constants.EPISODE);
 			String podcast = (String) each.get(Constants.PODCAST);
-			if(_podcast.equals(podcast) && _episode.equals(episode))
-				contains = true; break;
+			System.out.println("Comparing: " + episode + " With: " + episode);
+			if(_podcast.equals(podcast) && _episode.equals(episode)){
+				System.out.println("MATCH FOUND!");
+				contains = true; 
+				break;
+			}
 		}
 		return contains;
 	}

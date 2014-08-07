@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.EditorInfo;
@@ -366,10 +367,12 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 			searchModeEnabled = false;
 			cancel.performClick();
 		}else if(videoPlayerFragmentShown){
-			// VideoPlayerFragment now officially shown
+			// VideoPlayerFragment now officially hidden
 			videoPlayerFragmentShown = false;
 			cancel.performClick();
 			setDrawerClosedCustomActionBarView();
+			// Screen no longer needs to be on at all times
+			getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 			super.onBackPressed();
 		}else{
 			super.onBackPressed();

@@ -15,7 +15,7 @@ import com.fasih.podcastr.util.PodcastUtil;
 
 public class CategorySpinnerAdapter extends BaseAdapter {
 	
-	private List<CharSequence> categories = PodcastUtil.getCategories();
+	private List<String> categories = PodcastUtil.getCategories();
 	private Typeface roboto = PodcastrApplication.newInstance().getTypeface();
 	private int fontColor = -1;
 	@Override

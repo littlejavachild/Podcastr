@@ -57,13 +57,15 @@ public class GridAdapter extends BaseAdapter {
 		title.setText(podcast.getTitle());
 		title.setTypeface(roboto, Typeface.BOLD);
 		
-		WindowManager wm = (WindowManager) c.getSystemService(Context.WINDOW_SERVICE);
-		Display display = wm.getDefaultDisplay();
-		Point size = new Point();
-		display.getSize(size);
-		int width = size.x;
-		Picasso.with(c).load(uri).resize(width/2, width/2).into(logo);
-		title.setWidth(width/2);
+//		WindowManager wm = (WindowManager) c.getSystemService(Context.WINDOW_SERVICE);
+//		Display display = wm.getDefaultDisplay();
+//		Point size = new Point();
+//		display.getSize(size);
+//		int width = size.x;
+//		Picasso.with(c).load(uri).resize(width/2, width/2).into(logo);
+//		title.setWidth(width/2);
+		
+		Picasso.with(c).load(uri).error(R.drawable.headphones).into(logo);
 		
 		return convertView;
 	}

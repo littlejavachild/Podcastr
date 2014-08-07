@@ -26,6 +26,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.FrameLayout;
@@ -193,6 +194,11 @@ public class VideoPlayerFragment extends Fragment implements
 		if(EpisodeUtil.getEpisodes().size() == 0){
 			return;
 		}
+		
+		// Keep the screen on.
+		// This is a video app. Screen stays on at all times.
+		getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		
 		Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
 		String title = episode.getTitle();
 		String description = episode.getDescription();
@@ -210,6 +216,7 @@ public class VideoPlayerFragment extends Fragment implements
 		if(episodeTitle != null){
 			episodeTitle.setText(title);
 			episodeDescription.setText(description);
+			episodeTitle.setSelected(true);
 		}
 		
 		try {

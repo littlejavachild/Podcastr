@@ -2,11 +2,12 @@ package com.fasih.podcastr.util;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class PodcastUtil {
 	private static List<Podcast> podcasts = new ArrayList<Podcast>();
-	private static List<CharSequence> categories = new ArrayList<CharSequence>();
+	private static List<String> categories = new ArrayList<String>();
 	// Used to hold all those podcasts that do not match a given search text
 	private static List<Podcast> exclude = new ArrayList<Podcast>();
 	// To sort alphabetically
@@ -37,10 +38,11 @@ public class PodcastUtil {
 	public static void addCategory(String category){
 		if(!categories.contains(category)){
 			categories.add(category);
+			Collections.sort(categories);
 		}
 	}
 	//------------------------------------------------------------------------------
-	public static List<CharSequence> getCategories(){
+	public static List<String> getCategories(){
 		return categories;
 	}
 	//------------------------------------------------------------------------------
