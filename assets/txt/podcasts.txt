@@ -84,7 +84,7 @@
 			"title" : "iFive for the iPhone",
 			"description" : "iFive for the iPhone is your top five list of the best the iPhone has to offer. Find the hottest new apps and learn helpful tricks to get the most out of your iPhone. Hosted by Sarah Lane, this fast-paced show will make you an iPhone master in no time.",
 			"host" : "Sarah Lane",
-			"category" : "iPhone",
+			"category" : "Technology",
 			"logo" : "http://feeds.twit.tv/podcasts/coverart/ifive144audio.jpg",
 			"feed" : "http://feeds.twit.tv/ifive"
 		},
@@ -287,6 +287,14 @@
 			"category" : "Games",
 			"logo" : "http://assets.libsyn.com/content/4993006.jpg",
 			"feed" : "feeds.ign.com/ignfeeds/podcasts/gamescoop"
+		},
+		{
+			"title" : "This Developer's Life",
+			"description" : "Stories About Developers and Their Lives",
+			"host" : "Rob Conery and Scott Hanselman",
+			"category" : "Geek Talk",
+			"logo" : "http://media.wekeroad.com/tdl2.png",
+			"feed" : "http://feeds.feedburner.com/thisdeveloperslife"
 		}
 	]
 }

@@ -29,6 +29,11 @@
             android:configChanges="orientation" android:immersive="true">
             
         </activity>
+
+	
+    
+	
+    <meta-data android:name="com.crashlytics.ApiKey" android:value="4e762f224670ad9c95c7f665f5affdd018b987bc"/>
     </application>
 
 </manifest>

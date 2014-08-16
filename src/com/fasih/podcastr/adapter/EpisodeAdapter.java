@@ -19,6 +19,15 @@ public class EpisodeAdapter extends BaseAdapter {
 	private List<Episode> episodes = EpisodeUtil.getEpisodes();
 	private Typeface roboto = PodcastrApplication.newInstance().getTypeface();
 	
+	
+	public EpisodeAdapter(){
+		
+	}
+	//------------------------------------------------------------------------------
+	public EpisodeAdapter(List<Episode> newEpisodes){
+		episodes = newEpisodes;
+	}
+	//------------------------------------------------------------------------------
 	@Override
 	public int getCount() {
 		return episodes.size();
@@ -26,7 +35,11 @@ public class EpisodeAdapter extends BaseAdapter {
 	//------------------------------------------------------------------------------
 	@Override
 	public Object getItem(int position) {
-		return episodes.get(position);
+		if(episodes.size() > 0){
+			return episodes.get(position);
+		}else{
+			return null;
+		}
 	}
 	//------------------------------------------------------------------------------
 	@Override
@@ -50,6 +63,11 @@ public class EpisodeAdapter extends BaseAdapter {
 			tv.setText(_title);
 		}
 		return convertView;
+	}
+	//------------------------------------------------------------------------------
+	public void setDataSource(List<Episode> ep){
+		this.episodes = ep;
+		notifyDataSetChanged();
 	}
 	//------------------------------------------------------------------------------
 }

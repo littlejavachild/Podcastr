@@ -3,9 +3,8 @@
 	<string-array name="options">
 	    <item>Podcasts</item>
 	    <item>Downloads</item>
+	    <item>Recents</item>
 	    <item>Favorites</item>
-	    <item>Donate</item>
-	    <item>Contact Me</item>
 	    <item>Rate This App</item>
 	</string-array>    
 </resources>

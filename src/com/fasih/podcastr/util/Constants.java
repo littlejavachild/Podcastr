@@ -6,12 +6,20 @@ public interface Constants {
 	String VIDEO_INDEX = "video_index";
 	
 	String PODCAST_INDEX = "podcast_index";
+	String VIDEO_FRAGMENT_SHOWN = "video_frag_shown";
+	String FAVORITES_FRAGMENT_SHOWN = "fav_frag_shown";
+	String RECENTS_FRAGMENT_SHOWN = "recent_frag_shown";
 	
 	String DIR_XML = "/data/data/com.fasih.podcastr/files/xml";
 	String DIR_DOWNLOADS = "/data/data/com.fasih.podcastr/files/downloads";
 	
 	String FAVORITES_CLASS_NAME = "Favorites";
 	String RECENTS_CLASS_NAME = "Recents";
+	String MODIFIED_TIME = "modified_time";
 	String PODCAST = "podcast";
-	String EPISODE = "episode";
+	String TITLE = "title";
+	String DESCRIPTION = "description";
+	String GUID = "guid";
+	String ENCLOSURE = "enclosure";
+	
 }

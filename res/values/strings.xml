@@ -42,4 +42,11 @@
 	<string name="check_for_update">Check For Updates To Podcast?</string>
 	<string name="yes_check_for_update">Yes, Check For Updates</string>
 	<string name="no_check_for_updates">No, Don\'t Check For Updates</string>
+	
+	<!--  -->
+	<string name="favorites">Favorites</string>
+	<string name="recents">Recents</string>
+	
+	<!--  -->
+	<string name="enter_feed_url">Enter The Feed URL Here</string>
 </resources>

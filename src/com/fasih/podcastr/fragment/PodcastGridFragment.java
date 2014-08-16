@@ -28,7 +28,7 @@ import com.fasih.podcastr.util.PodcastUtil;
 import com.squareup.picasso.Picasso;
 
 public class PodcastGridFragment extends Fragment {
-	private PodcastGridFragment singleton = null;
+	private static PodcastGridFragment singleton = null;
 	private GridView podcastGrid = null;
 	private GridAdapter adapter = new GridAdapter();
 	private AssetManager am;
@@ -87,7 +87,7 @@ public class PodcastGridFragment extends Fragment {
 		loader.execute("txt/podcasts.txt");
 	}
 	//------------------------------------------------------------------------------
-	public PodcastGridFragment newInstance(){
+	public static PodcastGridFragment newInstance(){
 		if(singleton == null){
 			singleton = new PodcastGridFragment();
 		}
@@ -155,6 +155,8 @@ public class PodcastGridFragment extends Fragment {
 		dialog.show();
 		
 	}
+	//------------------------------------------------------------------------------
+	
 	//------------------------------------------------------------------------------
 	/**
 	 * Used to convey the index of the select podcast to the hosting

@@ -17,9 +17,9 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Environment;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -29,6 +29,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -46,6 +47,7 @@ import com.fasih.podcastr.util.LoadEpisodesTask;
 import com.fasih.podcastr.util.Podcast;
 import com.fasih.podcastr.util.PodcastUtil;
 import com.fasih.podcastr.util.PrefUtils;
+import com.fasih.podcastr.util.RecentUtil;
 import com.fasih.podcastr.view.VideoControllerView;
 import com.parse.ParseObject;
 
@@ -78,9 +80,12 @@ public class VideoPlayerFragment extends Fragment implements
     private LoadEpisodesTask loadEpisodes;
     private EpisodeAdapter adapter = new EpisodeAdapter();
     
+    boolean favoritesMode = false;
+    boolean recentsMode = false;
+    
   //------------------------------------------------------------------------------
 	public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-		
+		singleton = this;
 		View view = null;
 		view = inflater.inflate(R.layout.fragment_video_player, container, false);
 		contentView = view;
@@ -97,20 +102,31 @@ public class VideoPlayerFragment extends Fragment implements
 			setEpisodesListAdapter();
 			setEpisodeOnItemClickListener();
 		}
-		retrieveArguments();
-		getEpisodes();
+		
+		retrieveArgumentsAgain();
+		
+		if(favoritesMode || recentsMode){
+			setPodcastTitle();
+			playEpisode(PrefUtils.getVideoIndex(getActivity()));
+		}else{
+			System.out.println("RETRIEVING EPISODES: ");
+			retrieveArguments();
+			getEpisodes();
+		}
+		
 		setTouchEventListener();
 		setDownloadClickListener();
 		setAddToFavoritesClickListener();
 		setShareOnClickListener();
 		setRefreshOnClickListener();
-		setPodcastTitle();
 	}
 	//------------------------------------------------------------------------------
 	@Override
 	public void onStop(){
 		super.onStop();
-		loadEpisodes.cancel(true);
+		if(!(favoritesMode || recentsMode)){
+			loadEpisodes.cancel(true);
+		}
 		player.stop();
 		player.reset();
 		// onStop, we keep the snapshot state. Not a complete reset
@@ -123,7 +139,9 @@ public class VideoPlayerFragment extends Fragment implements
 		videoSurface = (SurfaceView) contentView.findViewById(R.id.videoSurface);
     	SurfaceHolder videoHolder = videoSurface.getHolder();
     	videoHolder.addCallback(this);
-    	player = new MediaPlayer();
+    	if(player == null){
+    		player = new MediaPlayer();
+    	}
     	player.setOnPreparedListener(this); 
     	
     	// Because these are in the ActionBar,
@@ -133,7 +151,8 @@ public class VideoPlayerFragment extends Fragment implements
     	share = (ImageButton) getActivity().findViewById(R.id.share);
     	refresh = (ImageButton) getActivity().findViewById(R.id.refresh);
     	podcastTitle = (TextView) getActivity().findViewById(R.id.podcast_title);
-    	podcastTitle.setTypeface(roboto, Typeface.BOLD);
+    	if(podcastTitle != null)
+    		podcastTitle.setTypeface(roboto, Typeface.BOLD);
     	
     	controller = new VideoControllerView(getActivity());
     	listOfEpisodes = (ListView) contentView.findViewById(R.id.listOfEpisodes);
@@ -191,15 +210,21 @@ public class VideoPlayerFragment extends Fragment implements
 	}
 	//------------------------------------------------------------------------------
 	private void playEpisode(int position){
-		if(EpisodeUtil.getEpisodes().size() == 0){
+		
+		if(adapter.getCount() == 0){
 			return;
 		}
 		
 		// Keep the screen on.
 		// This is a video app. Screen stays on at all times.
 		getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		
-		Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
+		// TODO
+		Episode episode;
+		if(favoritesMode || recentsMode){
+			episode = (Episode) adapter.getItem(position);
+		}else{
+			episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
+		}
 		String title = episode.getTitle();
 		String description = episode.getDescription();
 		String guid = episode.getGuid();
@@ -225,7 +250,6 @@ public class VideoPlayerFragment extends Fragment implements
 			player.setAudioStreamType(AudioManager.STREAM_MUSIC);
 			
 			if(existsLocally(getFileNameFromEnclosure(enclosure))){
-		        System.out.println("Exists Locally");
 		        String fileName = getFileNameFromEnclosure(enclosure);
 		        File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PODCASTS);
 		        File localFile = new File(path,fileName);
@@ -233,7 +257,6 @@ public class VideoPlayerFragment extends Fragment implements
 		        player.setDataSource(getActivity(), localSource);
 				player.prepare();
 			}else{
-		        System.out.println("Does Not Exist Locally");
 		        player.setDataSource(getActivity(), Uri.parse(source));
 				player.prepareAsync();
 			}
@@ -242,12 +265,29 @@ public class VideoPlayerFragment extends Fragment implements
 		  catch (IllegalStateException e) { e.printStackTrace(); } 
 		  catch (IOException e) { e.printStackTrace(); }
 		
+		setPodcastTitle();
 		setInitialButtonColor();
+		
+		if(!(favoritesMode || recentsMode)){
+			ParseObject recent = new ParseObject(Constants.RECENTS_CLASS_NAME);
+			
+			recent.put(Constants.TITLE, episode.getTitle());
+			recent.put(Constants.DESCRIPTION, episode.getDescription());
+			recent.put(Constants.GUID, episode.getGuid());
+			recent.put(Constants.ENCLOSURE, episode.getEnclosureURL());
+			RecentUtil.addToRecents(recent);
+		}
+		
+		
 	}
 	//------------------------------------------------------------------------------
 	@Override
 	public void onDetach(){
 		super.onDetach();
+		
+		favoritesMode = false;
+		recentsMode = false;
+		
 		player.stop();
 		player.reset();
 	}
@@ -340,7 +380,9 @@ public class VideoPlayerFragment extends Fragment implements
     //------------------------------------------------------------------------------
 	@Override
 	public void onDataArrived() {
-		adapter.notifyDataSetChanged();
+		adapter.setDataSource(EpisodeUtil.getEpisodes());
+		setPodcastTitle();
+		System.out.println("NEW EPISODES: " + adapter.getCount());
 		if(adapter.getCount() > 0){
 			playEpisode(PrefUtils.getVideoIndex(getActivity()));
 			// Because listOfEpisodes is not available in
@@ -356,6 +398,7 @@ public class VideoPlayerFragment extends Fragment implements
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int index,
 					long id) {
+				
 				// On clicking a new episode, everything is reset
 				PrefUtils.setVideoIndex(getActivity(), index);
 				PrefUtils.setSeekTo(getActivity(), 0);
@@ -369,7 +412,12 @@ public class VideoPlayerFragment extends Fragment implements
 		download.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
+				
+				if(adapter.getCount() == 0){
+					return;
+				}
+				
+				Episode episode = (Episode) adapter.getItem(PrefUtils.getVideoIndex(getActivity()));
 				String uri = episode.getEnclosureURL();
 				if(uri == null || uri.isEmpty()){
 					uri = episode.getGuid();
@@ -400,10 +448,6 @@ public class VideoPlayerFragment extends Fragment implements
 		
 		// This put the download in the same Download dir the browser uses 
 		r.setDestinationInExternalPublicDir(Environment.DIRECTORY_PODCASTS,fileName);
-		 
-		// TODO delete later
-		System.out.println("DOWNLOAD LOCATION: " + 
-				new File(Environment.DIRECTORY_PODCASTS,fileName).getAbsolutePath());
 		
 		// When downloading music and videos they will be listed in the player 
 		// (Seems to be available since Honeycomb only) 
@@ -446,23 +490,63 @@ public class VideoPlayerFragment extends Fragment implements
 	}
 	//------------------------------------------------------------------------------
 	private void setPodcastTitle(){
-		podcastTitle.setText(podcast.getTitle());
+		Resources res = getActivity().getResources();
+		if(favoritesMode){
+			String fav = res.getString(R.string.favorites);
+			System.out.println(podcastTitle == null);
+			System.out.println(fav == null);
+			podcastTitle.setText(fav);
+		}else if(recentsMode){
+			String rec = res.getString(R.string.recents);
+			podcastTitle.setText(rec);
+		}else{
+			System.out.println("podcastTitle isNull " + podcastTitle == null);
+			System.out.println("podcast isNull " + podcast == null);
+			podcastTitle.setText(podcast.getTitle());
+		}
 	}
 	//------------------------------------------------------------------------------
 	private void setAddToFavoritesClickListener(){
 		addToFavorites.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
+				Episode episode;
+				episode = (Episode) adapter.getItem(PrefUtils.getVideoIndex(getActivity()));
+				
+				if(episode == null){
+					return;
+				}
+				
+				if(favoritesMode || recentsMode){
+					
+					if(!player.isPlaying()){
+						return;
+					}
+				}
+				
 				ParseObject favorite = new ParseObject(Constants.FAVORITES_CLASS_NAME);
-				favorite.put(Constants.PODCAST, podcast.getFeed());
-				favorite.put(Constants.EPISODE, episode.getEnclosureURL());
+				
+				favorite.put(Constants.TITLE, episode.getTitle());
+				favorite.put(Constants.DESCRIPTION, episode.getDescription());
+				favorite.put(Constants.GUID, episode.getGuid());
+				favorite.put(Constants.ENCLOSURE, episode.getEnclosureURL());
+				
 				if(FavoriteUtil.containsFavorite(favorite)){
 					// If it contains it already,
 					// we remove
 					FavoriteUtil.removeFromFavorites(favorite);
 					// and set the logo to normal
 					addToFavorites.setImageResource(R.drawable.ic_action_important);
+					if(favoritesMode){
+						// TODO
+						adapter.setDataSource(FavoriteUtil.getFavoritesAsEpisodes());
+						if(adapter.getCount() == 0){
+							player.stop();
+							player.reset();
+						}else{
+							playEpisode(0);
+						}
+					}
 				}else{
 					// else, we add
 					FavoriteUtil.addToFavorites(favorite);
@@ -474,13 +558,18 @@ public class VideoPlayerFragment extends Fragment implements
 	}
 	//------------------------------------------------------------------------------
 	private void setInitialButtonColor(){
-		if(EpisodeUtil.getEpisodes().size() == 0 ){
+		if(adapter.getCount() == 0){
+			addToFavorites.setImageResource(R.drawable.ic_action_important);
 			return;
 		}
-		Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
+		Episode episode = (Episode) adapter.getItem(PrefUtils.getVideoIndex(getActivity()));
 		ParseObject favorite = new ParseObject(Constants.FAVORITES_CLASS_NAME);
-		favorite.put(Constants.PODCAST, podcast.getFeed());
-		favorite.put(Constants.EPISODE, episode.getEnclosureURL());
+		
+		favorite.put(Constants.TITLE, episode.getTitle());
+		favorite.put(Constants.DESCRIPTION, episode.getDescription());
+		favorite.put(Constants.GUID, episode.getGuid());
+		favorite.put(Constants.ENCLOSURE, episode.getEnclosureURL());
+		
 		if(FavoriteUtil.containsFavorite(favorite)){
 			// If it is already in favorites,
 			// we show the highlighted logo
@@ -519,13 +608,20 @@ public class VideoPlayerFragment extends Fragment implements
 				    } 
 				};
 				
-				buildAndShowRefreshYesNoDialog(dialogClickListener);
+				if(!(favoritesMode || recentsMode)){
+					buildAndShowRefreshYesNoDialog(dialogClickListener);
+				}
 			}
 		});
 	}
 	//------------------------------------------------------------------------------
 	private void shareEpisode(){
-		Episode episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
+		Episode episode = (Episode) adapter.getItem(PrefUtils.getVideoIndex(getActivity()));
+		
+		if(episode == null){
+			return;
+		}
+		
 		String message = "Watch " + episode.getTitle() + " [" + episode.getEnclosureURL() + "] " + "on Podcastr";
 		Intent sharingIntent = new Intent(Intent.ACTION_SEND);
 		sharingIntent.setType("text/plain");
@@ -582,6 +678,28 @@ public class VideoPlayerFragment extends Fragment implements
 		int indexOfSlash = feed.lastIndexOf("/");
 		String fileName = feed.substring(indexOfSlash) + ".xml";
 		return fileName;
+	}
+	//------------------------------------------------------------------------------
+	public void retrieveArgumentsAgain(){
+		// TODO
+		if(player != null){
+			player.reset();
+		}
+		
+		// get the booleans
+		favoritesMode = getArguments().getBoolean(Constants.FAVORITES_FRAGMENT_SHOWN);
+		recentsMode = getArguments().getBoolean(Constants.RECENTS_FRAGMENT_SHOWN);
+		if(favoritesMode){
+			adapter.setDataSource(FavoriteUtil.getFavoritesAsEpisodes());
+		}else if(recentsMode){
+			adapter.setDataSource(RecentUtil.getRecentsAsEpisodes());
+		}
+		new CountDownTimer(1000, 1000) {
+		     public void onTick(long millisUntilFinished) { /** NOTHING */ }
+		     public void onFinish() {
+		    	 playEpisode(PrefUtils.getVideoIndex(getActivity()));
+		     }
+		  }.start();
 	}
 	//------------------------------------------------------------------------------
 }

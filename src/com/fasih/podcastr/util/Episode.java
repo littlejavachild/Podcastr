@@ -37,5 +37,4 @@ public class Episode {
 	public void setEnclosureURL(String enclosureURL) {
 		this.enclosureURL = enclosureURL;
 	}
-	//------------------------------------------------------------------------------
 }

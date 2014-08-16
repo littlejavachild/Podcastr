@@ -41,7 +41,9 @@ public class FavoriteUtil {
 			@Override
 			public void done(List<ParseObject> faves, ParseException e) {
 				if( e == null){
-					favorites.addAll(faves);
+					if(favorites.isEmpty()){
+						favorites.addAll(faves);
+					}
 					System.out.println("***FAVORITES: " + faves.size() + "***");
 				}else{
 					System.out.println(e.getMessage());
@@ -54,20 +56,18 @@ public class FavoriteUtil {
 		if(!containsFavorite(favorite)){
 			favorites.add(favorite);
 			favorite.pinInBackground(callback);
-			System.out.println("Added: " + favorite.getString(Constants.EPISODE));
+			System.out.println("Added: " + favorite.getString(Constants.ENCLOSURE));
 			System.out.println("***SIZE: " + favorites.size() + "***");
 		}
 	}
 	//------------------------------------------------------------------------------
 	public static void removeFromFavorites(ParseObject favorite){
 		int index = -1;
-		String _podcast = (String) favorite.get(Constants.PODCAST);
-		String _episode = (String) favorite.get(Constants.EPISODE);
+		String _enclosure = (String) favorite.get(Constants.ENCLOSURE);
 		for(int i = 0; i < favorites.size(); i++){
 			ParseObject each = favorites.get(i);
-			String episode = (String) each.get(Constants.EPISODE);
-			String podcast = (String) each.get(Constants.PODCAST);
-			if(_podcast.equals(podcast) && _episode.equals(episode)){
+			String enclosure = (String) each.get(Constants.ENCLOSURE);
+			if(_enclosure.equals(enclosure)){
 				index = i;
 				break;
 			}	
@@ -75,25 +75,35 @@ public class FavoriteUtil {
 		ParseObject remove = favorites.get(index);
 		favorites.remove(remove);
 		remove.unpinInBackground(delCallback);
-		System.out.println("Removed: " + remove.getString(Constants.EPISODE));
+		System.out.println("Removed: " + remove.getString(Constants.ENCLOSURE));
 		System.out.println("***SIZE: " + favorites.size() + "***");
 	}
 	//------------------------------------------------------------------------------
 	public static boolean containsFavorite(ParseObject favorite){
 		boolean contains = false;
-		String _podcast = (String) favorite.get(Constants.PODCAST);
-		String _episode = (String) favorite.get(Constants.EPISODE);
+		String _enclosure = (String) favorite.get(Constants.ENCLOSURE);
 		for(ParseObject each : favorites){
-			String episode = (String) each.get(Constants.EPISODE);
-			String podcast = (String) each.get(Constants.PODCAST);
-			System.out.println("Comparing: " + episode + " With: " + episode);
-			if(_podcast.equals(podcast) && _episode.equals(episode)){
+			String enclosure = (String) each.get(Constants.ENCLOSURE);
+			if(_enclosure.equals(enclosure)){
 				System.out.println("MATCH FOUND!");
 				contains = true; 
 				break;
 			}
 		}
 		return contains;
+	}
+	//------------------------------------------------------------------------------
+	public static List<Episode> getFavoritesAsEpisodes(){
+		List<Episode> episodes = new ArrayList<Episode>();
+		for(ParseObject fav : favorites){
+			Episode ep = new Episode();
+			ep.setTitle(fav.getString(Constants.TITLE));
+			ep.setDescription(fav.getString(Constants.DESCRIPTION));
+			ep.setGuid(fav.getString(Constants.GUID));
+			ep.setEnclosureURL(fav.getString(Constants.ENCLOSURE));
+			episodes.add(ep);
+		}
+		return episodes;
 	}
 	//------------------------------------------------------------------------------
 }

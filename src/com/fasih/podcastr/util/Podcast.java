@@ -56,4 +56,15 @@ public class Podcast {
 		this.category = category;
 	}
 	//------------------------------------------------------------------------------
+	@Override
+	public String toString(){
+		String json = "title=" + title + 
+				      ",\n description=" + description +
+				      ",\n host=" + host + 
+				      ",\n category=" + category + 
+				      ",\n logo=" + logo + 
+				      ",\n feed=" + feed;
+		return json;
+	}
+	//------------------------------------------------------------------------------
 }
