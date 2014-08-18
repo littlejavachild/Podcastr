@@ -540,6 +540,7 @@ public class VideoPlayerFragment extends Fragment implements
 					if(favoritesMode){
 						// TODO
 						adapter.setDataSource(FavoriteUtil.getFavoritesAsEpisodes());
+						PrefUtils.setVideoIndex(getActivity(), adapter.getCount() -1);
 						if(adapter.getCount() == 0){
 							player.stop();
 							player.reset();

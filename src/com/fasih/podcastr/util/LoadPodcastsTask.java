@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
+import android.os.CountDownTimer;
 import android.support.v4.app.FragmentManager;
 
 import com.fasih.podcastr.adapter.GridAdapter;
@@ -62,9 +63,10 @@ public class LoadPodcastsTask extends AsyncTask<String, Void, Void> {
 	@Override
 	protected void onPostExecute(Void v){
 		// If not cancelled, deserialize
+		System.out.println(json);
+		Gson gson = new Gson();
+		Response response = gson.fromJson(json.toString(), Response.class);
 		if(!isCancelled()){
-			Gson gson = new Gson();
-			Response response = gson.fromJson(json.toString(), Response.class);
 			if(response != null){
 				PodcastUtil.addPodcasts(response.getPodcasts());
 				for(Podcast podcast : response.getPodcasts()){

@@ -1,16 +1,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fasih.podcastr"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+	
+	
+	<!-- Supported Screen Sizes -->
+    <supports-screens android:normalScreens="true" />
+    <supports-screens android:largeScreens="true" />
+    <supports-screens android:largeScreens="true" />
 	
     <application
         android:allowBackup="true"
@@ -29,10 +39,6 @@
             android:configChanges="orientation" android:immersive="true">
             
         </activity>
-
-	
-    
-	
     <meta-data android:name="com.crashlytics.ApiKey" android:value="4e762f224670ad9c95c7f665f5affdd018b987bc"/>
     </application>
 
