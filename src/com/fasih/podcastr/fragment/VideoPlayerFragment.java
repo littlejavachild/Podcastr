@@ -29,7 +29,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -50,6 +49,7 @@ import com.fasih.podcastr.util.PrefUtils;
 import com.fasih.podcastr.util.RecentUtil;
 import com.fasih.podcastr.view.VideoControllerView;
 import com.parse.ParseObject;
+import com.todddavies.components.progressbar.ProgressWheel;
 
 public class VideoPlayerFragment extends Fragment implements 
 													SurfaceHolder.Callback, 
@@ -76,6 +76,7 @@ public class VideoPlayerFragment extends Fragment implements
     private ImageButton share;
     private ImageButton refresh;
     private TextView podcastTitle;
+    private ProgressWheel pw;
     
     private LoadEpisodesTask loadEpisodes;
     private EpisodeAdapter adapter = new EpisodeAdapter();
@@ -158,6 +159,9 @@ public class VideoPlayerFragment extends Fragment implements
     	listOfEpisodes = (ListView) contentView.findViewById(R.id.listOfEpisodes);
     	episodeTitle = (TextView) contentView.findViewById(R.id.episode_title);
     	episodeDescription = (TextView) contentView.findViewById(R.id.episode_description);
+    	
+    	pw = (ProgressWheel) contentView.findViewById(R.id.pw_spinner);
+    	
     	// Because landscape mode only has a video player.
 		// If one of the TextView is null, all are null
     	if(episodeTitle != null){
@@ -215,16 +219,13 @@ public class VideoPlayerFragment extends Fragment implements
 			return;
 		}
 		
+		
 		// Keep the screen on.
 		// This is a video app. Screen stays on at all times.
 		getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		// TODO
 		Episode episode;
-		if(favoritesMode || recentsMode){
-			episode = (Episode) adapter.getItem(position);
-		}else{
-			episode = EpisodeUtil.getEpisodes().get(PrefUtils.getVideoIndex(getActivity()));
-		}
+		episode = (Episode) adapter.getItem(position);
 		String title = episode.getTitle();
 		String description = episode.getDescription();
 		String guid = episode.getGuid();
@@ -257,6 +258,10 @@ public class VideoPlayerFragment extends Fragment implements
 		        player.setDataSource(getActivity(), localSource);
 				player.prepare();
 			}else{
+				// We make the ProgressWheel visible, chances are that it may be invsible
+				pw.setVisibility(View.VISIBLE);
+				// and then we spin it. It will be hidden and shown in the callbacks.
+				pw.spin();
 		        player.setDataSource(getActivity(), Uri.parse(source));
 				player.prepareAsync();
 			}
@@ -312,6 +317,11 @@ public class VideoPlayerFragment extends Fragment implements
     @Override
     public void onPrepared(MediaPlayer mp) {
     	player.start();
+    	// stop spinning the progress wheel
+    	pw.stopSpinning();
+    	// and hide it
+    	pw.setVisibility(View.INVISIBLE);
+    	
         controller.setMediaPlayer(this);
         controller.setAnchorView((FrameLayout) contentView.findViewById(R.id.videoSurfaceContainer));
     }

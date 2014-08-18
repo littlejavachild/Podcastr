@@ -1,6 +1,7 @@
 package com.fasih.podcastr.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.view.LayoutInflater;
@@ -66,9 +67,10 @@ public class NavigationDrawerAdapter extends BaseAdapter {
 	public View getView(int position, View convertView, ViewGroup root) {
 		if(convertView == null){
 			LayoutInflater inflater = LayoutInflater.from(con);
-			if(position == 0)
+			if(position == 0){
 				convertView = inflater.inflate(R.layout.banner, root, false);
-			else{
+				convertView.setBackgroundColor(Color.rgb(86, 78, 59));
+			}else{
 				int redId = android.R.layout.simple_list_item_1;
 				convertView = inflater.inflate(redId, root, false);
 			}
