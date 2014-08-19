@@ -181,7 +181,7 @@ public class VideoPlayerFragment extends Fragment implements
 				              getActivity().getAssets(), 
 				              adapter,
 				              this);
-		loadEpisodes.execute(podcast.getFeed());
+		loadEpisodes.execute(podcast.getFeed(),podcast.getTitle());
 	}
 	//------------------------------------------------------------------------------
 	public static VideoPlayerFragment newInstance(){

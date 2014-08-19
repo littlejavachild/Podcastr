@@ -971,7 +971,7 @@
 		{
 			"title": "Top Traders Unplugged with Niels Kaastrup-Larsen, Veteran Hedge Fund Manager",
 			"description": "",
-			"host": " Niels Kaastrup-Larsen interviews the world’s top traders | Like Trend Following with Michael Covel but nothing like Tim Ferriss, Dave Ramsey, Bloomberg, CNBC, Mad Money, CNN or Wall Street Journal",
+			"host": " Niels Kaastrup-Larsen interviews the world’s top traders - Like Trend Following with Michael Covel but nothing like Tim Ferriss, Dave Ramsey, Bloomberg, CNBC, Mad Money, CNN or Wall Street Journal",
 			"category": "Freedom Podcasting",
 			"logo": "http://toptradersunplugged.com/wp-content/uploads/2014/05/TopTraderPodcastArt-02.jpg",
 			"feed": "http://toptradersunplugged.com/feed/podcast/"
@@ -985,8 +985,8 @@
 			"feed": "http://www.goodlifeproject.com/feed/podcast/"
 		},
 		{
-			"title": "Love Affair Travel Podcast | Exploring the Lifestyles of Location Independent Long Term Travelers",
-			"description": "Love Affair Travel | Exploring the Lifestyles of Long Term Travel",
+			"title": "Love Affair Travel Podcast - Exploring the Lifestyles of Location Independent Long Term Travelers",
+			"description": "Love Affair Travel - Exploring the Lifestyles of Long Term Travel",
 			"host": "Ian Robinson: Adventure, Travel, Entrepreneurship, Art, Music and Adrenaline",
 			"category": "Freedom Podcasting",
 			"logo": "http://loveaffairtravel.com/wp-content/uploads/powerpress/Love-Affair-Travel-Podcast-Art-363.jpg",
@@ -1002,14 +1002,14 @@
 		},
 		{
 			"title": "Shop Talk Radio with Nick Onken",
-			"description": "Shop Talk Radio | Under the Hood of the Creative Entrepreneur",
-			"host": "Nick Onken | Photographer, Author, and Creative Entrepreneur",
+			"description": "Shop Talk Radio - Under the Hood of the Creative Entrepreneur",
+			"host": "Nick Onken - Photographer, Author, and Creative Entrepreneur",
 			"category": "Freedom Podcasting",
 			"logo": "http://www.nickonken.me/wp-content/uploads/powerpress/NickOnkenShopTalk.jpg",
 			"feed": "http://www.nickonken.me/feed/podcast/"
 		},
 		{
-			"title": "The Inventor’s Mind | Inventions | Ideas | Product Design",
+			"title": "The Inventor’s Mind - Inventions - Ideas - Product Design",
 			"description": "Leading Innovators, Mechanics of Invention and Discussing Big Ideas",
 			"host": "Chris Hawker: Inventor, Author and President of Trident Design LLC",
 			"category": "Freedom Podcasting",
@@ -1019,7 +1019,7 @@
 		{
 			"title": "Glambition Radio",
 			"description": "Welcome to Glambition Radio with your Host Ali Brown. Women are rewriting the rules for leadership business success, making money and changing the world. Each week, join me for powerful messages and interviews that will leave you inspired and ready to get your Glambition on....",
-			"host": "Ali Brown | Entrepreneur, Mentor and Business Coach for Women",
+			"host": "Ali Brown - Entrepreneur, Mentor and Business Coach for Women",
 			"category": "Freedom Podcasting",
 			"logo": "http://www.alibrown.com/blog/wp-content/uploads/powerpress/Glambition-Ali-Brown-1400x1400.jpg",
 			"feed": "http://www.alibrown.com/blog/category/glambition/feed/"
@@ -1298,7 +1298,7 @@
 		},
 		{
 			"title": "The Goosedown",
-			"description": "Hosted by Kim Clark & Jasper Redd | The Goosedown is a podcast that celebrates the arts & entertainment.",
+			"description": "Hosted by Kim Clark & Jasper Redd - The Goosedown is a podcast that celebrates the arts & entertainment.",
 			"host": "The Goosedown",
 			"category": "Maxim Fun",
 			"logo": "http://i1.sndcdn.com/avatars-000064575214-6m5x12-original.jpg?e76cf77",
@@ -1649,25 +1649,25 @@
 			"feed": "http://www.npr.org/rss/podcast.php?id=35"
 		},
 		{
-			"title": "The Waves of Tech | Technology impacts to life",
+			"title": "The Waves of Tech - Technology impacts to life",
 			"description": "Technology news and how it relates to you.  Waves of Tech podcast is dedicated to technology and how it influences and impacts your daily life.",
-			"host": "The Waves of Tech | NetCast Studio",
+			"host": "The Waves of Tech - NetCast Studio",
 			"category": "NetCast Studio",
 			"logo": "http://netcaststudio.com/podcasts/wot/wot1400.jpg",
 			"feed": "http://netcaststudio.com/podcasts/wot/wot.xml"
 		},
 		{
-			"title": "Busy Ladies | Women's Discussion",
+			"title": "Busy Ladies - Women's Discussion",
 			"description": "Women's discussion from a personal and unique perspective.  Busy Ladies takes on unique viewpoints with health, cooking, family and and daily life.",
-			"host": "Busy Ladies | NetCast Studio",
+			"host": "Busy Ladies - NetCast Studio",
 			"category": "NetCast Studio",
 			"logo": "http://netcaststudio.com/podcasts/busyladies/bl1400.jpg",
 			"feed": "http://netcaststudio.com/podcasts/busyladies/busyladies.xml"
 		},
 		{
-			"title": "The Tech of Sports | Sports and Technology Integration",
+			"title": "The Tech of Sports - Sports and Technology Integration",
 			"description": "Many people don't realize that much of the technology we use in our everyday life was first developed for use in the sports world.  From the shoes we wear on our feet to the high definition televisions in our living room, the sports universe is a breeding ground for technology.  Writer and Photographer Rick Limpert will examine this each week on The Tech of Sports - With guests which include athletes, inventors and journalists that cover the intersection of sports and technology.  It might be low tech, it might be high tech, but it is tech and is probably connected to sports and the games we watch on TV and play in our backyards. ",
-			"host": "The Tech of Sports | NetCast Studio",
+			"host": "The Tech of Sports - NetCast Studio",
 			"category": "NetCast Studio",
 			"logo": "http://netcaststudio.com/podcasts/ssportstech/tos1400.jpg",
 			"feed": "http://netcaststudio.com/podcasts/ssportstech/thetechofsports.xml"
@@ -1675,7 +1675,7 @@
 		{
 			"title": "24 Jack Is Back",
 			"description": "Based on the TV show 24 Live Another Day is a limited twelve week series. Jack Bauer finds himself on the run in London; once again, as he attempts to thwart a global disaster.",
-			"host": "24 Jack Is Back | NetCast Studio",
+			"host": "24 Jack Is Back - NetCast Studio",
 			"category": "NetCast Studio",
 			"logo": "http://netcaststudio.com/podcasts/24/jackisback1400.jpg",
 			"feed": "http://netcaststudio.com/podcasts/24/liveanotherday.xml"
@@ -1689,33 +1689,33 @@
 			"feed": "http://netcaststudio.com/podcasts/tmv/tmv.xml"
 		},
 		{
-			"title": "Conversation Corner | Interviews and Discussion",
+			"title": "Conversation Corner - Interviews and Discussion",
 			"description": "The Conversation Corner covers a wide variety of topics interviewing special guests in their industry.",
-			"host": "Conversation Corner | NetCast Studio",
+			"host": "Conversation Corner - NetCast Studio",
 			"category": "NetCast Studio",
 			"logo": "http://netcaststudio.com/podcasts/conversation/conversation1400.jpg",
 			"feed": "http://netcaststudio.com/podcasts/conversation/corner.xml"
 		},
 		{
-			"title": "Riffraf | Alternative. Indie. Punk. Pop R&B. Folk and Rock Music",
+			"title": "Riffraf - Alternative. Indie. Punk. Pop R&B. Folk and Rock Music",
 			"description": "Alternative. Indie. Punk. Pop R&B. Folk and Rock Music.",
-			"host": "Riffraf | NetCast Studio",
+			"host": "Riffraf - NetCast Studio",
 			"category": "NetCast Studio",
 			"logo": "http://netcaststudio.com/podcasts/riffraf/riffrafsmlogo1400itunes.jpg",
 			"feed": "http://netcaststudio.com/podcasts/riffraf/rifraff.xml"
 		},
 		{
-			"title": "Flash Past | Trends and events in history",
+			"title": "Flash Past - Trends and events in history",
 			"description": "The future is made of the past. Flash Past is not your average podcast. Hosts discuss pop culture, history and their own experiences. This is an opportunity for listeners to learn a bit about the origins of some of the most memorable trends and events in our country’s history.",
-			"host": "Flash Past | NetCast Studio",
+			"host": "Flash Past - NetCast Studio",
 			"category": "NetCast Studio",
 			"logo": "http://netcaststudio.com/podcasts/flashpast/fp_new_1400.jpg",
 			"feed": "http://netcaststudio.com/podcasts/flashpast/flashpast.xml"
 		},
 		{
-			"title": "PGA Tour Radio | Technology Segment",
+			"title": "PGA Tour Radio - Technology Segment",
 			"description": "Rick Limpert joins Brian Katrek for Tech Tuesday on PGA Tour Radio. Rick discusses gadgets and tech, on and off the course, with a touch of humor, and you might even learn something.",
-			"host": "PGA Tour Radio | NetCast Studio",
+			"host": "PGA Tour Radio - NetCast Studio",
 			"category": "NetCast Studio",
 			"logo": "http://netcaststudio.com/podcasts/pga/pga1400.jpg",
 			"feed": "http://netcaststudio.com/podcasts/pga/pga.xml"

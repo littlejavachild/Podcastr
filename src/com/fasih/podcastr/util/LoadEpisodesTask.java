@@ -59,7 +59,9 @@ public class LoadEpisodesTask extends AsyncTask<String, Void, Void> {
 //			return null;
 //		}
 		EpisodeUtil.setEpisodesFor(arg0[0]);
-		String fileName = getFileNameFromUrl(arg0[0]) + ".xml";
+//		String fileName = getFileNameFromUrl(arg0[0]) + ".xml";
+		String fileName = arg0[1] + ".xml";
+		System.out.println("***FILENAME: ***" + fileName);
 		File xmlFile = new File(Constants.DIR_XML, fileName);
 		
 //		System.out.println("arg0 " + arg0[0]);
