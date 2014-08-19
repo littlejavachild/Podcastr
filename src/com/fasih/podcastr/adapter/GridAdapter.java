@@ -65,7 +65,7 @@ public class GridAdapter extends BaseAdapter {
 //		Picasso.with(c).load(uri).resize(width/2, width/2).into(logo);
 //		title.setWidth(width/2);
 		
-		Picasso.with(c).load(uri).error(R.drawable.headphones).into(logo);
+		Picasso.with(c).load(uri).error(R.drawable.headphones).resize(135, 135).into(logo);
 		
 		return convertView;
 	}

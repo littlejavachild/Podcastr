@@ -1,10 +1,2176 @@
 {
-	"podcasts" : [
+    "podcasts": [
+        {
+            "title": "Amplified",
+            "description": "Amplified is an award winning talk show about Apple, Mac, iPad, iPhone, iOS, guitars, amps, music, and recording. Get ready to rock. Hosted by Jim Dalrymple & Dan Benjamin.",
+            "host": "Jim Dalrymple & Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/35/cover.jpg",
+            "feed": "http://feeds.5by5.tv/amplified"
+        },
+        {
+            "title": "Back to Work",
+            "description": "Back to Work is an award winning talk show with Merlin Mann and Dan Benjamin discussing productivity, communication, work, barriers, constraints, tools, and more. Hosted by Merlin Mann & Dan Benjamin.",
+            "host": "Merlin Mann & Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/19/cover.jpg",
+            "feed": "http://feeds.5by5.tv/b2w"
+        },
+        {
+            "title": "The Best of 5by5",
+            "description": "Weekly highlights from 5by5's shows. Hosted by Dan Benjamin.",
+            "host": "Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/63/cover.jpg",
+            "feed": "http://feeds.5by5.tv/bestof"
+        },
+        {
+            "title": "The Big Web Show",
+            "description": "The award winning Big Web Show features special guests and topics like web publishing, art direction, content strategy, typography, web technology, and more. It's everything web that matters. Hosted by Jeffrey Zeldman.",
+            "host": "Jeffrey Zeldman",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/7/cover.jpg",
+            "feed": "http://feeds.5by5.tv/bigwebshow"
+        },
+        {
+            "title": "The Changelog",
+            "description": "The Changelog covers the intersection of software development and open source. Open source moves fast. Keep up! Hosted by Adam Stacoviak & Jerod Santo.",
+            "host": "Adam Stacoviak & Jerod Santo",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/52/cover.jpg",
+            "feed": "http://feeds.5by5.tv/changelog"
+        },
+        {
+            "title": "CMD+Space",
+            "description": "CMD+SPACE is an interview show that puts a spotlight on the people behind awesome projects. Each week Myke Hurley looks to discover what inspires his guests to do great things. Hosted by Myke Hurley.",
+            "host": "Myke Hurley",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/49/cover.jpg",
+            "feed": "http://feeds.5by5.tv/cmdspace"
+        },
+        {
+            "title": "Comics, Assembled!",
+            "description": "Comics, Assembled is a weekly podcast discussing the business of comics from the perspective of those who create them. Episodes will feature discussions of current comics news, the business of making comics, the creative challenges and methods, as well as the art of storytelling and freelancing in general. Hosted by Brian  Ward & Thom Zahler.",
+            "host": "Brian  Ward & Thom Zahler",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/74/cover.jpg",
+            "feed": "http://feeds.5by5.tv/comicsassembled"
+        },
+        {
+            "title": "The Critical Path",
+            "description": "The Critical Path is a talk show contemplating the causality of success and failure in the evolving story of mobile computing and related industries. Using Apple as a lens to look at existing and emerging tech markets, we try to understand what it means to be great. Hosted by Horace Dediu & Moisés Chiullan.",
+            "host": "Horace Dediu & Moisés Chiullan",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/24/cover.jpg",
+            "feed": "http://feeds.5by5.tv/criticalpath"
+        },
+        {
+            "title": "The Crossover",
+            "description": "A weekly discussion featuring hosts from 5by5's many shows with no limit on topic or fixed agenda; a freeform flow of ideas leading to a great conversation, from culture to tech and beyond. Hosted by Dan Benjamin.",
+            "host": "Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/47/cover.jpg",
+            "feed": "http://feeds.5by5.tv/crossover"
+        },
+        {
+            "title": "DLC",
+            "description": "DLC is your weekly audio tour of the latest in video games and tabletop entertainment. Hosts Jeff Cannata and Christian Spicer are joined every week by the best damn gaming experts on the planet as well as YOUR phone calls! Disagree, Like, or Comment by Direct Live Call-in or in the Designated Lobby Chat!  It is the gaming show Decided by Listener Contribution. DLC, the Digital Lifestyle Companion for gamers who Don't Like Cynicism. Hosted by Christian Spicer & Jeff Cannata.",
+            "host": "Christian Spicer & Jeff Cannata",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/64/cover.jpg",
+            "feed": "http://feeds.5by5.tv/dlc"
+        },
+        {
+            "title": "Founders Talk",
+            "description": "Founders Talk is an interview podcast, featuring in-depth, one on one, conversations with Founders. Hosted by Adam Stacoviak.",
+            "host": "Adam Stacoviak",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/13/cover.jpg",
+            "feed": "http://feeds.5by5.tv/founderstalk"
+        },
+        {
+            "title": "The Frequency",
+            "description": "The Frequency is a weekly news and talk show focused on bringing you the top stories from the real world, the tech world, and sometimes the weird world. Hosted by Haddie Cooke & Dan Benjamin.",
+            "host": "Haddie Cooke & Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/41/cover.jpg",
+            "feed": "http://feeds.5by5.tv/frequency"
+        },
+        {
+            "title": "High Density",
+            "description": "High Density is an interview show where we try to articulate what it means to be great. My guests offer observations and insights into the transformation of business and society through technology. Hosted by Horace Dediu.",
+            "host": "Horace Dediu",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/45/cover.jpg",
+            "feed": "http://feeds.5by5.tv/hd"
+        },
+        {
+            "title": "Home Work",
+            "description": "A weekly advice podcast for people who work from home, whether freelancer or telecommuter. We address listener-submitted questions, comments and concerns about all aspects of working from home. Hosted by Aaron Mahnke and Dave Caolo. You can submit your questions https://docs.google.com/forms/d/1YFjch8eOyL4tR5McmstHfCrFNlIayd4IZDYrdhAno-M/viewform Hosted by Aaron Mahnke & Dave Caolo.",
+            "host": "Aaron Mahnke & Dave Caolo",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/55/cover.jpg",
+            "feed": "http://feeds.5by5.tv/homework"
+        },
+        {
+            "title": "The Ihnatko Almanac",
+            "description": "The Ihnatko Almanac is a weekly discussion that mostly focuses on the Clickable Arts: the movies, music, books, comics, articles, and other bits of entertainment and news that Andy and Dan have been reaching through a mouse click recently. Warning: the Almanac is a designated meme-free zone. We prefer our pianos to be played by expert human artists, not by poorly-Photoshopped cats. Hosted by Andy Ihnatko & Dan Benjamin.",
+            "host": "Andy Ihnatko & Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/28/cover.jpg",
+            "feed": "http://feeds.5by5.tv/ia"
+        },
+        {
+            "title": "In Beta",
+            "description": "In Beta is a talk show about tech culture, making open source software, and how mobile, social, and web apps are changing the world. Hosted by Christie Koehler & Kevin Purdy.",
+            "host": "Christie Koehler & Kevin Purdy",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/37/cover.jpg",
+            "feed": "http://feeds.5by5.tv/inbeta"
+        },
+        {
+            "title": "The Incomparable",
+            "description": "The Incomparable is a weekly dive into geeky media we love, including movies, books, TV, comics, and more, featuring a rotating panel of guests and hosted by Jason Snell.",
+            "host": "hello@theincomparable.com (Jason Snell with Serenity Caldwell, David J. Loehr, Monty Ashley and Tony Sindelar)",
+            "category": "5by5",
+            "logo": "http://www.theincomparable.com/imgs/design/logo-theincomparable.png",
+            "feed": "http://feeds.theincomparable.com/theincomparable"
+        },
+        {
+            "title": "Isometric",
+            "description": "Each week, join game developer Brianna Wu, game journalist Maddy Myers, technology journalist Georgia Dow and game enthusiast Steve Lubitz as they analyze the week’s biggest stories in the video game industry from different perspectives. Hosted by Brianna Wu, Georgia Dow, Maddy Myers, and Steve Lubitz.",
+            "host": "Brianna Wu, Georgia Dow, Maddy Myers, and Steve Lubitz",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/75/cover.jpg",
+            "feed": "http://feeds.5by5.tv/isometric"
+        },
+        {
+            "title": "Mikes On Mics",
+            "description": "Mikes on Mics is a weekly discussion hosted by Michael Schechter of Workflowing.net and Mike Vardy of Productivityist.com that examines productivity, workflows, technology, and how you can \"do\" better. Hosted by Michael Schechter & Mike Vardy.",
+            "host": "Michael Schechter & Mike Vardy",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/54/cover.jpg",
+            "feed": "http://feeds.5by5.tv/mikesonmics"
+        },
+        {
+            "title": "5by5 at the Movies",
+            "description": "5by5's hosts and guests review their favorite movies. Hosted by Dan Benjamin.",
+            "host": "Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/32/cover.jpg",
+            "feed": "http://feeds.5by5.tv/movies"
+        },
+        {
+            "title": "Mac Power Users",
+            "description": "Learn about getting the most from your Apple technology with focused topics and workflow guests. Creating Mac Power Users, one geek at a time since 2009. Hosted by David Sparks & Katie Floyd.",
+            "host": "David Sparks & Katie Floyd",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/25/cover.jpg",
+            "feed": "http://feeds.5by5.tv/mpu"
+        },
+        {
+            "title": "The News",
+            "description": "A daily update on the latest in tech, Apple, gaming, web, and geek culture in under five minutes. Hosted by Dan Benjamin.",
+            "host": "Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/42/cover.jpg",
+            "feed": "http://feeds.5by5.tv/news"
+        },
+        {
+            "title": "On The Grid",
+            "description": "Join Matt McInerney, Andy Mangold & Dan Auer every week for a conversation about design's effect on the world, and the world's effect on design. Hosted by Andy Mangold, Dan Auer, and Matt McInerney.",
+            "host": "",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/76/cover.jpg",
+            "feed": "http://feeds.5by5.tv/onthegrid"
+        },
+        {
+            "title": "Old Tech News",
+            "description": "Old Tech News is the audiobook edition of my tech writings from The Chicago Sun-Times and elsewhere. The show features news and reviews as fresh as last week as well as older writings that still contain plenty of relevance. It's all good, useful stuff, but the FDA says I can't sell this material as \"fresh\" so: \"Old Tech News\" it is. Hosted by Andy Ihnatko.",
+            "host": "Andy Ihnatko",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/43/cover.jpg",
+            "feed": "http://feeds.5by5.tv/otn"
+        },
+        {
+            "title": "On Taking Pictures",
+            "description": "Every week, Jeffery Saddoris and Bill Wadman take on the art, science, and philosophy of photography and explore how they play out behind the camera in the process of making images. Insider insights for the novice, shop talk for the professional, and opinionated discussion for the interested observer of the field's trends and legacy. Hosted by Bill Wadman & Jeffery Saddoris.",
+            "host": "Bill Wadman & Jeffery Saddoris",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/48/cover.jpg",
+            "feed": "http://feeds.5by5.tv/otp"
+        },
+        {
+            "title": "Overtired",
+            "description": "Overtired is Christina Warren and Brett Terpstra, two tech-geeks with unusual sleep schedules coming together to nerd out over gadgets, software, personalities and life. Tune in to find out what keeps them up at night. Hosted by Brett Terpstra & Christina Warren.",
+            "host": "Brett Terpstra & Christina Warren",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/71/cover.jpg",
+            "feed": "http://feeds.5by5.tv/overtired"
+        },
+        {
+            "title": "Latest in Paleo",
+            "description": "Latest in Paleo is a weekly podcast that delivers the latest health and fitness news from a unique perspective where scientific evidence intersects with evolutionary clues. Hosted by Angelo Coppola.",
+            "host": "Angelo Coppola",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/20/cover.jpg",
+            "feed": "http://feeds.5by5.tv/paleo"
+        },
+        {
+            "title": "Grit",
+            "description": "Grit, the show formerly known as Quit, is about change, the challenges of improving your career, making tough decisions, and starting something awesome. Call in live at 512-518-5714 or leave a voicemail at 512-222-8141. Hosted by Dan Benjamin.",
+            "host": "Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/44/cover.jpg",
+            "feed": "http://feeds.5by5.tv/quit"
+        },
+        {
+            "title": "Radar",
+            "description": "A live, weekly talk show at the intersection of geek culture and technology. Each week, Dan Benjamin is joined by a rotating panel of fellow geeks, along with special guests to discuss the news, television, movies, technology, games, comics, gear, and the latest trends in the geek community. Hosted by Dan Benjamin.",
+            "host": "",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/60/cover.jpg",
+            "feed": "http://feeds.5by5.tv/radar"
+        },
+        {
+            "title": "Ruby on Rails Podcast",
+            "description": "The Ruby on Rails Podcast. Hosted by Sean Devine.",
+            "host": "Sean Devine",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/67/cover.jpg",
+            "feed": "http://feeds.5by5.tv/rubyonrails"
+        },
+        {
+            "title": "5by5 Specials",
+            "description": "5by5 special events. Hosted by Dan Benjamin.",
+            "host": "Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/31/cover.jpg",
+            "feed": "http://feeds.5by5.tv/specials"
+        },
+        {
+            "title": "Supercharged",
+            "description": "Supercharged discusses the latest tech news, answers your toughest life questions, and finds the best tips, tricks, and downloads for doing things better in the digital age.  Got a question? Email us at supercharged@toasterdog.com. Hosted by Adam Dachis.",
+            "host": "Adam Dachis",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/69/cover.jpg",
+            "feed": "http://feeds.5by5.tv/supercharged"
+        },
+        {
+            "title": "Systematic",
+            "description": "A weekly discussion about creativity, productivity, work, and everything Mac and iOS. Hosted by Brett Terpstra.",
+            "host": "Brett Terpstra",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/39/cover.jpg",
+            "feed": "http://feeds.5by5.tv/systematic"
+        },
+        {
+            "title": "The TV Show Show",
+            "description": "Watch at home and join us each week to talk about the next episode of your favorite TV show. We discuss the best shows, old and new, season by season, along with special guests and your calls. You'll never have to watch alone again. Unless you want to. Then that's ok. Hosted by Dan Benjamin.",
+            "host": "",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/65/cover.jpg",
+            "feed": "http://feeds.5by5.tv/tvshow"
+        },
+        {
+            "title": "Write For Your Life",
+            "description": "Write for Your Life is a show about creative writing, copywriting, reading, and the ever-changing publishing industry. Look out for advice, opinions, nonsense and some very special guests.  Hosted by Donna Sørensen & Iain Broome.",
+            "host": "Donna Sørensen & Iain Broome",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/62/cover.jpg",
+            "feed": "http://feeds.5by5.tv/wfyl"
+        },
+        {
+            "title": "After Dark",
+            "description": "This is what happens after Dan and his co-hosts hit \"STOP\" and their official shows are over. Behind the scenes, casual, unedited, and uncensored. Hosted by Dan Benjamin.",
+            "host": "Dan Benjamin",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/22/cover.jpg",
+            "feed": "http://feeds.5by5.tv/afterdark"
+        },
+        {
+            "title": "The Awkward Human Survival Guide",
+            "description": "The Awkward Human Survival Guide answers the uncomfortable questions everyone encounters on an unfortunately regular basis and talks to people around the world who embrace the stranger side of life. NSFW. Hosted by Adam Dachis, Darren Herczeg, Erica Elson, and Richard Cardenas.",
+            "host": "Adam Dachis, Darren Herczeg, Erica Elson, and Richard Cardenas",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/70/cover.jpg",
+            "feed": "http://feeds.5by5.tv/awkward"
+        },
+        {
+            "title": "Puromac",
+            "description": "Puromac es una conversación sobre todo el mundo de Apple entre dos viejos amigos, uno que originalmente era un fanático de Windows, y el otro que es un entusiasta de Apple de toda la vida. Cada episodio es una mezcla de consejos, trucos, recomendaciones de aplicaciones, noticias y análisis. Puromac is a conversation about all things Apple between two old friends, one who was originally a die-hard Windows user, and the other a lifelong Apple enthusiast.) Hosted by Federico Hatoum & Flavio Guinsburg.",
+            "host": "Federico Hatoum & Flavio Guinsburg",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/68/cover.jpg",
+            "feed": "http://feeds.5by5.tv/puromac"
+        },
+        {
+            "title": "Tech Douchebags",
+            "description": "TDB is a twelve-step program for technology snobs disguised as a comedic interview podcast - each week humorously helping geeks confront their digital narcissism and unhealthy attachment to their gadgets & devices. Hosted by Jordan Cooper.",
+            "host": "Jordan Cooper",
+            "category": "5by5",
+            "logo": "http://icebox.5by5.tv/images/broadcasts/72/cover.jpg",
+            "feed": "http://feeds.5by5.tv/tdb"
+        },
+		{
+			"title": "Benson's Boombox",
+			"description": "A monthly comedy podcast featuring a mix of sketch and conversation from two of the brightest minds North West Orange County has to offer.",
+			"host": "Benson's Boombox",
+			"category": "Benview Network",
+			"logo": "http://static.squarespace.com/static/510094bde4b0d34aa0c31ea5/t/515530a2e4b0ec1768d2508a/1364537506572/1500w/425425_10150548920850966_1735080341_n.jpg",
+			"feed": "http://www.benviewnetwork.com/bensonsboombox?format=rss"
+		},
+		{
+			"title": "Comic Nerds Unite: Comic Book Podcast",
+			"description": "Tim and Marc talk older comics in a friendly fun way.",
+			"host": "Tim Van Autreve, Marc Bolton",
+			"category": "Benview Network",
+			"logo": "http://comicnerdsunite.com/wp/wp-content/uploads/powerpress/ComicNerdsUnite.jpg",
+			"feed": "http://comicnerdsunite.com/wp/feed/podcast"
+		},
+		{
+			"title": "Community Fantasy League",
+			"description": "Like fantasy football, but for NBC's Community!",
+			"host": "shut up, leonard",
+			"category": "Benview Network",
+			"logo": "http://static.squarespace.com/static/510094bde4b0d34aa0c31ea5/t/52d4ff47e4b01276a21cd24d/1389690696086/1500w/284560_259324164080341_2655621_n.jpg",
+			"feed": "http://www.benviewnetwork.com/cfl?format=rss"
+		},
+		{
+			"title": "Matt and Brendo's Wrestling Show",
+			"description": "Matt Benson and Brendan Creecy chat about all things wrestling including WWE, TNA, Indies, past, present, and future.",
+			"host": "Matt Benson & Brendan Creecy",
+			"category": "Benview Network",
+			"logo": "http://mbwspod.com/wp-content/uploads/powerpress/wire-itunes.jpg",
+			"feed": "http://mbwspod.com/feed/"
+		},
+		{
+			"title": "Midnight Marinara",
+			"description": "Midnight Marinara is a bi-monthly podcast/radio play that serializes Creepypasta stories into full-fledged audio dramas. Whether it's a well-known chiller or a deserving unknown that catches attention, we endeavor to present an entertaining spin on these tales of the macabre. Sprinkle some of this on your Creepypasta come midnight!",
+			"host": "Midnight Marinara",
+			"category": "Benview Network",
+			"logo": "http://static.squarespace.com/static/510094bde4b0d34aa0c31ea5/t/528b0229e4b039a9b8541c56/1384841770768/1500w/MidnightManProgress.png",
+			"feed": "http://www.benviewnetwork.com/midnightmarinara?format=rss"
+		},
+		{
+			"title": "Nerd's Eye View",
+			"description": "Andrew leads a round table discussion of film, television, and pop culture with regular cohosts Matthew Esposito, Jordan Scott, and Thomas Willett.",
+			"host": "Nerd's Eye View",
+			"category": "Benview Network",
+			"logo": "http://static.squarespace.com/static/510094bde4b0d34aa0c31ea5/t/52df3fc4e4b01c1215aafe8c/1390362570641/1500w/NEV2013logo.jpg",
+			"feed": "http://www.benviewnetwork.com/nev?format=rss"
+		},
+		{
+			"title": "Picture Start with Derick Armijo",
+			"description": "A new podcast about movies and the intensely entertaining charm of the people talking about them.",
+			"host": "Picture Start With Derick Armijo",
+			"category": "Benview Network",
+			"logo": "http://static.squarespace.com/static/510094bde4b0d34aa0c31ea5/t/5236c1a4e4b0588d65810ab1/1379320229160/1500w/46411_158509901016969_1526501979_n.jpg",
+			"feed": "http://www.benviewnetwork.com/picturestart?format=rss"
+		},
+		{
+			"title": "The Pillagecast",
+			"description": "The Pillagecast: Take the treasure, burn what's left.",
+			"host": "The Pillagecast",
+			"category": "Benview Network",
+			"logo": "http://imglogo.podbean.com/image-logo/304347/PillageCast.jpg",
+			"feed": "http://taskbarbarian.podbean.com/feed/"
+		},
+		{
+			"title": "Pop Sickles",
+			"description": "Derick Armijo and Brendan Creecy reap all that pop culture has to sow. Derick’s TwitterBrendo’s TwitterBenson’s TwitterGates’ TwitterThe Benview Networkbrendoman.comPicture Start with Derick ArmijoRadio BrendoMan. Subscribe to the Podcast in iTunesPodcast RSS Feed. Derick Armijo and Brendan Creecy reap all that pop culture has to sow.",
+			"host": "Derick Armijo & Brendan Creecy",
+			"category": "Benview Network",
+			"logo": "https://scontent-a-lax.xx.fbcdn.net/hphotos-prn2/1380026_521256564617611_437730980_n.jpg",
+			"feed": "http://feeds.feedburner.com/PopSickles"
+		},
+		{
+			"title": "Radio BrendoMan",
+			"description": "A geeky podcast currently featuring Brendan Creecy and Phil Vecchio talking about books, movies, soda, Doritos, video games, Disneyland, and so much other stuff. Also classic episodes featuring the brendoman.com crew.",
+			"host": "Brendan Creecy & Phil Vecchio",
+			"category": "Benview Network",
+			"logo": "http://i.imgur.com/4wu4aH5.jpg",
+			"feed": "http://feeds.feedburner.com/brendoman"
+		},
+		{
+			"title": "shut up, leonard",
+			"description": "Matt and Andrew like Community. Watch the show with them as they recap and  review every episode of the rejuvenated season 5!",
+			"host": "shut up, leonard",
+			"category": "Benview Network",
+			"logo": "http://static.squarespace.com/static/510094bde4b0d34aa0c31ea5/t/515e6326e4b0ecbdd5ab8e25/1365140265315/1500w/sullogosquare.jpg",
+			"feed": "http://www.benviewnetwork.com/shutupleonard?format=rss"
+		},
+		{
+			"title": "The Adam Carolla Show",
+			"description": "Welcome to the Adam Carolla Podcast! The new home for the rantings and ravings of Adam Carolla, with Bald Bryan on sound effects and and Alison Rosen on news. Check it out Adam hangs out with some his pals, like: Larry Miller, David Allen Grier, Dr. Drew Pinksy, Dana Gould, Doug Benson, and many, many more.",
+			"host": "",
+			"category": "Carolla Digital",
+			"logo": "http://assets.libsyn.com/content/4666139.jpg",
+			"feed": "http://theadamcarollashow.libsyn.com/rss"
+		},
+		{
+			"title": "The Adam and Dr. Drew Show",
+			"description": "Adam Carolla & Dr. Drew Pinsky reunite the partnership that made Loveline a wild success and cultural touchstone.  In each episode Adam and Drew take uncensored, nothing-off-limits, calls about sex, drug, medical and relationship issues. Dr. Drew brings the medicine while Adam's comedy and rants are the spoonful of sugar to make it go down.",
+			"host": "info@ace.noxsolutions.com (ace.noxsolutions.com)",
+			"category": "Carolla Digital",
+			"logo": "http://ace.noxsolutions.com/images/podcast/adamanddrew.jpg",
+			"feed": "http://feeds.feedburner.com/TheAdamAndDrewShow"
+		},
+		{
+			"title": "The Dr. Drew Podcast",
+			"description": "Dr. Drew Pinsky, board certified internist and addiction medicine specialist, takes listener calls and talks to experts on a variety of topics relating to health, relationships, sex and drug addiction.",
+			"host": "info@ace.noxsolutions.com (ace.noxsolutions.com)",
+			"category": "Carolla Digital",
+			"logo": "http://ace.noxsolutions.com/images/podcast/drdrewpodcast.jpg",
+			"feed": "http://feeds.feedburner.com/thedrdrewpodcast"
+		},
+		{
+			"title": "We Are The People",
+			"description": "A Weekly Glasgow Rangers Podcast by the Supporters for the Supporters",
+			"host": "Iaian, James, John, Ross, Ross & Todd",
+			"category": "Carolla Digital",
+			"logo": "http://wearethepeoplepodcast.com/media/WATP-CoverArt-1400.jpg",
+			"feed": "http://wearethepeoplepodcast.com/?feed=podcast"
+		},
+		{
+			"title": "10th Avenue Podcast with Lynette Carolla",
+			"description": "",
+			"host": "10th Avenue Podcast with Lynette Carolla",
+			"category": "Carolla Digital",
+			"logo": "http://10thavenuepodcast.com/wp-content/plugins/powerpress/itunes_default.jpg",
+			"feed": "http://10thavenuepodcast.com/feed/"
+		},
+		{
+			"title": "Penn's Sunday School",
+			"description": "Carolla Digital",
+			"host": "info@ace.noxsolutions.com (ace.noxsolutions.com)",
+			"category": "Carolla Digital",
+			"logo": "http://ace.noxsolutions.com/images/podcast/penn_sunday_school.jpg",
+			"feed": "http://feeds.feedburner.com/PennSundaySchool/"
+		},
+		{
+			"title": "Ace on the House » Podcast",
+			"description": "Adam Carolla's Construction Podcast",
+			"host": "",
+			"category": "Carolla Digital",
+			"logo": "",
+			"feed": "http://aceonthehouse.adamcarolla.com/category/podcast/feed/"
+		},
+		{
+			"title": "Alison Rosen Is Your New Best Friend",
+			"description": "A twice weekly podcast hosted by veteran interviewer and everyone's new best friend Alison Rosen (The Adam Carolla Show) featuring surprisingly honest conversations that are equal parts silly, serious, revelatory and sometimes involving a sombrero. Plus an eternal quest to find out if that thing you think or do is normal in a segment called \"JustMeorEveryone?\" ",
+			"host": "",
+			"category": "Carolla Digital",
+			"logo": "http://assets.libsyn.com/content/4192410.jpg",
+			"feed": "http://ariynbf.libsyn.com/rss"
+		},
+		{
+			"title": "CarCast",
+			"description": "Hosted by Adam Carolla and Matt D'Andria, CarCast covers everything from hot rods to super cars, delivering serious expertise with a good sense of humor. Automotive designers, racers and celebrity car enthusiasts come to CarCast for a real, unscripted, lively discussion of all things on four wheels. Recent guests include Jay Leno, Vic Edelbrock, Bobby Rahal, Chip Foose, Billy Gibbons, Patrick Warburton, Zachary Levi, Patrick Dempsey, Kenny Wayne Shepherd and Bill Goldberg.",
+			"host": "info@ace.noxsolutions.com (ace.noxsolutions.com)",
+			"category": "Carolla Digital",
+			"logo": "http://ace.noxsolutions.com/images/podcast/CarCast.jpg",
+			"feed": "http://feeds.feedburner.com/CarCast"
+		},
+		{
+			"title": "For Crying Out Loud",
+			"description": "TV executive Lynette Carolla, wife of comedian Adam, along with comedy writer and best-selling parenting author of Sippy Cups are Not For Chardonnay - Stefanie Wilder-Taylor are two mothers of twins breaking it down parenting style. In this raucous hour of conversations they cover a range of topics from their marriages and kids, to the pros and cons of ferberizing to which one of the Real Housewives have had too much filler (all of them). The format is informative, loose and most of all entertaining. A wide variety of guests show up such as friends of The Adam Carolla show, (David Alan Grier, Greg Fitzsimmons, Teresa Strasser, the lovable Dr. Bruce) as well as big names in the parenting biz to personal friends and anyone that they find interesting. This hour will feel like you're hanging with your best girl friends. Lynette and Stefanie are honest, silly and sometimes become vulnerable as they discuss their own experiences as wife and mom. Put them in your ears while you clean your floors and let the girls keep you company during what will surely become your favorite hour of the week.",
+			"host": "info@ace.noxsolutions.com (ace.noxsolutions.com)",
+			"category": "Carolla Digital",
+			"logo": "http://ace.noxsolutions.com/images/podcast/for_crying_out_loud.jpg",
+			"feed": "http://feeds.feedburner.com/TheParentExperiment"
+		},
+		{
+			"title": "As It Happens from CBC Radio",
+			"description": "CBC Radio's As It Happens' listening experience is like taking a trip around the world. From the complex headlines of the day to the weird and wacky, As It Happens brings you the story behind the story and now we're podcasting the whole show!",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-asithappens.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/asithappens.xml"
+		},
+		{
+			"title": "Grownups Read Things They Wrote as Kids from CBC Radio",
+			"description": "Dan Misener invites brave Canadians to read their childhood writing ... out loud in front of an audience. Embarrassing, moving, hilarious – all captured live during a 10-city tour.",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-grownups.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/grownupsread.xml"
+		},
+		{
+			"title": "Head To Toe from CBC Radio",
+			"description": "Head to Toe stops you on the street and peers into your closet to ask “What are you wearing, and why?” Host JJ Lee finds threads of vulnerability and surprise in our clothing and, through history and social science, peels back the layers to give us a new understanding of what we put on.",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-head-to-toe.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/headtotoe.xml"
+		},
+		{
+			"title": "How To Do It",
+			"description": "How to Do It takes an in-depth look at the questions Canadians are too afraid to ask, like how to disappear from your life and  how to make someone fall in love with you. Each week we tackle a new situation we hope you never find yourself in. ",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-howtodoit.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/howtodoit.xml"
+		},
+		{
+			"title": "Live Through This from CBC Radio",
+			"description": "No one turns the dial when the hero is hanging off the cliff. For 10 weeks you’ll hear extraordinary stories of survival – from the most extreme to the seemingly mundane, from mutinies at sea to desperately seeking silence. Everyone has something they’re surviving.",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-livethroughthis.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/livethroughthis.xml"
+		},
+		{
+			"title": "Newshounds from CBC Radio",
+			"description": "You’ve got to be first, but you’ve got to be right. That’s what drives the news business, and it’s what drives CBC Radio’s new quiz show. Play along with host Adam Growe and two guest contestants, and discover how much attention you really did pay to the world this week.",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-newshounds.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/newshounds.xml"
+		},
+		{
+			"title": "Q: The Podcast from CBC Radio",
+			"description": "CBC Radio's Q is Canada's liveliest arts, culture and entertainment magazine. It's a smart and surprising tour through personalities and cultural issues that matter to Canadians. Hosted by Jian Ghomeshi, with his trademark wit and spontaneity, Q covers pop culture and high arts alike, with forays into the most provocative and compelling cultural trends. Q brings you big names, big ideas, and those paving the way in Canada's cultural community. Q is your cultural intervention!",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-qpodcast.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/qpodcast.xml"
+		},
+		{
+			"title": "The Bugle And The Passing Bell from CBC Radio",
+			"description": "Fifty years ago, CBC Radio devoted 17 hours to the voices and stories of the men who fought in World War One. To mark the 100th anniversary of the outbreak of the war, documentary producer Steve Wadhams and host Beza Seife bring those voices and stories back to life.",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-bugle.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/bugleandthebell.xml"
+		},
+		{
+			"title": "The Current from CBC Radio (Highlights)",
+			"description": "CBC Radio's The Current is a meeting place of perspectives with a fresh take on issues that affect Canadians today.",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-thecurrent.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/current.xml"
+		},
+		{
+			"title": "What A Waste from CBC Radio",
+			"description": "CBC Radio science columnist Torah Kachur starts from the premise that there is no such thing as waste, just wasted resources. As we try to clean up the mess we’ve made of the planet, Torah explores what can be done with everything from our leftover food to our nuclear detritus.",
+			"host": "podcasting@cbc.ca",
+			"category": "Canadian Broadcasting Corporation",
+			"logo": "http://www.cbc.ca/radio/podcasts/images/promo-what-a-waste.jpg",
+			"feed": "http://www.cbc.ca/podcasting/includes/whatawaste.xml"
+		},
+		{
+			"title": "Affirmation Nation with Bob Ducca",
+			"description": "Frustrated with the technological complexities of blogging and the harsh judgment he received from many therapy groups, Bob Ducca has taken to Earwolf to share his thoughts, concerns, meditations, recommendations, and ramblings. Catch him every Monday, Wednesday, and Friday.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/05/AffirmationNation_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/affirmationnation"
+		},
+		{
+			"title": "Analyze Phish",
+			"description": "Harris and Scott are comedians, music lovers, and friends. Where do they differ? Harris loves Phish, and Scott does not. On Analyze Phish, Harris navigates the vast landscape of Phishs catalogue to find entry points for Scott while trying to explain the live Phish experience without the use of illegal substances.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2013/01/AnalyzePhish_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/analyze-phish"
+		},
+		{
+			"title": "By The Way, In Conversation with Jeff Garlin",
+			"description": "By The Way, In Conversation with Jeff Garlin is an eavesdroppers paradise. Recorded live at Largo in LA, its a series of casual talks between the host and his most interesting show business friends. Agendas are out the window and no topics are off limits in these revealing chats.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2013/01/ByTheWay_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/by-the-way-in-conversation-with-jeff-garlin"
+		},
+		{
+			"title": "Comedy Bang Bang: The Podcast",
+			"description": "Join host Scott Aukerman (\"ComedyBang!Bang!\" on IFC, \"Mr.Show\") for a weekly podcast that blends conversation and character work from today's funniest comedians. While Scott begins by traditionally interviewing the celebrities, the open-door policy means an assortment of eccentric oddballs can pop by at any moment to chat, compete in games, and engage in comic revelry. With all that,andregular bonus episodes, we bet your favorite part will still be the plugs!",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/04/CBBLOGOFULL.jpg",
+			"feed": "http://feeds.feedburner.com/comedydeathrayradio"
+		},
+		{
+			"title": "Eardrop",
+			"description": "We've invited some of our favorite comedians to call in and leave messages on our answering machine. These are those messages. There are no guarantees: we don't know who is calling, when, or for how long. Intrigued?",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/04/Eardrop_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/Eardrop"
+		},
+		{
+			"title": "Earwolf Challenge",
+			"description": "The Earwolf Challenge is America's first reality podcast. Ten podcasts compete to win a year-long contract with Earwolf by competing in various podcast-related challenges. Matt Besser hosts and judges along with a slew of notable figures in the world of podcasting.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/07/EarwolfChallenge_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/theearwolfchallenge"
+		},
+		{
+			"title": "Earwolf Presents",
+			"description": "Earwolf Presents is a way to showcase some of our hilarious Earwolf guests who aren't able to host a weekly podcast. There is no set schedule and no host, so you could consider these Earwolf bonus episodes. Enjoy!",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/08/EarwolfPresents_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/earwolfpresents"
+		},
+		{
+			"title": "Glitter in the Garbage",
+			"description": "Glitter in the Garbage is a celebration of all things fancy, classy, and important. Your host, Drew Droege, and his friends will play obscure celebrities who celebrate, fight, and feast upon the filth. It's like a salon, without all that boring intellect.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/04/GlitterInTheGarbage_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/GlitterintheGarbagewithDrewDroege"
+		},
+		{
+			"title": "Hollywood Handbook",
+			"description": "Hollywood Handbook is an insider's guide to achieving your showbiz dreams from two A-List it-boys who are living theirs. Hayes and Sean provide an exclusive VIP backstage pass into Tinseltown politics, answer questions from unsuccessful listeners, and bring in famous guests to discuss their craft and how they became what they are (famous).",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2013/09/HollywoodHandbook_1600x1600_Cover1.jpg",
+			"feed": "http://rss.earwolf.com/hollywood-handbook"
+		},
+		{
+			"title": "How Did This Get Made?",
+			"description": "Have you ever seen a movie so bad that it's amazing? Paul Scheer, June Diane Raphael and Jason Mantzoukas want to hear about it! We'll watch it with our funniest friends, and report back to you with the results.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/04/HDTGMFULL.jpg",
+			"feed": "http://feeds.feedburner.com/howdidthisgetmade"
+		},
+		{
+			"title": "improv4humans with Matt Besser",
+			"description": "Few names are as synonymous with improv as Matt Besser. Founding member of the Upright Citizens Brigade and a regular performer in the world-famous show Asssscat, Matt has brought his talents to Earwolf with a fully improvised weekly podcast featuring the best improvisers in the universe. Music by Bobby Matthews and Dragoon.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/11/Improv4Humans_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/improv4humans"
+		},
+		{
+			"title": "Kevin Pollak's Chat Show",
+			"description": "Kevin Pollak's Chat Show is a podcast and live streaming video talk show seen every Sunday, 3PM PST on YouTube. An award-winning actor, Pollak (The Usual Suspects, Casino, A Few Good Men) was named by Comedy Central as One of the Top 100 Comedians of All Time. Here, he interviews celebrated actors, writers, directors, comedians, and masters of the tech universe. New episodes drop weekly on Tuesdays.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2013/03/KevinPollaksChatShow_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/kevin-pollaks-chat-show"
+		},
+		{
+			"title": "Love, Dad",
+			"description": "Love, Dad is a conversation about fatherhood between veteran dad Dave Koechner and brand-new father Jeff Ullrich. Learn each week what it takes to be a father from two guys still trying to figure it out.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/08/LoveDad_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/lovedadpodcast"
+		},
+		{
+			"title": "Mike Detective",
+			"description": "The continuing adventures of Mike Detective, unlicensed and uninsured private eye! This hard-boiled noir serial stars Rob Huebel and is perfect for the whole family... assuming your family enjoys dirty words and wiener jokes.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/04/MikeDetective_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/MikeDetective"
+		},
+		{
+			"title": "Nerd Poker",
+			"description": "Each week, under dark of night, a group of warriors lead by Brian Posehn gather to play Dungeons & Dragons, and you're invited to attend!",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/11/NerdPoker_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/nerd-poker"
+		},
+		{
+			"title": "Never Not Funny: The Jimmy Pardo Podcast",
+			"description": " Never Not Funny is an award-winning weekly podcast hosted by comedian and TV personality Jimmy Pardo and producer Matt Belknap. Since 2006, the show has offered comedy fans the unique opportunity to eavesdrop on freewheeling conversations between Pardo and his sometimes famous, always funny friends. Unscripted. Unedited. Unstoppable. It's Never Not Funny.Never Not Funny is an award-winning weekly podcast hosted by comedian and TV personality Jimmy Pardo and producer Matt Belknap. Since 2006, the show has offered comedy fans the unique opportunity to eavesdrop on freewheeling conversations between Pardo an",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn2.earwolf.com/wp-content/uploads/2014/01/NeverNotFunny_1600x1600_Cover_Final.jpg",
+			"feed": "http://feeds.feedburner.com/NeverNotFunny"
+		},
+		{
+			"title": "Nocturnal Emotions with Har Mar Superstar",
+			"description": "Nocturnal Emotions with Har Mar Superstar features long conversations with musicians, actors, artists, and other people of interest focusing on embarrassing moments in their lives and careers.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/09/NocturnalEmotions_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/NocturnalEmotionsWithHarMarSuperstar"
+		},
+		{
+			"title": "Owen & TJ Read the News",
+			"description": "From the minds of Owen Burke (Funny or Die) and Adam McKay (Anchorman, Step Brothers, Talladega Nights). Owen stays up on current events and TJ, a cell phone case salesman and aspiring hip hop artist, is more interested in what's going on at the Hooters down at the Jacksonville, FL CityWalk. On Owen & TJ Read the News they discuss the top stories of the month together.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/11/OwenAndTJ_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/owen-tj-read-the-news"
+		},
+		{
+			"title": "Pod Cats",
+			"description": "Sure, Podcast King Marc Maron has a new comedy show on IFC. But what do Monkey, Boomer and LaFonda have to say about it? If you thought Maron had issues, try his three cats on for size. Earwolf and IFC caved to their demands for a new podcast of their very own, and these are the results. Listen up and check out Maron every Friday night at 10pm only on IFC.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2013/05/PodCats_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/pod-cats"
+		},
+		{
+			"title": "Professor Blastoff",
+			"description": "This show is a weekly conversation between Tig Notaro and her co-hosts Kyle Dunnigan and David Huntsberger, in which they focus on a central theme they find interesting. The topics range from scientific to philosophical to metaphysical with Aaron Burrell assisting in the research.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/05/PBFULL.jpg",
+			"feed": "http://feeds.feedburner.com/professorblastoff"
+		},
+		{
+			"title": "Rafflecast",
+			"description": "Rafflecast brings you sketches, impressions, songs, and celebrity guests each week! Wake up from your NPR-induced nap, and spend an hour with the greatest innovator in the history of spoken word entertainment... Jon Daly!",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/11/RaffleCast_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/rafflecast"
+		},
+		{
+			"title": "Ronna & Beverly",
+			"description": "Ronna Glickman & Beverly Ginsberg are the best-selling co-authors of You'll Do A Little Better Next Time: A Guide to Marriage and Re-marriage for Jewish Singles (\"ItsaysJewishinthename--butit'sforeveryone!\"). These outspoken fiftysomethings from Boston, who can be seen regularly at the Upright Citizens Brigade Theatre in LA, dispense their unique brand of relationship advice while interviewing/interrogating celebrity guests.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/02/RonnaBeverly_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/ronnaandbeverly"
+		},
+		{
+			"title": "Seth Godin's Startup School",
+			"description": "Seth Godin is a thought leader in the marketing and business world. In this rare live recording, hear Seth as he guides thirty entrepreneurs through a workshop exploring how they can build and run their dream business.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/09/StartupSchool__1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/startup-school"
+		},
+		{
+			"title": "Shortwave with Grant-Lee Phillips",
+			"description": "Shortwave host singer-songwriter Grant-Lee Phillips interviews fellow musicians about their craft, and guests perform acoustic renditions of their songs and new music that they're working on.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/09/ShortwaveRadio_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/ShortwaveWithGrant-leePhillips"
+		},
+		{
+			"title": "Sklarbro Country",
+			"description": "Sklarbro Country features Randy and Jason Sklar as they give their weekly comedic takes on the worlds of sports and pop culture. You don't have to know about sports to enjoy it, as long as you like silly puns and great comedians.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/04/SBCFULL.jpg",
+			"feed": "http://feeds.feedburner.com/sklarbrocountry"
+		},
+		{
+			"title": "The Andy Daly Podcast Pilot Project",
+			"description": "Earwolf producer Matt Gourley (Superego) and Andy Daly (the upcoming Comedy Central series Review) have spent months sifting through podcast pilots to curate this collection of noteworthy efforts. Together they'll bring you podcast pilots submitted by a beloved cowboy poet, a theatrical director who specializes in girls, a satanist game show host, a water skiing legend and many more. All of these would-be podcasters have, oddly enough, taken advantage of the open door policy on Comedy Bang Bang, but there is so much more to discover about each and every one of them...",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2013/12/ADPPP_Cover_A1.jpg",
+			"feed": "http://rss.earwolf.com/the-andy-daly-podcast-pilot-project"
+		},
+		{
+			"title": "The Apple Sisters",
+			"description": "Buzz Buzz Buzz! It's 1943 and you are listening to FDR's favorite radio show: The Apple Sisters! Candy, Cora, and Seedy Apple are here to sing, dance, and shill us out of the depression and into the future.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/05/AppleSisters_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/applesisters"
+		},
+		{
+			"title": "The Cracked Podcast",
+			"description": "The Cracked Podcast is an extension of the editorial team discussions that shape the brilliant articles and sketches on Cracked. Cohosts Jack O'Brien and Michael Swaim, along with an impressive roster of guests, use the platform to identify and dissect pop culture tropes, debunk myths and generally try to reach the large demographic of people who would enjoy their site's content if only they'd learn to read.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2013/08/EAR_CrackedPodcast_1600x1600_Cover_Final.jpg",
+			"feed": "http://rss.earwolf.com/the-cracked-podcast"
+		},
+		{
+			"title": "The Fogelnest Files with Jake Fogelnest",
+			"description": "The Fogelnest Files is a weekly podcast where Jake Fogelnest and some of his favorite comedians and funny friends revisit pop culture gems from the Internet and Jakes personal archive. Check out http://YouTube.com/TheFogelnestFiles for video playlists from the show!",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/08/FogelnestFiles_1600x1600_Cover.jpg",
+			"feed": "http://feeds.feedburner.com/fogelnestfiles"
+		},
+		{
+			"title": "the reality SHOW show",
+			"description": "Hayes and Sean are two chilled out bros who love watching reality television. In this podcast they relive the past week's best moments, and prove once and for all that reality doesn't bites. Cool people and reality stars stop by to play games and dish on their favorite shows. Listen, won't you?",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/10/RealityShowShow_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/the-reality-show-show"
+		},
+		{
+			"title": "The Wolf Den",
+			"description": "The Wolf Den focuses on starting and growing a new business and interviews others who are influencing the business of new media. Part of the fun is hearing about the behind the scenes building of Earwolf.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/04/EAR_WolfDen_New_032014_Final.jpg",
+			"feed": "http://feeds.feedburner.com/wolfden"
+		},
+		{
+			"title": "Topics",
+			"description": "\"Topics\" features long-time friends and creative comedic collaborators Michael Ian Black and Michael Showalter as they tackle some of mankind's most difficult questions: What is the nature of love? Is time travel possible? Does God exist? And so many more. \"Topics\" is a thoughtful, intense conversation about what makes humankind... kind of human. Featuring original music by Dan Deacon!",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2014/01/Topics_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/topics"
+		},
+		{
+			"title": "Totally Laime",
+			"description": "Come be a fly on the wall every week as Elizabeth Laime and her husband, Psychic Andy, invite a guest from the world of comedy into their home to hang out for an hour. Topics range from puppy dogs to sex dreams and everything in between!Come be a fly on the wall every week as Elizabeth Laime and her husband, Psychic Andy, invite a guest from the world of comedy into their home to hang out for an hour. Topics range from puppy dogs to sex dreams and everything in between!",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://www.totallylaime.com/assets/TotallyLaime_Logo_1400x1400.jpg",
+			"feed": "http://feeds.feedburner.com/totallylaime"
+		},
+		{
+			"title": "U Talkin' U2 To Me?",
+			"description": "In anticipation of U2s latest album release, Adam Scott (Parks and Recreation) and Scott Aukerman (Comedy Bang! Bang!) come together as superfan Adam Scott Aukerman to discuss the music and impact of the band. Listen in as these friends cover everything from Boy to No Line on the Horizon, and reveal a little something about themselves along the way.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2014/02/EAR_UTalkinU2ToMe_Cover_C2.jpg",
+			"feed": "http://rss.earwolf.com/u-talkin-u2-to-me"
+		},
+		{
+			"title": "Who Charted?",
+			"description": "Howard Kremer and his trusty chart keeper Kulap Vilaysack are here with the charts of the week. Learn what is hitting in music and movies, and learn about some of your favorite comedians with games like Chart Roulette.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2011/04/WHOCHARTEDFULL.jpg",
+			"feed": "http://feeds.feedburner.com/WhoChartedwithHowardKremer"
+		},
+		{
+			"title": "Yo, Is This Racist?",
+			"description": "Yo, Is This Racist?, hosted by Andrew Ti, creator of the popular blog of the same name, is a daily podcast (Mondays through Fridays) where Ti and his guests answer questions from fan-submitted voicemails and emails about whether or not something is, in fact, racist.",
+			"host": "",
+			"category": "Earwolf",
+			"logo": "http://cdn.earwolf.com/wp-content/uploads/2012/09/YoIsThisRacist_1600x1600_Cover.jpg",
+			"feed": "http://rss.earwolf.com/yo-is-this-racist"
+		},
+		{
+			"title": "Call Chelsea Peretti",
+			"description": "Beloved comedian Chelsea Peretti takes calls on weekly themed episodes, interacts with callers, and contemplates suicide/homicide. Jk.",
+			"host": "Chelsea Peretti",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/callchelseap1389218519.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=callchelseap"
+		},
+		{
+			"title": "Conversations With Matt Dwyer",
+			"description": "Matt Dwyer seeks comedy in extraordinary people from all walks of life in this gonzo interview program. From BDSM porn actors to Harvard graduates, Matt Dwyer has an esoteric taste in deeply fascinating pedestrian life.",
+			"host": "Matt Dwyer Feral Audio",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/conversationswithmattdwyer1389127693.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=conversationswithmattdwyer"
+		},
+		{
+			"title": "Don't Ever Change with John Roy",
+			"description": "Don'tEverChange is a series of interviews with funny people about their high school experience.  It's funny, absurd, dramatic, and traumatic, just like high school.",
+			"host": "John Roy, Feral Audio",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/donteverchange1390252334.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=donteverchange"
+		},
+		{
+			"title": "Dongtini",
+			"description": "Your one stop shop for bitches, wieners, and God.",
+			"host": "Simone Turkington and Stephanie Drury",
+			"category": "Feral Audio",
+			"logo": "http://www.dongtini.com/images/dongtini-iTunes-logo-1-2.jpg",
+			"feed": "http://feeds.podtrac.com/eLXWmC94gdd4"
+		},
+		{
+			"title": "Getting On with James Urbaniak",
+			"description": "A monthly radio drama wherein the actor James Urbaniak navigates the darkly comedic recesses of his troubled yet charming mind. Contradictions abound!",
+			"host": "",
+			"category": "Feral Audio",
+			"logo": "http://assets.libsyn.com/content/6704407.jpg",
+			"feed": "http://gettingonwithju.libsyn.com/rss"
+		},
+		{
+			"title": "Improv Nerd With Jimmy Carrane",
+			"description": "ImprovNerdwithJimmyCarrane is a live interview show hosted by Jimmy Carrane, a well-known improv teacher and former host of Studio 312 on Chicago Public Radio. In this show, Jimmy explores the creative process used to make great comedy.",
+			"host": "Jimmy Carrane",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/improvnerd1389159064.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=improvnerd"
+		},
+		{
+			"title": "Kumail Nanjiani's The X-Files Files",
+			"description": "Kumail Nanjiani (Silicon Valley, The Indoor Kids) and a guest explore their favorite cases of The X-Files. The truth is out there!",
+			"host": "Kumail Nanjiani, Feral Audio",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/thexfilesfiles1401837778.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=thexfilesfiles"
+		},
+		{
+			"title": "New Year's Eve with Neil Hamburger",
+			"description": "Count down the New Year with host Neil Hamburger and TOP musical acts!",
+			"host": "Neil Hamburger",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/nyeneil1389127799.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=nyeneil"
+		},
+		{
+			"title": "Please Be My Girlfriend",
+			"description": "Hosted by Upright Citizens Brigade performer David Barton Harris and blogger/story teller Roman Presnell; PBmGF unlocks the secrets of dating through comedy. Produced by FeralAudio.com",
+			"host": "David Harris Roman Presnell Feral Audio",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/pleasebemygirlfriend1389227542.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=pleasebemygirlfriend"
+		},
+		{
+			"title": "Real Life Sci-Fi with Wade & Willy",
+			"description": "Conspiracies and the Paranormal, Fact or Fiction? Wade is a cynic. Willy believes in everything. By the end of the episode their guest must chose a side. ",
+			"host": "Wade Randolph, Willy Roberts, Feral Audio",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/reallifescifi1402435442.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=reallifescifi"
+		},
+		{
+			"title": "Sean Conroy Presents: The Flabbergast",
+			"description": "In this dense one man sketch show, comedian Sean Conroy (The Long Shot Podcast, ASSSSSCAT) shows off his character skills around loads of sound design and diverse sketches.",
+			"host": "Sean Conroy, Feral Audio",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/seanconroypresentstheflabbergast1389227488.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=seanconroypresentstheflabbergast"
+		},
+		{
+			"title": "Slumber Party With Alie and Georgia",
+			"description": "Climb into our fort for an adult slumber party with Alie & Georgia! There's wine spritzers, games, ghost stories and pajamas are mandatory.",
+			"host": "Alie Ward Georgia Hardstark Feral Audio",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/slumberpartywithalieandgeorgia1389127837.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=slumberpartywithalieandgeorgia"
+		},
+		{
+			"title": "Steve Agee: Uhhh",
+			"description": "Steve Agee (The Sarah Silverman Program) jumped on the podcast bandwagon because, frankly, that's what bandwagons are for. There are no themes or gimmicks and the stakes are low, which is pretty much the only way Steve can deal anything. Just a guy in his",
+			"host": "Steve Agee Feral Audio",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/steveageeuhhh1389127959.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=steveageeuhhh"
+		},
+		{
+			"title": "Tangentially Speaking with Dr. Christopher Ryan",
+			"description": "Ever wanted to hang with a dominatrix, comedian, famous health guru, or Italian prince? Here's your chance. Tangentially Speaking is dedicated to the idea that good conversation is organic, revelatory, and free to go down unexpected paths.",
+			"host": "",
+			"category": "Feral Audio",
+			"logo": "http://assets.libsyn.com/content/7261649.jpg",
+			"feed": "http://tangent.libsyn.com/rss"
+		},
+		{
+			"title": "The Adventures Of Danny and Mike",
+			"description": "You might remember Danny Tamberelli and Mike Maronna from 90's classics like All That, Figure it Out, Igby Goes Down, The Mighty Ducks & Slackers or Home Alone, just to name a few.",
+			"host": "Danny Tamberelli and Michael Maronna",
+			"category": "Feral Audio",
+			"logo": "http://www.castmate.fm/itunes_images/adventuresofdannyandmike1378581615.jpg",
+			"feed": "http://www.castmate.fm/feed.php?u=adventuresofdannyandmike"
+		},
+		{
+			"title": "Top Traders Unplugged with Niels Kaastrup-Larsen, Veteran Hedge Fund Manager",
+			"description": "",
+			"host": " Niels Kaastrup-Larsen interviews the world’s top traders | Like Trend Following with Michael Covel but nothing like Tim Ferriss, Dave Ramsey, Bloomberg, CNBC, Mad Money, CNN or Wall Street Journal",
+			"category": "Freedom Podcasting",
+			"logo": "http://toptradersunplugged.com/wp-content/uploads/2014/05/TopTraderPodcastArt-02.jpg",
+			"feed": "http://toptradersunplugged.com/feed/podcast/"
+		},
+		{
+			"title": "Good Life Project",
+			"description": "Inspiring People, Stories, Interviews and Insights",
+			"host": "Jonathan Fields: Interviews With World-class Entrepreneurs, Artists, Makers and World-shakers on Starting a Business, Motivation, Inspiration, Art, Entrepreneurship, Innovation, Design and More.",
+			"category": "Freedom Podcasting",
+			"logo": "http://www.goodlifeproject.com/wp-content/uploads/powerpress/Good_Life_Project_7-14_1400x1400-863.jpg",
+			"feed": "http://www.goodlifeproject.com/feed/podcast/"
+		},
+		{
+			"title": "Love Affair Travel Podcast | Exploring the Lifestyles of Location Independent Long Term Travelers",
+			"description": "Love Affair Travel | Exploring the Lifestyles of Long Term Travel",
+			"host": "Ian Robinson: Adventure, Travel, Entrepreneurship, Art, Music and Adrenaline",
+			"category": "Freedom Podcasting",
+			"logo": "http://loveaffairtravel.com/wp-content/uploads/powerpress/Love-Affair-Travel-Podcast-Art-363.jpg",
+			"feed": "http://loveaffairtravel.com/feed/podcast"
+		},
+		{
+			"title": "Where Health Lies",
+			"description": "Welcome to 'Where Health Lies’  For over 30 years Don has travelled the globe sharing his unique and empowering messages of Self-Care and Self-Education.  We've put together for you a collection of what Don calls \"truest-truths\".  It’s unrehearsed, we hope you enjoy it…but more importantly, we hope it inspires you to make greater, positive choices.  Please visit DonTolmanInternational.com to join and to receive free health tips, product offers & complimentary event tickets when Don comes to town.  If you would like to help us spread Don’s message, please tell a friend, or leave an honest iTunes review at the iTunes store.  Thanks for listening and stay tuned for our next episode.The Truth about Self Care that the Pharmaceutical Industry and Government doesn't want you to Know",
+			"host": "wherehealthlies@freedompodcasting.com (Don Tolman: The Whole Food Medicine Man)Don Tolman: The Whole Food Medicine Man",
+			"category": "Freedom Podcasting",
+			"logo": "http://static.libsyn.com/p/assets/c/c/0/f/cc0f5d2924c9edbc/DonTolmanPodcastShowArt1400x1400.jpg",
+			"feed": "http://feeds.feedburner.com/wherehealthlies"
+		},
+		{
+			"title": "Shop Talk Radio with Nick Onken",
+			"description": "Shop Talk Radio | Under the Hood of the Creative Entrepreneur",
+			"host": "Nick Onken | Photographer, Author, and Creative Entrepreneur",
+			"category": "Freedom Podcasting",
+			"logo": "http://www.nickonken.me/wp-content/uploads/powerpress/NickOnkenShopTalk.jpg",
+			"feed": "http://www.nickonken.me/feed/podcast/"
+		},
+		{
+			"title": "The Inventor’s Mind | Inventions | Ideas | Product Design",
+			"description": "Leading Innovators, Mechanics of Invention and Discussing Big Ideas",
+			"host": "Chris Hawker: Inventor, Author and President of Trident Design LLC",
+			"category": "Freedom Podcasting",
+			"logo": "http://inventorsmind.com/wp-content/uploads/powerpress/InventorsMind_1400x1400.jpg",
+			"feed": "http://inventorsmind.com/feed/podcast/"
+		},
+		{
+			"title": "Glambition Radio",
+			"description": "Welcome to Glambition Radio with your Host Ali Brown. Women are rewriting the rules for leadership business success, making money and changing the world. Each week, join me for powerful messages and interviews that will leave you inspired and ready to get your Glambition on....",
+			"host": "Ali Brown | Entrepreneur, Mentor and Business Coach for Women",
+			"category": "Freedom Podcasting",
+			"logo": "http://www.alibrown.com/blog/wp-content/uploads/powerpress/Glambition-Ali-Brown-1400x1400.jpg",
+			"feed": "http://www.alibrown.com/blog/category/glambition/feed/"
+		},
+		{
+			"title": "The School of Greatness with Lewis Howes",
+			"description": "Lewis Howes is an author, Lifestyle Entrepreneur, former pro athlete and world record holder in football. The goal of the School of Greatness is to share inspiring stories from the most brilliant business minds, world class athletes and influential celebrities on the planet; to help you find out what makes great people great.",
+			"host": "Ian Robinson: Adventure, Travel, Entrepreneurship, Art, Music and Adrenaline",
+			"category": "Freedom Podcasting",
+			"logo": "http://lewishowes.com/wp-content/uploads/2013/03/lewis_podcast_large.jpg",
+			"feed": "http://lewishowes.com/feed/podcast/"
+		},
+		{
+			"title": "Geek Gamer Weekly – MP3",
+			"description": "Audio MP3 podcast feed of the Geek Gamer Weekly podcast!",
+			"host": "GeekGamer.TV",
+			"category": "GeekGamer.tv",
+			"logo": "http://i.imgur.com/gZA0HPd.jpg",
+			"feed": "http://feeds.geekgamer.tv/GeekGamerAudio"
+		},
+		{
+			"title": "Minecraft Me – MP3",
+			"description": "A show based on the popular PC game called Minecraft.  By GeekGamer.TV",
+			"host": "GeekGamer.TV",
+			"category": "GeekGamer.tv",
+			"logo": "http://www.geekgamer.tv/wp-content/uploads/powerpress/mm-season3-mp3.jpg",
+			"feed": "http://feeds.geekgamer.tv/minecraftaudio"
+		},
+		{
+			"title": "Geek Gamer Pinball",
+			"description": "HD Feed for all media relating to Pinball coverage!  Geek Gamer Pinball, episodes, tournaments, specials can all be found here!",
+			"host": "GeekGamer.TV",
+			"category": "GeekGamer.tv",
+			"logo": "http://www.geekgamer.tv/wp-content/uploads/powerpress/geekgamerpinball-1400-555.jpg",
+			"feed": "http://www.geekgamer.tv/feed/ggpinball/"
+		},
+		{
+		   "title": "gspn.tv - All Inclusive - Entire Network Feed",
+		   "description": "Join The Community!",
+		   "host": "gspn.tv - Generally Speaking Production Network",
+		   "category": "GSPN",
+		   "logo": "http://gspn.tv/wp-content/uploads/2013/10/AIArt.jpg",
+		   "feed": "http://feeds.feedburner.com/gspn"
+	   },
+	   {
+			"title": "BSD Now MP3",
+			"description": "A weekly show covering the latest developments in the world of the BSD family of operating systems. News, Tutorials and Interviews for new users and long time developers alike.Everything you wanted to know about BSD",
+			"host": "Jupiter Broadcastingchris@jupiterbroadcasting.com (Jupiter Broadcasting)",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.jupiterbroadcasting.com/images/bsdnow-badge.jpg",
+			"feed": "http://feeds.feedburner.com/BsdNowMp3"
+		},
+		{
+			"title": "Coder Radio MP3",
+			"description": "A weekly talk show taking a pragmatic look at the art and business of software development and related technologies. ",
+			"host": "Jupiter Broadcastingchris@jupiterbroadcasting.com (chris@jupiterbroadcasting.com)",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.jupiterbroadcasting.com/images/CR-rssBadge.jpg",
+			"feed": "http://feeds.feedburner.com/coderradiomp3"
+		},
+		{
+			"title": "HowTo Linux MP3",
+			"description": "HowTo Linux will guide you through the amazing world of Linux. From switching to Windows, to building the ultimate home theater, firewall, office file server, and just about anything else. Get the most from Linux. ",
+			"host": "Jupiter Broadcastinghowtolinux@jupiterbroadcasting.com (Jupiter Broadcasting)",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.jupiterbroadcasting.com/wp-content/uploads/2014/06/H2L-Badge.jpg",
+			"feed": "http://feeds.feedburner.com/HowToLinuxMp3"
+		},
+		{
+			"title": "Plan B",
+			"description": "Plan B is a weekly talk show contemplating the future and present of Bitcoin. With insights for the novice, shop talk for the expert, and opinionated discussion for the interested observer of bitcoin and related technologies.",
+			"host": "",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.jupiterbroadcasting.com/images/planb-badge.jpg",
+			"feed": "http://feeds.feedburner.com/planbmp3"
+		},
+		{
+			"title": "The Linux Action Show! MP3",
+			"description": "Audio versions of The Linux Action Show! A show that covers everything geeks care about in the open source and Linux world. Get a solid dose of Linux, gadgets, news events and much more!Linux enthusiasts talk top news stories, current trends and any other subject regarding Linux and Open Source!",
+			"host": "Jupiter Broadcastingchris@linuxactionshow.com",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.linuxactionshow.com/images/tux-jedi_sickness_fun.png",
+			"feed": "http://feeds2.feedburner.com/TheLinuxActionShow"
+		},
+		{
+			"title": "LINUX Unplugged Podcast",
+			"description": "An open show powered by community LINUX Unplugged takes the best attributes of open collaboration and focuses them into a weekly lifestyle show about Linux.Linux Action Show, with no rules.",
+			"host": "Jupiter Broadcastingchris@jupiterbroadcasting.com (Jupiter Broadcasting)",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.jupiterbroadcasting.com/images/LASUN-Badge1400.jpg",
+			"feed": "http://feeds.feedburner.com/linuxunplugged"
+		},
+		{
+			"title": "TechSNAP MP3",
+			"description": "An in-depth analysis of tech issues and topics. Hosted by Chris Fisher and Allan Jude, with over 20+ years in the technology industry. Tune in and get engaged by deep critical analysis and conversation around technologies’ milestones.In-depth Discussion of Tech Topics.",
+			"host": "chris@jupiterbroadcasting.com",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://jupiterbroadcasting.com/images/techsnap/techsnapAudio.jpg",
+			"feed": "http://feeds.feedburner.com/techsnapmp3"
+		},
+		{
+			"title": "Tech Talk Today MP3",
+			"description": "An opinionated daily technology talk show. Chris Fisher is joined by a rotating cast of characters. Far removed from the valley bubble we tell the honest truth about some of tech’s biggest demigods. With insights on current events, and perspective from the past ones Tech Talk Today promises to be interesting, or fail live trying.",
+			"host": "Jupiter Broadcasting",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://jb4.cdn.scaleengine.net/wp-content/uploads/2014/06/t3bade.jpg",
+			"feed": "http://feedpress.me/t3mp3"
+		},
+		{
+			"title": "unfilter MP3",
+			"description": "We're living in historic times. Don't waste it on TV. Unplug from the distractions and propaganda, and unfilter your life! ",
+			"host": "Jupiter Broadcasting",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.jupiterbroadcasting.com/images/itunes-badge.jpg",
+			"feed": "http://www.jupiterbroadcasting.com/feeds/unfilterMP3.xml"
+		},
+		{
+			"title": "SciByte Audio",
+			"description": "Join a degree-holding physicist and a card-carrying science enthusiast, as we cover the ins-and-outs of scientific subjects, ranging from astronomy to particle physics, and everything in between! We’ll also get into the details of the technology used to discover the secrets of the universe.Science and technology, in bite-sized (and delicious) chunks.",
+			"host": "Jupiter Broadcasting",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.jupiterbroadcasting.com/images/SciByteBadgeMP3.jpg",
+			"feed": "http://feeds.feedburner.com/scibyteaudio"
+		},
+		{
+			"title": "FauxShow MP3",
+			"description": "It's not a real show, but it's always fun and informative. Jupiter Broadcasting's favorite unofficial show!",
+			"host": "Jupiter Broadcasting",
+			"category": "Jupiter Brodacasting",
+			"logo": "http://www.jupiterbroadcasting.com/images/FauxShowStillcrop600.jpg",
+			"feed": "http://www.jupiterbroadcasting.com/feeds/FauxShowMP3.xml"
+		},
+		{
+			"title": "The College Years",
+			"description": "The Sound of Young America, today, is an award-winning and beloved syndicated public radio show. It was once, though, a college radio show, and this feed documents that show -- the greatest college radio show of all time.The greatest college radio show of all time. The Sound of Young America is today an award-winning syndicated public radio show. Five years ago, it was three guys' college radio show. The College Years takes you into that history.",
+			"host": "splangy@splangy.com (Jesse Thorn)Jesse Thorn",
+			"category": "Maxim Fun",
+			"logo": "http://www.splangy.com/radio/banners/collegeyears.jpg",
+			"feed": "http://feeds.feedburner.com/collegeyears"
+		},
+		{
+			"title": "NPR: Bullseye with Jesse Thorn",
+			"description": "Bullseye from NPR is your curated guide to culture. Jesse Thorn hosts in-depth interviews with brilliant creators, culture picks from our favorite critics and irreverent original comedy. Bullseye has been featured in Time, The New York Times, GQ and McSweeney's, which called it thekindofshowpeoplelistentoinamoreperfectworld. (Formerly known as The Sound of Young America.)",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/4613132.jpg",
+			"feed": "http://feeds.feedburner.com/tsoya"
+		},
+		{
+			"title": "Jordan, Jesse GO!",
+			"description": "Jordan, Jesse, Go! is a hilarious mix of the intelligent, silly and profoundly vulgar. Jesse Thorn (NPR's Bullseye) and Jordan Morris (Fuel TV) talk about feelings, sex, culture and miniature donkeys. An iTunes staff pick.",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/1713695.jpg",
+			"feed": "http://feeds.feedburner.com/thornmorris"
+		},
+		{
+			"title": "The Kasper Hauser Comedy Podcast",
+			"description": "The Kasper Hauser Comedy Podcast",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/2425627.jpg",
+			"feed": "http://feeds.feedburner.com/kasperhauser"
+		},
+		{
+			"title": "Coyle and Sharpe: The Imposters",
+			"description": "This podcast is produced by maximumfun.org.  Go there for more information.",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/1938855.jpg",
+			"feed": "http://feeds.feedburner.com/coyleandsharpe"
+		},
+		{
+			"title": "Stop Podcasting Yourself",
+			"description": "Vancouver's top comedy podcast. Hosted by Graham Clark and Dave Shumka, with weekly guests. Hilarious weekly guests? Yup.Vancouver's top comedy podcast? Hosted by Graham Clark and Dave Shumka, with weekly guests. Hilarious weekly guests? Yup.",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/5912177.jpg",
+			"feed": "http://feeds.feedburner.com/stoppodcastingyourself"
+		},
+		{
+			"title": "Judge John Hodgman",
+			"description": "John Hodgman's Today in the Past podcast is now The Judge John Hodgman Podcast.  Have your pressing issues decided by Famous Minor Television Personality John Hodgman, Certified Judge.  If you'd like John Hodgman to solve your pressing issue, simply email it, along with your phone number, to hodgman@maximumfun.org.  THAT IS ALL.",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/6357063.jpg",
+			"feed": "http://feeds.feedburner.com/judgejohnhodgman"
+		},
+		{
+			"title": "My Brother, My Brother And Me",
+			"description": "Free advice, from three of the world's most qualified experts.Free advice from three of the world's most qualified, most related experts: Justin, Travis and Griffin McElroy. For one-half to three-quarters of an hour every Monday, we tell people how to live their lives, because we're obviously doing such a great job ",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/7416218.jpg",
+			"feed": "http://feeds.feedburner.com/mbmbam"
+		},
+		{
+			"title": "Throwing Shade",
+			"description": "Comedians Erin Gibson and Bryan Safi take a weekly look at all the issues important to ladies and gays...and treat them with much less respect than they deserve. ",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/6608452.jpg",
+			"feed": "http://throwingshade.libsyn.com/rss"
+		},
+		{
+			"title": "International Waters",
+			"description": "International Waters is a pop culture comedy quiz show where land laws do not apply. Join host Dave Holmes and competing teams of world-famous comedians from the US and UK in a hilarious and lively test of pop culture knowledge (and the ability to make up baloney when that knowledge fails). It's part panel show, part trivia quiz and all laughs. It's also a little embarrassed it wrote that last sentence.",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/7146714.jpg",
+			"feed": "http://www.maximumfun.org/feeds/iw.xml"
+		},
+		{
+			"title": "the memory palace",
+			"description": "the memory palaceFrom award-winning public radio producer, Nate DiMeo, comes The Memory Palace. Short, surprising stories of the past, sometimes heartbreaking, sometimes hysterical, always super-great. For history buffs, fans of public radio shows like This American Life,",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/1294273.jpg",
+			"feed": "http://feeds.feedburner.com/thememorypalace"
+		},
+		{
+			"title": "RISK!",
+			"description": "If you like The Moth, This American Life or Snap Judgment, take a walk on the wilder side with RISK! Your colorful host Kevin Allison (of the legendary comedy group The State) helms this surprisingly uncensored show where people tell jaw-dropping true stories they never thought they'd dare to share in public. RISK! is hilarious, heart-wrenching and remarkably real. Think you've heard it all? Fasten your seatbelt.True Tales Boldly Told!",
+			"host": "kevinallison1970@yahoo.com (Kevin Allison)Kevin Allison",
+			"category": "Maxim Fun",
+			"logo": "http://risk-show.com/podcast/files/ReneCoverArt.jpg",
+			"feed": "http://feeds.feedburner.com/risk-show/yWzy"
+		},
+		{
+			"title": "Dave Hill's Podcasting Incident",
+			"description": "Dave Hill's Podcasting Incident is an incredible podcast by comedian/musician/writer/actor/thinking man/highly-boneable public figure Dave Hill on which he interviews assorted people of note/whoever he can talk into it- comedians, musicians, actors, authors, convicts, etc.  If you like podcasts and/or the Internet in general, you will really like this podcast because it is pretty much the greatest of all-time.  I just checked.  For more info on this and other Dave-related topics, go to www.davehillonline.com, Dave's website on the Internet.  Also, Dave Hill's first book, TASTEFUL NUDES (St. Martin's Press) will be available for human consumption in May 2012.  So there.",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/2722482.jpg",
+			"feed": "http://davehillincident.libsyn.com/rss"
+		},
+		{
+			"title": "One Bad Mother",
+			"description": "One Bad Mother is a comedy podcast hosted by Biz Ellis and Theresa Thorn. Join us every week as we deal with the thrills and embarrassments of motherhood and strive for less judging, and more laughing...(then, crying).",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/5443520.jpg",
+			"feed": "http://maximumfun.org/feeds/onebadmother.xml"
+		},
+		{
+			"title": "Wham Bam Pow with Cameron Esposito",
+			"description": "Wham Bam Pow with Cameron Esposito is an action/scifi moviecast. Each week, host Cameron Esposito and panelists Rhea Butcher and Ricky Carmona will terminate your boredom with movies news, interviews & watch along film reviews. It's one show to rule them all!",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/5640658.jpg",
+			"feed": "http://maximumfun.org/feeds/wbp.xml"
+		},
+		{
+			"title": "Sawbones: A Marital Tour of Misguided Medicine",
+			"description": "Join Dr. Sydnee McElroy and her husband Justin for a tour of all the dumb, bad, gross, weird and wrong ways we've tried to fix people. ",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/5795463.jpg",
+			"feed": "http://sawbones.libsyn.com/rss"
+		},
+		{
+			"title": "Song Exploder",
+			"description": "A podcast where musicians take apart their songs, and piece by piece, tell the story of how they were made.",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/7339307.jpg",
+			"feed": "http://songexploder.libsyn.com/rss"
+		},
+		{
+			"title": "Oh No Ross and Carrie",
+			"description": "Welcome to Oh No, Ross and Carrie!, the show where we don’t just report on fringe science, spirituality, and claims of the paranormal, but take part ourselves. Follow us as we join religions, undergo alternative treatments, seek out the paranormal, and always find the humor in life’s biggest mysteries. We show up - so you don’t have to. Every month we share a new investigation, along with occasional bonus interviews and updates.",
+			"host": "Oh No Ross and Carrie",
+			"category": "Maxim Fun",
+			"logo": "http://static.squarespace.com/static/5138c39ee4b031149dd93597/t/52c4b646e4b0a77a5034f10d/1388623432725/1500w/MaxFunPodcasts_CoverArt_OhNoRossandCarrie2_1400px.jpg",
+			"feed": "http://feeds.feedburner.com/OhNoPodcast"
+		},
+		{
+			"title": "The Goosedown",
+			"description": "Hosted by Kim Clark & Jasper Redd | The Goosedown is a podcast that celebrates the arts & entertainment.",
+			"host": "The Goosedown",
+			"category": "Maxim Fun",
+			"logo": "http://i1.sndcdn.com/avatars-000064575214-6m5x12-original.jpg?e76cf77",
+			"feed": "http://feeds.soundcloud.com/users/soundcloud:users:38191213/sounds.rss"
+		},
+		{
+			"title": "Lady to Lady",
+			"description": "Comedians Barbara Gray, Brandie Posey and Tess Barker welcome a fourth funny lady to the table to bring you gut-busting debates over current events, pop culture and embarrassingly hilarious personal revelations for a podcast full of insanity and laughs. Springing from the hit live talk show at the Upright Citizen's Brigade Los Angeles, Lady to Lady brings the funny with visits from weirdo recurring characters & on-the-fly theme songs - making it one of the most unique and ridiculous ways you can spend an hour.",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/6668506.jpg",
+			"feed": "http://ladytolady.libsyn.com/rss"
+		},
+		{
+			"title": "Throwing Shade",
+			"description": "Comedians Erin Gibson and Bryan Safi take a weekly look at all the issues important to ladies and gays...and treat them with much less respect than they deserve. ",
+			"host": "",
+			"category": "Maxim Fun",
+			"logo": "http://assets.libsyn.com/content/6608452.jpg",
+			"feed": "http://throwingshade.libsyn.com/rss"
+		},
+		{
+			"title": "Big Pop Fun with Tom Wilson",
+			"description": "Big Pop Fun with Tom Wilson is a podcast dedicated to pop, and the lives lived within its gentle influence, or tightening grasp, or soul crushing evil claws, depending on who you are. Unapologetically big and fun, Tom has lived a life that the world has seen through pop cultural lenses, and you can keep them on or take them off, but he's going to keep going anyway. Enjoy!",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463417.jpg",
+			"feed": "http://bigpopfunpodcast.libsyn.com/rss"
+		},
+		{
+			"title": "Bizarre States",
+			"description": "Join Jessica Chobot and Andrew Bowser as they lift the veil and showcase the hauntings, urban myths, unsolved murders and general oddities that everyone has experienced but no one wants to talk about.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/7345554.jpg",
+			"feed": "http://spookyshit.libsyn.com/rss"
+		},
+		{
+			"title": "Cashing in with T.J. Miller",
+			"description": "Host Cash Levy can't get any other guests, although he'd like to.  Listen to thought provoking nonsense as Cash interviews T.J. Miller over and over again.  Aren't you tired of everybody interviewing more than one person? It's the podcast no one has heard of and everyone is talking about.  Philosophy, unsolicited advice, answers to questions you didn't have... They pistol whip the worlds mysteries into submission- saving lives one podcast at a time, and ruining a life every tenth.  Just listen... you need to hear this.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463422.jpg",
+			"feed": "http://cashinginwithtjmiller.libsyn.com/rss"
+		},
+		{
+			"title": "Chewin' It with Kevin and Steve",
+			"description": "Kevin Heffernan & Steve Lemme (creators/stars of such movies as Super Troopers & Beerfest) chew the fat, share stories and have a few laughs with each other AND some great guests! ",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463398.jpg",
+			"feed": "http://chewinit.libsyn.com/rss"
+		},
+		{
+			"title": "Competitive Erotic Fan Fiction with Bryan Cook",
+			"description": "Comedians compete writing and performing Erotic Fan Fiction pieces, based upon their whims or audience suggestion. It’s really stupid.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5728417.jpg",
+			"feed": "http://eroticfanfiction.libsyn.com/rss"
+		},
+		{
+			"title": "Comic Book Club",
+			"description": "A Live Comic Book Talk Show!",
+			"host": "Nerdist Industries",
+			"category": "Nerdist",
+			"logo": "http://comicbookclublive.com/wp-content/uploads/powerpress/comicbookclub-1400.jpg",
+			"feed": "http://comicbookclublive.com/?feed=podcast"
+		},
+		{
+			"title": "Ding-Donger with Matt Braunger",
+			"description": "Comedian Matt Braunger hitches a ride with you for thirty minutes to talk, spin yarns, make jokes, and above all, entertain. Then he gets out of the car (or iPod, what have you, etc). No guests, no agenda, no lack of lively times. Real fun from a real ding-dong. ",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5574541.jpg",
+			"feed": "http://dingdonger.libsyn.com/rss"
+		},
+		{
+			"title": "Dining with Doug and Karen",
+			"description": "Enjoy a meal with comedians and old friends Karen Anderson and Doug Benson. Each episode will feature a different chef showing off their creations, and the conversation between Doug and Karen that goes with it.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463393.jpg",
+			"feed": "http://dinigwithdougandkaren.libsyn.com/rss"
+		},
+		{
+			"title": "Humans From Earth with Geoff Boucher",
+			"description": "Humans From Earth is a stellar pop-culture podcast hosted by Geoff Boucher where he interviews actors, writers, musicians and other interesting humans!",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/7273209.jpg",
+			"feed": "http://humansfromearth.libsyn.com/rss"
+		},
+		{
+			"title": "James Bonding",
+			"description": "Matt and Matt. Bond over Bond. Matt Gourley and Matt Mira love James Bond so much they decided to make a podcast about it. Each episode they invite a guest to dive deep into one movie from the greatest film franchise known to man.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/6067254.jpg",
+			"feed": "http://jamesbonding.libsyn.com/rss"
+		},
+		{
+			"title": "Jonah Raydio",
+			"description": "Jonah Ray has some friends over to his house to drink, listen to music, and converse....with sexy results.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463407.jpg",
+			"feed": "http://jonahraydio.libsyn.com/rss"
+		},
+		{
+			"title": "Kickin' It Mary Lynn Style",
+			"description": "Mary Lynn talks about unprotected sex and other life changing events with comedians, actors, and all manner of people who work in showbiz.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/4738948.jpg",
+			"feed": "http://kickingitmarylynn.libsyn.com/rss"
+		},
+		{
+			"title": "Making It with Riki Lindhome",
+			"description": "Riki Lindhome talks to people in the entertainment industry and asks them how they got their careers. There's no road map for show business and everyone's story is different, so Riki interviews people about how they started, how they've kept it going and what they've learned along the way.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5926373.jpg",
+			"feed": "http://makingitriki.libsyn.com/rss"
+		},
+		{
+			"title": "Mike and Tom Eat Snacks",
+			"description": "Michael Ian Black and Tom Cavanagh eat snacks and talk about it!",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463399.jpg",
+			"feed": "http://mates.libsyn.com/rss"
+		},
+		{
+			"title": "Nerdist Writers Panel",
+			"description": "The Nerdist Writers Panel series is an informal chat moderated by Ben Blacker (co-creator of the Thrilling Adventure Hour; writer for Supah Ninjas, Supernatural, among others) with professional writers about the process and business of writing. Covering TV, film, comic books, music, novels, and any other kind of writing about which you'd care to hear. Proceeds from the live panels benefit 826LA, the national non-profit tutoring program.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5925927.jpg",
+			"feed": "http://nerdistwriters.libsyn.com/rss"
+		},
+		{
+			"title": "The Nerdist",
+			"description": "Nerdy nerdness comedy podcast w/ Chris Hardwick, Jonah Ray & Matt Mira.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5515523.jpg",
+			"feed": "http://nerdist.libsyn.com/rss"
+		},
+		{
+			"title": "Pop My Culture",
+			"description": "a Podcast Sensation(ish) hosted by Cole Stratton and Vanessa Ragland",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "",
+			"feed": "http://www.popmyculturepodcast.com/feed/"
+		},
+		{
+			"title": "Sex Nerd Sandra",
+			"description": "Curious about the naughty side of life? Come giggle with Sandra at the cuddly side of the sex pool! Exploring fascinating topics & perspectives on sex & love, join sexuality educator Sandra Daugherty & special guests for a loving laugh at the fundamentals of human nature.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463415.jpg",
+			"feed": "http://sexnerdsandra.libsyn.com/rss"
+		},
+		{
+			"title": "Terrified with Dave Ross",
+			"description": "Dave Ross interviews comedians, musicians, and other famous types to find out what they don't like about themselves. ",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5864837.jpg",
+			"feed": "http://terrified.libsyn.com/rss"
+		},
+		{
+			"title": "The Alton Browncast",
+			"description": "TV Host and Foodist Alton Brown chats with celebrities about their culinary passions, takes calls from listeners, and basically does whatever he flippin’ wants for 45 minutes.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5828316.jpg",
+			"feed": "http://thebrowncast.libsyn.com/rss"
+		},
+		{
+			"title": "The Indoor Kids with Kumail Nanjiani and Emily V. Gordon",
+			"description": "The Indoor Kids isn't just about video games, but it isn't not about video games. The Indoor Kids is all about the kind of lifestyle you have to lead in order to be a proper Gamer, capital G. Join hosts Kumail Nanjiani and Emily V. Gordon as they take a journey from childhood Shinobi obsessions, up through the best and worst video game adaptations of movies. Grab your Energy Swords(Mountain Dew liter bottles)!",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463414.jpg",
+			"feed": "http://theindoorkids.libsyn.com/rss"
+		},
+		{
+			"title": "The K Ohle with Kurt Braunohler",
+			"description": "The  K Ohle is a multi-format podcast hosted by comedian Kurt Braunohler. \n FORMATS INCLUDE (but are not limited to):The Boat Show – The Best Non-Boating Boat Show on the Internet – Kurt and his guests talk at length about boating, a topic of which they have no knowledge. PETophilia – “The Animal Show for People Who Think Animals are Dumb” – guests get into it about their pets; plus, Animal Stories of the Week, Fact Animal Facts, and Who’s Dumber, the fun game the humiliates animals!\n Get Lost! – “This Feels a Bit Rape-y” - Every episode, Kurt takes a guest into his car, blindfolds them, drives them somewhere they’ve never been, and they have to figure out where they are and how they’d get back. And they have some chats along the way. FactTime - Kurt and co-host Matt Oberg unpack and investigate improvised stories from comedians while applying faulty scientific theories in a very produced and tightly edited format. If you love Radiolab, you'll love FactTime",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5607156.jpg",
+			"feed": "http://kohle.libsyn.com/rss"
+		},
+		{
+			"title": "The Mutant Season",
+			"description": "Eleven year old Gil talks to adults with cool jobs and shares things that he likes with you!",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5926369.jpg",
+			"feed": "http://themutantseason.libsyn.com/rss"
+		},
+		{
+			"title": "The Todd Glass Show",
+			"description": "Todd Glass and friends talk about stuff.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5689236.jpg",
+			"feed": "http://toddglassshow.libsyn.com/rss"
+		},
+		{
+			"title": "The Wrestling Compadres Slamcast",
+			"description": "Pro Wrestling! Comedy! Awesome guests! Steel chair shots & high-fives! Yep, your new favorite show. Every Wednesday.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/7389356.jpg",
+			"feed": "http://wrestlingcompadres.libsyn.com/rss"
+		},
+		{
+			"title": "Thrilling Adventure Hour",
+			"description": "The Thrilling Adventure Hour is a staged show in the style of old-time radio performed by your favorite stars from the worlds of television, film, comedy, sketch, animation, and the stage. It is created and written by Ben Acker and Ben Blacker. For more information, tickets to the live show, and pretty pictures, please visit ThrillingAdventureHour.com.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5705638.jpg",
+			"feed": "http://thrillingadventurehour.libsyn.com/rss"
+		},
+		{
+			"title": "Today We Learned",
+			"description": "'Today We Learned' is a podcast of knowledge! Don't let the name confuse you, it's technically a weekly podcast. Razzle and Dan labor down in the knowledge mines of the Internet to bring you the latest, greatest and sometimes weirdest facts and trivia the world has to offer. Join the guys and a special guest every Monday as they take you on a tour de force of fun-filled factoids in less time than it takes to do your laundry. Who knows? You might just learn something.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5978204.jpg",
+			"feed": "http://todaywelearned.libsyn.com/rss"
+		},
+		{
+			"title": "We're Alive - A Zombie Story of survival",
+			"description": "A classic style radio drama, updated for today with a full sound design and a large cast of actors. This audio drama focuses on a group of survivors in a world on the brink of collapse. We air 3 episodes a month, taking a week off between chapters.Following Survivors through Undead L.A.",
+			"host": "waylandprod@gmail.com (Wayland Productions)Wayland Productions",
+			"category": "Nerdist",
+			"logo": "http://www.zombiepodcast.com/rss/Artwork/wa_logo1200.jpg",
+			"feed": "http://feeds.feedburner.com/itpc/wwwwaylandws/Wayland_Productions/Were_Alive_-_Podcast/rssxml"
+		},
+		{
+			"title": "What's New with Christian Spicer",
+			"description": "Amazing comedians work on new material as recorded live at the NerdMelt Showroom in Los Angeles and then discuss their writing process, what worked, what didn't, and more with each other and host Christian Spicer. ",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/6320827.jpg",
+			"feed": "http://whatsnew.libsyn.com/rss"
+		},
+		{
+			"title": "You Made It Weird with Pete Holmes",
+			"description": "Everybody has secret weirdness, Pete Holmes gets comedians to share theirs.",
+			"host": "",
+			"category": "Nerdist",
+			"logo": "http://assets.libsyn.com/content/5463425.jpg",
+			"feed": "http://youmadeitweird.libsyn.com/rss"
+		},
+		{
+			"title": "On the Media",
+			"description": "The smartest, wittiest, most incisive media analysis show in the universe. The weekly one-hour podcast of NPR’s On the Media is your guide to how the media sausage is made.  Hosts Brooke Gladstone and Bob Garfield examine threats to free speech and government transparency, criticize media coverage of the week’s big stories, examine new technology, and unravel hidden political narratives in the media. In an age of information overload, OTM helps you dig your way out. The Peabody Award winning show is produced by WNYC Radio.",
+			"host": "WNYC, New York Public Radio",
+			"category": "NPR",
+			"logo": "http://www.wnyc.org/i/raw/1/onthemedia_3.png",
+			"feed": "http://feeds.wnyc.org/onthemedia"
+		},
+		{
+			"title": "NPR Programs: Tell Me More Podcast",
+			"description": "Capturing the headlines, issues and pleasures relevant to multicultural life in America, NPR's Tell Me More focuses on the way we live, intersect and collide in a diverse world.  Hosted by Michel Martin.",
+			"host": "",
+			"category": "NPR",
+			"logo": "http://media.npr.org/images/podcasts/2013/primary/Tell_Me_More_1400.jpg",
+			"feed": "http://www.npr.org/rss/podcast.php?id=46"
+		},
+		{
+			"title": "NPR: Ask Me Another Podcast",
+			"description": "Ask Me Another blends brainteasers and local pub trivia night with comedy and music into a rambunctious hour-long show. Play along as Host Ophira Eisenberg invites in-studio guests and listeners alike to stretch their noggins, tickle their funny bones, and enjoy witty banter and guitar riffs from house musician Jonathan Coulton. What you'll hear resembles the casual intimacy of game night at a friend's house: one where scores are forgotten in favor of hilarious gaffes.",
+			"host": "",
+			"category": "NPR",
+			"logo": "http://media.npr.org/images/podcasts/primary/icon_510299.jpg",
+			"feed": "http://www.npr.org/rss/podcast.php?id=510299"
+		},
+		{
+			"title": "NPR: Snap Judgment Podcast",
+			"description": "Snap Judgment is the smoking-hot new show from NPR.  Winner of the Public Radio Talent Quest, Glynn Washington delivers a raw, musical brand of storytelling, daring listeners to see the world through the eyes of another.",
+			"host": "",
+			"category": "NPR",
+			"logo": "http://media.npr.org/images/podcasts/primary/icon_510294.jpg",
+			"feed": "http://www.npr.org/rss/podcast.php?id=510294"
+		},
+		{
+			"title": "Radiolab from WNYC",
+			"description": "Radiolab is a show about curiosity. Where sound illuminates ideas, and the boundaries blur between science, philosophy, and human experience. Radiolab is heard around the country on more than 450 NPR member stations. Check your local station for airtimes. Embed the Radiolab widget on your blog or website. Radiolab is supported, in part, by the National Science Foundation and the Alfred P. Sloan Foundation, enhancing public understanding of science and technology in themodern world. More information about Sloan at www.sloan.org. All press inquiries may be directed to Jennifer Houlihan Roussel at (646) 829-4497.",
+			"host": "WNYC, New York Public Radio",
+			"category": "NPR",
+			"logo": "http://www.wnyc.org/i/raw/1/Radiolab_1.png",
+			"feed": "http://feeds.wnyc.org/radiolab"
+		},
+		{
+			"title": "NPR: TED Radio Hour Podcast",
+			"description": "The TED Radio Hour is a journey through fascinating ideas: astonishing inventions, fresh approaches to old problems, new ways to think and create. Based on Talks given by riveting speakers on the world-renowned TED stage, each show is centered on a common theme - such as the source of happiness, crowd-sourcing innovation, power shifts, or inexplicable connections. The TED Radio Hour is hosted by Guy Raz, and is a co-production of NPR & TED. Follow the show @TEDRadioHour.",
+			"host": "",
+			"category": "NPR",
+			"logo": "http://media.npr.org/images/podcasts/primary/icon_510298.jpg",
+			"feed": "http://www.npr.org/rss/podcast.php?id=510298"
+		},
+		{
+			"title": "This American Life",
+			"description": "Official free, weekly podcast of the award-winning radio show ThisAmericanLife. First-person stories and short fiction pieces that are touching, funny, and surprising. Hosted by Ira Glass, from WBEZ Chicago Public Radio. In mp3 and updated Mondays.",
+			"host": "Chicago Public Media",
+			"category": "NPR",
+			"logo": "http://www.thisamericanlife.org/sites/all/themes/thislife/images/logo-square-1400.jpg",
+			"feed": "http://feeds.thisamericanlife.org/talpodcast"
+		},
+		{
+			"title": "NPR Programs: Fresh Air Podcast",
+			"description": "Fresh Air from WHYY, the Peabody Award-winning weekday magazine of contemporary arts and issues, is one of public radio's most popular programs. Hosted by Terry Gross, the show features intimate conversations with today's biggest luminaries.",
+			"host": "",
+			"category": "NPR",
+			"logo": "http://media.npr.org/images/podcasts/2013/primary/fresh_air.png",
+			"feed": "http://www.npr.org/rss/podcast.php?id=13"
+		},
+		{
+			"title": "WBUR-FM: Here & Now Podcast",
+			"description": "National and international news analysis, film, theater, music and more, from WBUR and NPR",
+			"host": "",
+			"category": "NPR",
+			"logo": "http://media.npr.org/images/podcasts/primary/icon_510051.jpg",
+			"feed": "http://www.npr.org/rss/podcast.php?id=510051"
+		},
+		{
+			"title": "NPR: Latino USA Podcast",
+			"description": "Latino USA, the radio journal of news and culture, is the only national, English-language radio program produced from a Latino perspective.",
+			"host": "",
+			"category": "NPR",
+			"logo": "http://media.npr.org/images/podcasts/primary/icon_510016.jpg",
+			"feed": "http://www.npr.org/rss/podcast.php?id=510016"
+		},
+		{
+			"title": "NPR Programs: Wait Wait... Don't Tell Me! Podcast",
+			"description": "NPR's weekly current events quiz.  Have a laugh and test your news knowledge while figuring out what's real and what we've made up.",
+			"host": "",
+			"category": "NPR",
+			"logo": "http://media.npr.org/images/podcasts/2013/primary/wait_wait.jpg",
+			"feed": "http://www.npr.org/rss/podcast.php?id=35"
+		},
+		{
+			"title": "The Waves of Tech | Technology impacts to life",
+			"description": "Technology news and how it relates to you.  Waves of Tech podcast is dedicated to technology and how it influences and impacts your daily life.",
+			"host": "The Waves of Tech | NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/wot/wot1400.jpg",
+			"feed": "http://netcaststudio.com/podcasts/wot/wot.xml"
+		},
+		{
+			"title": "Busy Ladies | Women's Discussion",
+			"description": "Women's discussion from a personal and unique perspective.  Busy Ladies takes on unique viewpoints with health, cooking, family and and daily life.",
+			"host": "Busy Ladies | NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/busyladies/bl1400.jpg",
+			"feed": "http://netcaststudio.com/podcasts/busyladies/busyladies.xml"
+		},
+		{
+			"title": "The Tech of Sports | Sports and Technology Integration",
+			"description": "Many people don't realize that much of the technology we use in our everyday life was first developed for use in the sports world.  From the shoes we wear on our feet to the high definition televisions in our living room, the sports universe is a breeding ground for technology.  Writer and Photographer Rick Limpert will examine this each week on The Tech of Sports - With guests which include athletes, inventors and journalists that cover the intersection of sports and technology.  It might be low tech, it might be high tech, but it is tech and is probably connected to sports and the games we watch on TV and play in our backyards. ",
+			"host": "The Tech of Sports | NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/ssportstech/tos1400.jpg",
+			"feed": "http://netcaststudio.com/podcasts/ssportstech/thetechofsports.xml"
+		},
+		{
+			"title": "24 Jack Is Back",
+			"description": "Based on the TV show 24 Live Another Day is a limited twelve week series. Jack Bauer finds himself on the run in London; once again, as he attempts to thwart a global disaster.",
+			"host": "24 Jack Is Back | NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/24/jackisback1400.jpg",
+			"feed": "http://netcaststudio.com/podcasts/24/liveanotherday.xml"
+		},
+		{
+			"title": "Tehachapi Mountain Voice - Community Updates And Information",
+			"description": "Tehachapi Mountain Voice brings you local events, meetings, information, recreation and news for the community of Tehachapi California.",
+			"host": "Tehachapi Mountain Voice - NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/tmv/tmv1400.jpg",
+			"feed": "http://netcaststudio.com/podcasts/tmv/tmv.xml"
+		},
+		{
+			"title": "Conversation Corner | Interviews and Discussion",
+			"description": "The Conversation Corner covers a wide variety of topics interviewing special guests in their industry.",
+			"host": "Conversation Corner | NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/conversation/conversation1400.jpg",
+			"feed": "http://netcaststudio.com/podcasts/conversation/corner.xml"
+		},
+		{
+			"title": "Riffraf | Alternative. Indie. Punk. Pop R&B. Folk and Rock Music",
+			"description": "Alternative. Indie. Punk. Pop R&B. Folk and Rock Music.",
+			"host": "Riffraf | NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/riffraf/riffrafsmlogo1400itunes.jpg",
+			"feed": "http://netcaststudio.com/podcasts/riffraf/rifraff.xml"
+		},
+		{
+			"title": "Flash Past | Trends and events in history",
+			"description": "The future is made of the past. Flash Past is not your average podcast. Hosts discuss pop culture, history and their own experiences. This is an opportunity for listeners to learn a bit about the origins of some of the most memorable trends and events in our country’s history.",
+			"host": "Flash Past | NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/flashpast/fp_new_1400.jpg",
+			"feed": "http://netcaststudio.com/podcasts/flashpast/flashpast.xml"
+		},
+		{
+			"title": "PGA Tour Radio | Technology Segment",
+			"description": "Rick Limpert joins Brian Katrek for Tech Tuesday on PGA Tour Radio. Rick discusses gadgets and tech, on and off the course, with a touch of humor, and you might even learn something.",
+			"host": "PGA Tour Radio | NetCast Studio",
+			"category": "NetCast Studio",
+			"logo": "http://netcaststudio.com/podcasts/pga/pga1400.jpg",
+			"feed": "http://netcaststudio.com/podcasts/pga/pga.xml"
+		},
+		{
+			"title": "Android Authority (HD MP4 - 30fps)",
+			"description": "Android Authority is an established, independent voice that covers the latest Android news, Android phone reviews, Android tablet reviews, how-tos, and other news related to the world of Android.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/androidauthority/androidauthority.jpg",
+			"feed": "http://revision3.com/androidauthority/feed/mp4-hd30/"
+		},
+		{
+			"title": "Anyhoo (HD MP4 - 30fps)",
+			"description": "Anyhoo loves fun facts, pop culture and bringing you mind-bending stories and perspective every day. List on, brother, list on. We'll always be here with an informative distraction.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/anyhoo/anyhoo.jpg",
+			"feed": "http://revision3.com/anyhoo/feed/mp4-hd30/"
+		},
+		{
+			"title": "Amplified (HD MP4 - 30fps)",
+			"description": "Amplified is an internet reality show deep in the workings of Soundman, the top car audio shop in southern California since the 1970s. Follow the edgy crew as they hook up the sickest audio systems and have a blast while doing so.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/amplified/amplified.jpg",
+			"feed": "http://revision3.com/amplified/feed/mp4-hd30/"
+		},
+		{
+			"title": "The Ben Heck Show (HD MP4 - 30fps)",
+			"description": "Season 4 premieres November 4th with brand new episodes each week! Tune in to join master hacker, engineer, and conjurer of cool stuff Ben Heck as he tackles all new projects. Submit YOUR idea for what Ben should build next at BenHeck@Revision3.com.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/tbhs/tbhs.jpg",
+			"feed": "http://revision3.com/tbhs/feed/mp4-hd30/"
+		},
+		{
+			"title": "DIY Tryin (HD MP4 - 30fps)",
+			"description": "DIY Tryin is a weekly, hands-on adventure in do-it-yourself and do it with others. Hosted by Patrick Norton and Michael Hand, whether it's experimenting with cronuts in the kitchen, welding up a bombproof bike rack, making your or building an amazing media server, DIY Tryin is ready to help viewers develop the skills to build, not buy, one project at a time! Cronuts!",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/diytryin/diytryin.jpg",
+			"feed": "http://revision3.com/diytryin/feed/mp4-hd30/"
+		},
+		{
+			"title": "Fandom Beat (HD MP4 - 30fps)",
+			"description": "Welcome to Fandom Beat, a place for all of us to celebrate the stuff we're obsessed with! Shows on Fandom Beat will cover our favorite topics starting with My Little Pony, anime and K-pop, and expand from there. Let us know what you're a fan of and stick around for more to come!",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/fandombeat/fandombeat.jpg",
+			"feed": "http://revision3.com/fandombeat/feed/mp4-hd30/"
+		},
+		{
+			"title": "Film Riot (HD MP4 - 30fps)",
+			"description": "Film Riot is a how-to trip through filmmaking from the mind of Ryan Connolly. From how to make great effects to following Triune Films through production, Film Riot explores the art of filmmaking in a way you've never seen.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/filmriot/filmriot.jpg",
+			"feed": "http://revision3.com/filmriot/feed/mp4-hd30/"
+		},
+		{
+			"title": "GeekBeat.TV (HD MP4 - 30fps)",
+			"description": "GeekBeat.TV presents the day's hottest stories, tips, trends, and news all in one place. It's the next can't-miss show for anyone looking to keep their finger on the pulse of the wired world.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/geekbeattv/geekbeattv.jpg",
+			"feed": "http://revision3.com/geekbeattv/feed/mp4-hd30/"
+		},
+		{
+			"title": "Hak5 (HD MP4 - 30fps)",
+			"description": "Hak5 isn't your typical tech show. It's hacking in the old-school sense, covering everything from network security, open source and forensics to DIY modding and the homebrew scene.  Damn the warranties, it's time to Trust your Technolust.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/hak5/hak5.jpg",
+			"feed": "http://revision3.com/hak5/feed/mp4-hd30/"
+		},
+		{
+			"title": "HD Nation (HD MP4 - 30fps)",
+			"description": "HD Nation is your guide to the best in HD content, and the best in home theater gear, no matter what your budget is!",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/hdnation/hdnation.jpg",
+			"feed": "http://revision3.com/hdnation/feed/mp4-hd30/"
+		},
+		{
+			"title": "The New Show (HD MP4 - 30fps)",
+			"description": "What's The New Show? A new spin on everything from trending topics to breaking news to bad movies. If there's an opinion to be had, you better believe that we've formed one. Check back everyday for new content, videos, and breaking opinions. If the internet is talking about it, you can sure bet that we are too!",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/thenewshow/thenewshow.jpg",
+			"feed": "http://revision3.com/thenewshow/feed/mp4-hd30/"
+		},
+		{
+			"title": "The Philip DeFranco Show (HD MP4 - 30fps)",
+			"description": "Your daily source of news and commentary about the world around you.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/philipdefranco/philipdefranco.jpg",
+			"feed": "http://revision3.com/philipdefranco/feed/mp4-hd30/"
+		},
+		{
+			"title": "RatedRR (HD MP4 - 30fps)",
+			"description": "Richard Ryan is coming at you with action-packed episodes of TheBreakdown and TechAssassin on RatedRR! Watch your favorite gadgets get blown up on TechAssassin in spectacular slow motion. On TheBreakdown see your favorite scenes from movies & video games in real life.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/ratedrr/ratedrr.jpg",
+			"feed": "http://revision3.com/ratedrr/feed/mp4-hd30/"
+		},
+		{
+			"title": "Rev3Games (HD MP4 - 30fps)",
+			"description": "Your source for original gaming content! From behind-the-scenes segments to breaking news, reviews, and the hottest previews, Rev3Games has you covered.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/rev3gamesoriginals/rev3gamesoriginals.jpg",
+			"feed": "http://revision3.com/rev3gamesoriginals/feed/mp4-hd30/"
+		},
+		{
+			"title": "SGNL by Sony (HD MP4 - 30fps)",
+			"description": "A close-up look at Sony's gadgets, games, music and movies.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/sgnlbysony/sgnlbysony.jpg",
+			"feed": "http://revision3.com/sgnlbysony/feed/mp4-hd30/"
+		},
+		{
+			"title": "SoldierKnowsBest (HD MP4 - 30fps)",
+			"description": "SoldierKnowsBest is one of the most trusted online technology review shows. Covering smartphones, tablets, computers and all your must-have gadgets, this isn't your usual tech lecture series.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/soldierknowsbest/soldierknowsbest.jpg",
+			"feed": "http://revision3.com/soldierknowsbest/feed/mp4-hd30/"
+		},
+		{
+			"title": "SourceFed (HD MP4 - 30fps)",
+			"description": "Part of the Phil DeFranco Family, SourceFed is a daily news show focusing on the biggest stories of the day.  We are now bringing the show to Revision3.com",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/sourcefed/sourcefed.jpg",
+			"feed": "http://revision3.com/sourcefed/feed/mp4-hd30/"
+		},
+		{
+			"title": "SourceFed Nerd (HD MP4 - 30fps)",
+			"description": "SourceFedNERD is where we get to talk about, and do, all the cool, and not so cool, things that we Love!!! It's More of Everything and Anything you should and shouldn't know about on a daily basis from @SourceFed. What do you NERD?",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/sourcefednerd/sourcefednerd.jpg",
+			"feed": "http://revision3.com/sourcefednerd/feed/mp4-hd30/"
+		},
+		{
+			"title": "Tech Assassin - Reloaded (HD MP4 - 30fps)",
+			"description": "Come behind the scenes of Richard Ryan's RatedRR show Tech Assassin, where the latest in Technology and Weapon systems are reviewed and destroyed in slow motion.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/techassassinreloaded/techassassinreloaded.jpg",
+			"feed": "http://revision3.com/techassassinreloaded/feed/mp4-hd30/"
+		},
+		{
+			"title": "TechnoBuffalo (HD MP4 - 30fps)",
+			"description": "TechnoBuffalo isn't just a rehash of information from other websites. It provides tech reviews, insights, news and rumors from the best and brightest editors in the technical review space!",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/technobuffalo/technobuffalo.jpg",
+			"feed": "http://revision3.com/technobuffalo/feed/mp4-hd30/"
+		},
+		{
+			"title": "Tekzilla",
+			"description": "All Tekzilla, all the time",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/hubs/31-27926dc7-tek.jpg",
+			"feed": "http://revision3.com/feed/hub/tekzilla/mp4-large"
+		},
+		{
+			"title": "Ty's iHelp (HD MP4 - 30fps)",
+			"description": "Ty Moss covers the world of Apple products, providing up-to-date news, explanatory how-to's, concise reviews, and even jailbreaking tips. Tune in to Ty's iHelp every week for the latest Apple tips, reviews and more.",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/tysihelp/tysihelp.jpg",
+			"feed": "http://revision3.com/tysihelp/feed/mp4-hd30/"
+		},
+		{
+			"title": "Variant (HD MP4 - 30fps)",
+			"description": "Each week Variant covers everything about comics including graphic novels, movies, tv, cons and games. From hardcore fans to those just picking up their first comic book, Variant will inform and entertain!",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/variant/variant.jpg",
+			"feed": "http://revision3.com/variant/feed/mp4-hd30/"
+		},
+		{
+			"title": "Vloggity (HD MP4 - 30fps)",
+			"description": "My Vlog thingy where I speak non news related things to yo face!",
+			"host": "feedback@revision3.com (Revision3)Revision3",
+			"category": "Revision3",
+			"logo": "http://videos.revision3.com/revision3/images/shows/vloggity/vloggity.jpg",
+			"feed": "http://revision3.com/vloggity/feed/mp4-hd30/"
+		},
+		
+		
+		
+		
+		
+		
+		{
+			"title": "All About Android (MP3)",
+			"description": "All About Android delivers everything you want to know about Android each week--the biggest news, freshest hardware, best apps and geekiest how-tos -- with Android enthusiasts Jason Howell, Gina Trapani, Ron Richards, and a variety of special guests along the way. Viewers have a voice by sending emails t aaa@twit.tv or calling 347-SHOW-AAA. Records live every Tuesday at 5:00pm PT/8:00pm ET on http://live.twit.tv/",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/aaa1400audio.jpg",
+			"feed": "http://feeds.twit.tv/aaa.xml"
+		},
+		{
+			"title": "Android App Arena (MP3)",
+			"description": "Android App Arena is your weekly source for some of the latest and greatest apps and games available on the Android mobile platform. Hands-on demos, category shoot-outs, a closer look at the biggest new app of the week, and in-depth interviews with some of Android's best developers. Send in your app tips toarena@twit.tv. Vote for your favorite apps on our subreddit at androidapparena.reddit.com. Airs live every Friday at 4:00pm ET / 1:00pm PT / 8:00pm UTC.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/arena1400audio.jpg",
+			"feed": "http://feeds.twit.tv/arena.xml"
+		},
+		{
+			"title": "Before You Buy (MP3)",
+			"description": " Before You Buy is a product reviews show on the TWiT Network. TWiT staff get together to test out the latest gadgets--everything from phones to cameras--to help consumers make wise buying decisions. Make sure you watch... Before You Buy! Send feedback to byb@twit.tv and subscribe to @bybreviews on Twitter for the latest updates. For individual reviews on YouTube, please go to http://youtube.com/TWiTBeforeYouBuy",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/byb1400audio.jpg",
+			"feed": "http://feeds.twit.tv/byb.xml"
+		},
+		{
+			"title": "Coding 101 (MP3)",
+			"description": "Join Father Robert Ballecer and Shannon Morse on Coding 101, a weekly instructional, project-oriented programming show with appeal for beginning to intermediate programmers. Using a combination of classroom-style teaching, guest programmers, and special interest segments, Coding 101 will offer beginner, intermediate and applied programming topics within several interchangeable modules. Learn programming languages such as Java, C++, Visual Basic, and more!  Records live every Thursday at 1:30pm PT / 4:30pm ET at http://live.twit.tv/",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/code1400audio.jpg",
+			"feed": "http://feeds.twit.tv/code.xml"
+		},
+		{
+			"title": "FLOSS Weekly (MP3)",
+			"description": " We're not talking dentistry here; FLOSS all about Free Libre Open Source Software. Join host Randal Schwartz every Wednesday as he talks with the most interesting and important people in the Open Source and Free Software community. Records live at http://live.twit.tv/ every Wednesday at 8:30am PT/11:30am ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/floss1400audio.jpg",
+			"feed": "http://feeds.twit.tv/floss.xml"
+		},
+		{
+			"title": "Ham Nation (MP3)",
+			"description": " Ham Nation is the TWIT show about ham radio. Bob Heil, with various co-hosts and guests, will cover the excitement and importance of ham radio - from tossing an antenna wire in a tree allowing you to talk to the world, to the importance of ham radio operators in time of disasters. Ham Nation airs live eachWednesday at 6:00pm PT / 9:00pm ET at http://live.twit.tv/",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/hn1400audio.jpg",
+			"feed": "http://feeds.twit.tv/hn.xml"
+		},
+		{
+			"title": "Home Theater Geeks (MP3)",
+			"description": " Scott Wilkinson, online editor of UltimateAVmag.com and HomeTheaterMag.com, interviews the leaders, pioneers behind today's Home Theater technology. A regular on The Tech Guy with Leo Laporte, each week Scott explores the technologies behind your screen. Recorded live at http://live.twit.tv/ every Thursday at 2:30pm PT/5:30pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/htg1400audio.jpg",
+			"feed": "http://feeds.twit.tv/htg.xml"
+		},
+		{
+			"title": "iFive for the iPhone (MP3)",
+			"description": "iFive for the iPhone is your top five list of the best the iPhone has to offer. Find the hottest new apps and learn helpful tricks to get the most out of your iPhone. Hosted by Sarah Lane, this fast-paced show will make you an iPhone master in no time. Records live at http://live.twit.tv/ every Wednesday at 3:00pm PT / 6:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/podcasts/coverart/ifive1400audio.jpg",
+			"feed": "http://feeds.twit.tv/ifive.xml"
+		},
+		{
+			"title": "iPad Today (MP3)",
+			"description": " Tech geeks Leo Laporte and Sarah Lane love their iPads so much they've created iPadToday, the TWiT network's first show highlighting the best apps, most helpful tools, coolest tricks, and essential news surrounding the iPad revolution. iPadToday is smart, informative, and lots of fun. Recorded live at http://live.twit.tv/ on Mondays at 12:30pm PT / 3:30pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/podcasts/coverart/ipad1400audio.jpg",
+			"feed": "http://feeds.twit.tv/ipad.xml"
+		},
+		{
+			"title": "Know How... (MP3)",
+			"description": " Get the know how to make technology work for you. Fr. Robert Ballecer shows you tech projects that you can do yourself and explain everything from tech basics to advanced techniques. Send your questions and suggestions to knowhow@twit.tv or leave a voicemail at 408-800-KNOW. Records live at http://live.twit.tv/ every Thursday at 11:00am PT/2:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/kh1400audio.jpg",
+			"feed": "http://feeds.twit.tv/kh.xml"
+		},
+		{
+			"title": "MacBreak Weekly (MP3)",
+			"description": " Get the latest Mac news and views from the top journalists covering Apple today. Another great show from the TWiT Netcast Network. Records live at http://live.twit.tv/ every Tuesday at 11:00am PT/2:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/mbw1400audio.jpg",
+			"feed": "http://feeds.twit.tv/mbw.xml"
+		},
+		{
+			"title": "Marketing Mavericks (MP3)",
+			"description": " Marketing Mavericks covers the intersection of marketing and tech. Each week, Tonya Hall interviews top marketing professionals to discuss case studies, communication strategies, and brand insights on social media, trends, and analytics. Records live at http://live.twit.tv/ every Monday at 4:30pm PT/7:30pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/mm1400audio.jpg",
+			"feed": "http://feeds.twit.tv/mm.xml"
+		},
+		{
+			"title": "OMGcraft (MP3)",
+			"description": " OMGcraft is your one-stop-shop for everything Minecraft. Discover the big new tips, tricks, and stuff you should know about Minecraft. Hosted by Chad Johnson, this show will make you a Minecraft expert in no time.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/omgcraft1400audio.jpg",
+			"feed": "http://feeds.twit.tv/omgcraft.xml"
+		},
+		{
+			"title": "Padre's Corner (MP3)",
+			"description": "18% science, 27% irreverence, 22% current events, 56% geek life, 13% non-sequiturs and $19 of ranting. That's the formula for Padre'sCorner – A show that's not necessarily about tech news, but created by those who love news about tech. Join Padre each week as he picks up the stories that fall through the cracks and geeks out with your favorite folks from around the Interwebz. Records live every Tuesday at 10:30pm ET / 7:30pm PT at http://live.twit.tv/",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/padre1400audio.jpg",
+			"feed": "http://feeds.twit.tv/padre.xml"
+		},
+		{
+			"title": "Radio Leo (MP3)",
+			"description": "A compendium of podcasts from the Chief TWiT, Leo Laporte. This feed includes all his podcast releases and sometimes includes his appearances on other podcasts. One feed to serve them all.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/radioleo1400audio.jpg",
+			"feed": "http://feeds.twit.tv/leo.xml"
+		},
+		{
+			"title": "redditUP (MP3)",
+			"description": "redditUP features the best that thefrontpageoftheinternet has to offer. Hosted by Sarah Lane and Chad 'OMGchad' Johnson, each episode recaps the week's best stories, memes, AMAs (Ask Me Anythings), and more from the popular social news community. Records live every Wednesday at 7:30pm ET / 4:30pm PT at http://live.twit.tv/",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/ru1400audio.jpg",
+			"feed": "http://feeds.twit.tv/ru.xml"
+		},
+		{
+			"title": "Security Now (MP3)",
+			"description": " Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, creator of Spinrite and ShieldsUP, discusses the hot topics in security today with Leo Laporte. Winner of the 2009 and 2007 people's choice award for best Technology/Science podcast. Records live at http://live.twit.tv/ every Tuesday at 1:00pm PT/4:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/sn1400audio.jpg",
+			"feed": "http://feeds.twit.tv/sn.xml"
+		},
+		{
+			"title": "Tech News 2Night (MP3)",
+			"description": " Get your tech news and get on your way. Tech News 2Night brings you the evening's top tech news plus a deep dive into the big stories of the day. Hosted by Sarah Lane, Tech News 2Night records live, weeknights at 4pm PT/7pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/tn2n1400audio.jpg",
+			"feed": "http://feeds.twit.tv/tn2n.xml"
+		},
+		{
+			"title": "Tech News Today (MP3)",
+			"description": "Tech News Today, with Mike Elgan and Jason Howell, delivers the top tech news in 30 minutes or less live each weekday at 10:00am Pacific, 1:00pm Eastern. Give us your news and views at 260-TNT-SHOW or tnt@twit.tv, or watch recorded shows on our website at http://twit.tv/tnt",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/tnt1400audio.jpg",
+			"feed": "http://feeds.twit.tv/tnt.xml"
+		},
+		{
+			"title": "The Giz Wiz (MP3)",
+			"description": " MAD's maddest writer and The Giz Wiz, Dick DeBartolo, showcases useful, unique and sometimes silly gadgets and gizmos from his studio, his warehouse, trade shows, and even from those late night TV ads. He's joined by co-host Chad Johnson. Records live every Wednesday at 5:00pm PT/8:00pm ET at http://live.twit.tv/",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/podcasts/coverart/dgw1400audio.jpg",
+			"feed": "http://feeds.twit.tv/dgw.xml"
+		},
+		{
+			"title": "The Social Hour (MP3)",
+			"description": " Social web addicts Sarah Lane and Amber MacArthur have teamed up to create TheSocialHour, your source for the best social tools, news, and fascinating folks building the next generation of the Internet. TheSocialHour is helpful, inspiring, interactive, and fun! Recorded live on http://live.twit.tv/ ever Thursday at 12:00pm PT / 3:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/tsh1400audio.jpg",
+			"feed": "http://feeds.twit.tv/itn.xml"
+		},
+		{
+			"title": "The Tech Guy (MP3)",
+			"description": " No one does a better job of explaining technology, computers, and the Internet than Leo Laporte. This podcast contains the full content of his twice weekly radio talk show as heard on stations all over the US on the Premiere Radio Networks weekends 2-5p Eastern. ",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/ttg1400audio.jpg",
+			"feed": "http://feeds.twit.tv/kfi.xml"
+		},
+		{
+			"title": "This Week in Computer Hardware (MP3)",
+			"description": " Building a new computer? This Week in Computer Hardware is the show where you'll find out the latest info on the motherboards, CPUs, GPUs, and RAM you'll want to use when designing your machine. TWiCH gives you the latest in hardware benchmarks and what not-yet-released products might be on the horizon. Hosted by Ryan Shrout of PC Perspective, Patrick Norton of Tekzilla and Leo Laporte of the TWiT netcast network. Contact TWiCH at twich@twit.tv. Records live every Thursday at 6:00pm PT/9:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/twich1400audio.jpg",
+			"feed": "http://feeds.twit.tv/twich.xml"
+		},
+		{
+			"title": "This Week in Enterprise Tech (MP3)",
+			"description": " This Week in Enterprise Tech explores the complex, cutting edge world of enterprise technology. Hosted by Father Robert Ballecer, aka Friar Tech, TWiET features IT professionals explaining the ins and outs of enterprise solutions. Records live at http://live.twit.tv/ every Monday at 2:30pm PT / 5:30pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/podcasts/coverart/twiet1400audio.jpg",
+			"feed": "http://feeds.twit.tv/twiet.xml"
+		},
+		{
+			"title": "This Week in Google (MP3)",
+			"description": "Leo Laporte, Gina Trapani, Jeff Jarvis and their guests talk about the latest Google and cloud computing news.Records live at http://live.twit.tv/ every Wednesday at 1:00pm PT/4:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/podcasts/coverart/twig1400audio.jpg",
+			"feed": "http://feeds.twit.tv/twig.xml"
+		},
+		{
+			"title": "This Week in Law (MP3)",
+			"description": "Join legal bloggers (and trained attorneys) Denise Howell and Evan Brown as they discuss breaking issues in technology law, including patents, copyrights, and more. Records live at http://live.twit.tv/ every Friday at 11:00am PT/2:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/twil1400audio.jpg",
+			"feed": "http://feeds.twit.tv/twil.xml"
+		},
+		{
+			"title": "This Week in Tech (MP3)",
+			"description": "Your first podcast of the week is the last word in tech. Join Leo Laporte, Patrick Norton, Kevin Rose, John C. Dvorak, and other tech luminaries in a roundtable discussion of the latest trends in digital technology. Winner of the 2005 People's Choice Podcast Award for best overall podcast and Best Technology Podcast. Released every Sunday by midnight Pacific.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/twit1400audio.jpg",
+			"feed": "http://feeds.twit.tv/twit.xml"
+		},
+		{
+			"title": "Triangulation (MP3)",
+			"description": "Every week Leo Laporte talks to the smartest people in the world about the most important topics in technology. Records live at http://live.twit.tv/ every Monday at 11:00am PT/2:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/tri1400audio.jpg",
+			"feed": "http://feeds.twit.tv/tri.xml"
+		},
+		{
+			"title": "TWiT Bits (MP3)",
+			"description": "TWiT Bits are highlights from shows on TWiT.tv. You can find more information about TWiT and subscribe to our full shows at http://twit.tv/",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/bits1400.jpg",
+			"feed": "http://feeds.twit.tv/bits.xml"
+		},
+		{
+			"title": "TWiT Live Specials (MP3)",
+			"description": "Leo Laporte and the TWiTs go off the beaten path to bring you non-standard shows from the network, including breaking news, live-on-location events, special interviews, and geek conference expeditions. Broadcast live at http://live.twit.tv/",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/specials1400audio.jpg",
+			"feed": "http://feeds.twit.tv/ces.xml"
+		},
+		{
+			"title": "Windows Weekly (MP3)",
+			"description": "A weekly look at all things Microsoft, including Windows, Windows Phone, Office, Xbox, and more, from two of the foremost Windows watchers in the world, Paul Thurrott of the Super Site for Windows and Mary Jo Foley of All About Microsoft. Records live at http://live.twit.tv/ every Wednesday at 11:00am PT/2:00pm ET.",
+			"host": "TWiTleo@twit.tv (Leo Laporte)",
+			"category": "TWiT",
+			"logo": "http://feeds.twit.tv/coverart/ww1400audio.jpg",
+			"feed": "http://feeds.twit.tv/ww.xml"
+		},
 		{
 			"title" : "TED Talks",
 			"description" : "Each year, TED hosts 80 of the world's most fascinating people: Trusted voices and convention-breaking mavericks, icons and geniuses. These podcasts (also available in audio format) capture the most extraordinary presentations delivered from the TED stage. Each week, we'll release a new talk to inspire, intrigue and stir the imagination. For best effect, plan to listen to at least three, start to finish. (They have a cumulative effect.) If you have a curious soul and an open mind, we think you'll be hooked....",
 			"host" : "TED",
-			"category" : "Ideas",
+			"category" : "Misc",
 			"logo" : "http://ted.streamguys.net/TEDTalksvideo_tile_144.jpg",
 			"feed" : "http://feeds.feedburner.com/TEDTalks_video"
 		},
@@ -12,167 +2178,34 @@
 			"title" : "StackExchange Podcasts",
 			"description" : "Hosted by Joel Spolsky with Jay Hanlon and David Fullerton, the Stack Exchange podcast lets you listen in on discussions and decisions about the Stack Exchange Network. The Stack Exchange podcast gives you an unparalleled view into how a startup is created and built.",
 			"host" : "Joel Spolsky, Jay Hanlon and David Fullerton",
-			"category" : "Geek Talk",
+			"category" : "Misc",
 			"logo" : "http://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png",
 			"feed" : "http://blog.stackoverflow.com/feed/"
 		},
 		{
-			"title" : "TWiT",
-			"description" : "Tom Merritt brings you \"Tech News Today\" with co-hosts Sarah Lane (TechTV, Revision3), Iyaz Akhtar (PC Mag, TechVi) and others.  Get up to speed, with a fun and friendly ride through the need-to-know tech news of the day. Your calls and emails welcome at 260-TNT-SHOW or tnt@twit.tv.  Recorded live Mon-Fri at 2:30pm PT/5:30pm ET on http://live.twit.tv.",
-			"host" : "Tom Merritt, Sarah Lane, Iyaz Akhtar and others",
-			"category" : "Technology",
-			"logo" : "http://feeds.twit.tv/coverart/twitfeed144audio.jpg",
-			"feed" : "http://feeds.twit.tv/brickhouse.xml"
-		},
-		{
-			"title" : "All About Android",
-			"description" : "All About Android delivers everything you want to know about Android each week--the biggest news, freshest hardware, best apps and geekiest how-to's --  with Android enthusiasts Jason Howell, Gina Trapani, Ron Richards, and a variety of special guests along the way.  Viewers have a voice by sending emails to aaa@twit.tv or calling 347-SHOW-AAA.  Records live every Tuesday at 5:00pm PT/8:00pm ET on http://live.twit.tv.",
-			"host" : "Ron Richards, Gina Trapani and Iyaz Akhtar",
-			"category" : "Technology",
-			"logo" : "http://leo.am/podcasts/coverart/aaa144audio.jpg",
-			"feed" : "http://feeds.twit.tv/aaa"
-		},
-		{
-			"title" : "Before You Buy",
-			"description" : "Before You Buy is a product reviews show on the TWiT Network. TWiT staff get together to test out the latest gadgets--everything from phones to cameras--to help consumers make wise buying decisions. Make sure you watch... Before You Buy! Send feedback to byb@twit.tv and subscribe to @bybreviews on Twitter for the latest updates. For individual reviews on YouTube, please go to youtube.com/twit and look for the BYB Full Reviews channel.",
-			"host" : "Leo Laporte",
-			"category" : "Technology",
-			"logo" : "http://leoville.tv/podcasts/coverart/byb600audio.jpg",
-			"feed" : "http://feeds.twit.tv/byb_video_large"
-		},
-		{
-			"title" : "FLOSS Weekly",
-			"description" : "Each Wednesday we talk about Free Libre and Open Source Software with the people who are writing it. Part of the TWiT Netcast Network.",
-			"host" : "Randal Schwartz and Gareth Greenaway",
-			"category" : "Technology",
-			"logo" : "http://feeds.twit.tv/coverart/floss144audio.jpg",
-			"feed" : "http://leo.am/podcasts/floss_video_large"
-		},
-		{
-			"title" : "HAM Nation",
-			"description" : "HAM Nation is the new TWIT show about ham radio. Bob Heil, with various co-hosts and guests will cover the excitement and importance of ham radio - from tossing an antenna wire in a tree allowing you to talk to the world, to the importance of ham radio operators in time of disasters. HAM Nation airs live each Tuesday at 6:00 PT/ 9:00ET on http://live.twit.tv.",
-			"host" : "Bob Heil, George Thomas, Gordon West, and Don Wilbanks",
-			"category" : "Technology",
-			"logo" : "http://feeds.twit.tv/coverart/hn144audio.jpg",
-			"feed" : "http://leo.am/podcasts/hn_video_large"
-		},
-		{
-			"title" : "Frame Rate",
-			"description" : "The best ways to watch Internet TV and the best stuff to watch. Tom Merritt and Brian Brushwood scour everything from Hollywood to Hackers to help you get closer to cutting the cord.",
-			"host" : "Tom Merritt and Scott Johnson",
-			"category" : "Technology",
-			"logo" : "http://leoville.tv/podcasts/coverart/fr600audio.jpg",
-			"feed" : "http://leo.am/podcasts/fr_video_large"
-		},
-		{
-			"title" : "Security Now",
-			"description" : "Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, creator of Spinrite and ShieldsUP, discusses the hot topics in security today with Leo Laporte.",
-			"host" : "Leo Laporte and Steve Gibson",
-			"category" : "Security",
-			"logo" : "http://leoville.tv/podcasts/coverart/sn144audio.jpg",
-			"feed" : "http://leo.am/podcasts/sn_video_large"
-		},
-		{
-			"title" : "Home Theater Geeks",
-			"description" : "Scott Wilkinson, online editor of UltimateAVmag.com and HomeTheaterMag.com, interviews the leaders, pioneers behind today's Home Theater technology. A regular on The Tech Guy with Leo Laporte, ach week Scott explores the technologies behind your screen. Recorded live every Monday at 215pm Pacific/2115 UTC at http://live.twit.tv.",
-			"host" : "Scott Wilkinson",
-			"category" : "Technology",
-			"logo" : "http://leoville.tv/podcasts/coverart/htg144audio.jpg",
-			"feed" : "http://leo.am/podcasts/htg_video_large"
-		},
-		{
-			"title" : "iFive for the iPhone",
-			"description" : "iFive for the iPhone is your top five list of the best the iPhone has to offer. Find the hottest new apps and learn helpful tricks to get the most out of your iPhone. Hosted by Sarah Lane, this fast-paced show will make you an iPhone master in no time.",
-			"host" : "Sarah Lane",
-			"category" : "Technology",
-			"logo" : "http://feeds.twit.tv/podcasts/coverart/ifive144audio.jpg",
-			"feed" : "http://feeds.twit.tv/ifive"
-		},
-		{
-			"title" : "Know How",
-			"description" : "Get the know how to make technology work for you. Iyaz Akhtar and Leo Laporte show you tech projects that you can do yourself and explain everything from tech basics to advanced techniques",
-			"host" : "Iyaz Akhtar",
-			"category" : "Technology",
-			"logo" : "http://feeds.twit.tv/coverart/kh144.jpg",
-			"feed" : "http://feeds.twit.tv/kh_video_large"
-		},
-		{
-			"title" : "OMGCraft",
-			"description" : "OMGcraft is your one-stop-shop for everything Minecraft. Discover the big new tips, tricks, and stuff you should know about Minecraft. Hosted by Chad Johnson, this show will make you a Minecraft expert in no time.",
-			"host" : "Chad \"OMGchad\" Johnson",
-			"category" : "Games",
-			"logo" : "http://feeds.twit.tv/coverart/omgcraft144audio.jpg",
-			"feed" : "http://feeds.twit.tv/omgcraft_video_large"
-		},
-		{
-			"title" : "This Week In Computer Hardware",
-			"description" : "Building a new computer? This Week in Computer Hardware is the show where you'll find out the latest info on the motherboards, CPUs, GPUs, and RAM you'll want to use when designing your machine. TWiCH gives you the latest in hardware benchmarks and what not-yet-released products might be on the horizon. Hosted by Ryan Shrout of PC Perspective, Patrick Norton of Tekzilla and Leo Laporte of the TWiT netcast network. Recorded live every Thursday at 6pm Pacific/0100 UTC at http://live.twit.tv.",
-			"host" : "Patrick Norton, Ryan Shrout",
-			"category" : "Computer Hardware",
-			"logo" : "http://leo.am/podcasts/coverart/twich144audio.jpg",
-			"feed" : "http://leo.am/podcasts/twich_video_large"
-		},
-		{
-			"title" : "This Week In Google",
-			"description" : "Leo Laporte, Gina Trapani, Jeff Jarvis and their guests talk about the latest Google and cloud computing news.  Recorded live at 4 p.m. Eastern/1 p.m. Pacific/2000 UTC on Wednesdays and released later that evening. Part of the TWiT Netcast Network.",
-			"host" : "Jeff Jarvis, Leo Laporte, Gina Trapani",
-			"category" : "Google",
-			"logo" : "http://leoville.tv/podcasts/coverart/twig144audio.jpg",
-			"feed" : "http://feeds.twit.tv/twig_video_large"
-		},
-		{
-			"title" : "HAK5",
-			"description" : "Put together by a band of IT ninjas, security professionals and hardcore gamers, Hak5 isn't your typical tech show. We take on hacking in the old-school sense, covering everything from network security, open source and forensics, to DIY modding and the homebrew scene. Then we wrap it all up with a healthy dose of cocktails and geek comedy. Damn the warranties, it's time to Trust your Technolust.",
-			"host" : "Darren Kitchen, Shannon",
-			"category" : "Security",
-			"logo" : "http://videos.revision3.com/revision3/images/shows/hak5/hak5_100x100.jpg",
-			"feed" : "http://feeds2.feedburner.com/hak5hd"
-		},
-		{
 			"title" : "Techzing",
-			"description" : "TechZing is an informal chat show hosted by Justin Vincent & Jason Roberts. We release two shows per week. Midweek Interview Show � We interview people that we find interesting such as John C Dvorak, Peldi from Balsamiq, Pete Michaud etc. Weekend Discussion Show � We have a �no agenda� style discussion ruminating on tech, startups and other HN-like topics, we�ll even on occasion take a risk and venture into the unknown. We also talk about the progression of our businesses Pluggio, AppIgnite & Swarm SG.",
+			"description" : "TechZing is an informal chat show hosted by Justin Vincent & Jason Roberts. We release two shows per week. Midweek Interview Show  We interview people that we find interesting such as John C Dvorak, Peldi from Balsamiq, Pete Michaud etc. Weekend Discussion Show  We have a no agenda style discussion ruminating on tech, startups and other HN-like topics, well even on occasion take a risk and venture into the unknown. We also talk about the progression of our businesses Pluggio, AppIgnite & Swarm SG.",
 			"host" : "Justin Vincent and Jason Roberts",
-			"category" : "Geek Talk",
+			"category" : "Misc",
 			"logo" : "http://techzinglive.com/img/techzing-cover.png",
 			"feed" : "http://techzinglive.com/feed"
-		},
-		{
-			"title" : "Unfilter",
-			"description" : "We're living in historic times. Don't waste it on TV. Unplug from the distractions and propaganda, and unfilter your life! Learn the story behind the stories, and bust media propaganda.",
-			"host" : "Chris Fisher",
-			"category" : "Geek Talk",
-			"logo" : "http://www.jupiterbroadcasting.com/images/itunes-badge144.jpg",
-			"feed" : "http://www.jupiterbroadcasting.com/feeds/unfilterMob.xml"
-		},
-		{
-			"title" : "Big Red Barrel",
-			"description" : "We drop (somewhat) informative entertainment bombs across the landscape of your ears.",
-			"host" : "Dave, PacmanPolarBear, and Kev",
-			"category" : "Geek Talk",
-			"logo" : "http://static.giantbomb.com/uploads/original/0/27/2473033-2470604-bombcast-art.png",
-			"feed" : "http://feeds.feedburner.com/BigRedBarrel"
-		},
-		{
-			"title" : "The Indoor Kids",
-			"description" : "The Indoor Kids isn't just about video games, but it isn't not about video games.  The Indoor Kids is all about the kind of lifestyle you have to lead in order to be a proper Gamer, capital G. Join hosts Kumail Nanjiani and Emily V. Gordon  as they take a journey from childhood Shinobi obsessions, up through the best and worst video game adaptations of movies.  Grab your Energy Swords(Mountain Dew liter bottles)!",
-			"host" : "Kumail Nanjiani, Emily V Gordon, Matthew Burnside",
-			"category" : "Games",
-			"logo" : "http://assets.libsyn.com/content/5463414.jpg",
-			"feed" : "http://theindoorkids.libsyn.com/rss"
 		},
 		{
 			"title" : "ChemistryWorld",
 			"description" : "A weekly tour of the periodic table, from Chemistry World, the magazine of the Royal Society of Chemistry.",
 			"host" : "Royal Society of Chemistry",
-			"category" : "Science",
+			"category" : "Misc",
 			"logo" : "http://www.rsc.org/images/CWElementPod.jpg",
 			"feed" : "http://www.rsc.org/chemistryworld/podcasts/elements_podcast.xml"
 		},
+		
+		
+		
 		{
 			"title" : "Al Jazeera World",
 			"description" : "A series of one-hour documentaries showcasing films from across the Al Jazeera Network.",
 			"host" : "Al Jazeera Network",
-			"category" : "Documentaries",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/aljazeeraworld_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/aljazeeraworld"
 		},
@@ -180,7 +2213,7 @@
 			"title" : "Al Jazeera Correspondent",
 			"description" : "From remote corners of Tibet to the mines of Chile, Al Jazeera's correspondents take us on their journey of discovery.",
 			"host" : "Al Jazeera Network",
-			"category" : "Documentaries",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/aljazeeracorrespondent_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/aljazeeracorrespondent"
 		},
@@ -188,7 +2221,7 @@
 			"title" : "The Cure",
 			"description" : "Journey to the frontiers of world health, from cutting-edge breakthroughs to advances in affordable care.",
 			"host" : "Al Jazeera Network",
-			"category" : "News",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/thecure_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/thecure"
 		},
@@ -196,7 +2229,7 @@
 			"title" : "Artscape",
 			"description" : "Artscape gives expression to the creative forces behind many of the world's headline stories.",
 			"host" : "Al Jazeera Network",
-			"category" : "Documentaries",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/artscape_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/artscape"
 		},
@@ -204,7 +2237,7 @@
 			"title" : "earthrise",
 			"description" : "An upbeat new series exploring the solutions to today's environmental challenges.",
 			"host" : "Al Jazeera Network",
-			"category" : "Documentaries",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/earthrise_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/earthrise"
 		},
@@ -212,7 +2245,7 @@
 			"title" : "Fault Lines",
 			"description" : "Looking deeper into the US and its place in the world.",
 			"host" : "Al Jazeera Network",
-			"category" : "Documentaries",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/faultlines_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/faultlines"
 		},
@@ -220,7 +2253,7 @@
 			"title" : "The Cafe",
 			"description" : "A talk show set in cafes around the world in which we hear the explosive conversations of local leaders and experts.",
 			"host" : "Al Jazeera Network",
-			"category" : "Ideas",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/thecafe_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/thecafe"
 		},
@@ -228,7 +2261,7 @@
 			"title" : "Activate",
 			"description" : "Telling the stories of activists around the world as they challenge authority and stand up for what they believe in.",
 			"host" : "Al Jazeera Network",
-			"category" : "Ideas",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/activate_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/activate"
 		},
@@ -236,7 +2269,7 @@
 			"title" : "Listening Post",
 			"description" : "A weekly programme that examines and dissects the world's media.",
 			"host" : "Al Jazeera Network",
-			"category" : "News",
+			"category" : "Al Jazeera",
 			"logo" : "http://feeds-custom.aljazeera.net/en/images/programmes/listeningpost_600x600_logo.jpg",
 			"feed" : "http://feeds.aljazeera.net/podcasts/listeningpost"
 		},
@@ -244,15 +2277,15 @@
 			"title" : "The Tennis Podcast",
 			"description" : "Presented by tennis commentator David Law and featuring Catherine Whitaker, in each episode the The Tennis Podcast features an in-depth interview with a big-name player, a top journalist or influential administrator, and plenty of chat about the sport.",
 			"host" : "David Law",
-			"category" : "Sports",
+			"category" : "Misc",
 			"logo" : "http://assets.libsyn.com/content/4568598.jpg",
 			"feed" : "http://thetennispodcast.libsyn.com/rss"
 		},
 		{
 			"title" : "MotoPod",
-			"description" : "MotoPod, The Motorcycle Roadracing Podcast, is an internet radio show dedicated to MotoGP and motorcycle racing news, interviews, commentary, opinion and rumor! MotoPod's primary focus is MotoGP, the premier class of the FIM World Championship Motorcycle Grand Prix Road Racing Series, but we�ll have occasional sidetrips into the world of FIM SBK World Superbike, Supersport and many other forms of two wheeled motorsport. Find out what�s going on in the sport that is the pinnacle of motorsports, Grand Prix Motorcycle Road Racing! New episodes every week.",
+			"description" : "MotoPod, The Motorcycle Roadracing Podcast, is an internet radio show dedicated to MotoGP and motorcycle racing news, interviews, commentary, opinion and rumor! MotoPod's primary focus is MotoGP, the premier class of the FIM World Championship Motorcycle Grand Prix Road Racing Series, but well have occasional sidetrips into the world of FIM SBK World Superbike, Supersport and many other forms of two wheeled motorsport. Find out whats going on in the sport that is the pinnacle of motorsports, Grand Prix Motorcycle Road Racing! New episodes every week.",
 			"host" : "Bob Hayes, Jim Race, Martin Darlington, Jules Cisek",
-			"category" : "Sports",
+			"category" : "Misc",
 			"logo" : "http://www.motopodcast.com/podcasts/motopod-tall-large_144.jpg",
 			"feed" : "http://feeds.feedburner.com/motopodcast"
 		},
@@ -260,41 +2293,25 @@
 			"title" : "NBA.com's Hang Time Podcast",
 			"description" : "NBA news, analysis and commentary from the staff at NBA.com. Sekou Smith hosts the weekly podcast with Rick Fox and Lang Whitaker, with guests from all around the league and the people who cover it.",
 			"host" : "John Schuhmann",
-			"category" : "Sports",
+			"category" : "Misc",
 			"logo" : "http://www.nba.com/2010/images/03/23/Sekou_iTunesPodcast_300x300_v1A.jpg",
 			"feed" : "feeds.feedburner.com/hang-time-podcast"
-		},
-		{
-			"title" : "Tone Control",
-			"description" : "Steve Gaynor of The Fullbright Company sits down with noteworthy video game developers for an in-depth conversation about their career and creative process, and the tricky work of establishing and maintaining a cohesive tone in their games.",
-			"host" : "Steve Gaynor",
-			"category" : "Games",
-			"logo" : "http://static.idlethumbs.net/img/feeds/6__feed.jpg",
-			"feed" : "https://www.idlethumbs.net/feeds/tonecontrol"
-		},
-		{
-			"title" : "Dota Insight",
-			"description" : "A Dota 2 Podcast.",
-			"host" : "Skythor, Loudmetal, and Finch",
-			"category" : "Games",
-			"logo" : "http://www.dotainsight.com/wp-content/uploads/2013/04/dota-insight-logo-final-1400opt.jpg",
-			"feed" : "http://www.dotainsight.com/podcast"
-		},
-		{
-			"title" : "Game Scoop!",
-			"description" : "IGN.com shoots a week�s worth of gaming news straight into your ear",
-			"host" : "IGN Staff",
-			"category" : "Games",
-			"logo" : "http://assets.libsyn.com/content/4993006.jpg",
-			"feed" : "feeds.ign.com/ignfeeds/podcasts/gamescoop"
 		},
 		{
 			"title" : "This Developer's Life",
 			"description" : "Stories About Developers and Their Lives",
 			"host" : "Rob Conery and Scott Hanselman",
-			"category" : "Geek Talk",
+			"category" : "Misc",
 			"logo" : "http://media.wekeroad.com/tdl2.png",
 			"feed" : "http://feeds.feedburner.com/thisdeveloperslife"
-		}
-	]
+		},
+		{
+	       "title": "The Partially Examined Life Philosophy Podcast",
+	       "description": "A Philosophy Podcast and Philosophy Blog",
+	       "host": "Mark Linsenmayer",
+	       "category": "Misc",
+	       "logo": "http://www.partiallyexaminedlife.com/wp-content/uploads/powerpress/PEL_orange_1400x1400.jpg",
+	       "feed": "http://feeds.feedburner.com/partiallyexaminedlife/blog"
+	   }
+    ]
 }
