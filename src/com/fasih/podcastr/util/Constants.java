@@ -9,6 +9,7 @@ public interface Constants {
 	String VIDEO_FRAGMENT_SHOWN = "video_frag_shown";
 	String FAVORITES_FRAGMENT_SHOWN = "fav_frag_shown";
 	String RECENTS_FRAGMENT_SHOWN = "recent_frag_shown";
+	String RETRIEVE_EPISDOES = "retrieve_episodes";
 	
 	String DIR_XML = "/data/data/com.fasih.podcastr/files/xml";
 	String DIR_DOWNLOADS = "/data/data/com.fasih.podcastr/files/downloads";

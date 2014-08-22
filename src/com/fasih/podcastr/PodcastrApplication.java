@@ -5,19 +5,24 @@ import java.io.File;
 
 import android.app.Application;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 
 import com.fasih.podcastr.util.Constants;
-import com.fasih.podcastr.util.FavoriteUtil;
 import com.parse.Parse;
 
 public class PodcastrApplication extends Application {
 	private static PodcastrApplication singleton = null;
-	private Typeface roboto = null;
+	private static Typeface roboto = null;
 	private boolean homeActivityVisible = false;
+	private static MediaPlayer player = null;
 	//--------------------------------------------------------------------------------------------------
 	@Override
 	public void onCreate(){
 		singleton = this;
+		// Create a single media player
+		// that will be used everywhere
+		player = new MediaPlayer();
+		
 		// The following line enables localdatastore
 		Parse.enableLocalDatastore(this);
 		// The following line initialized Parse
@@ -68,6 +73,10 @@ public class PodcastrApplication extends Application {
 		if(!downloads.exists()){
 			downloads.mkdirs();
 		}
+	}
+	//--------------------------------------------------------------------------------------------------
+	public MediaPlayer getMediaPlayer(){
+		return player;
 	}
 	//--------------------------------------------------------------------------------------------------
 }

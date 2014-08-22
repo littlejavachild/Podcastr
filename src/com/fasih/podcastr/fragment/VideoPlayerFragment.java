@@ -19,6 +19,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Environment;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -110,9 +111,10 @@ public class VideoPlayerFragment extends Fragment implements
 			setPodcastTitle();
 			playEpisode(PrefUtils.getVideoIndex(getActivity()));
 		}else{
-			System.out.println("RETRIEVING EPISODES: ");
 			retrieveArguments();
-			getEpisodes();
+			if(EpisodeUtil.getEpisodes().size() == 0){
+				getEpisodes();
+			}
 		}
 		
 		setTouchEventListener();
@@ -140,9 +142,7 @@ public class VideoPlayerFragment extends Fragment implements
 		videoSurface = (SurfaceView) contentView.findViewById(R.id.videoSurface);
     	SurfaceHolder videoHolder = videoSurface.getHolder();
     	videoHolder.addCallback(this);
-    	if(player == null){
-    		player = new MediaPlayer();
-    	}
+    	player = PodcastrApplication.newInstance().getMediaPlayer();
     	player.setOnPreparedListener(this); 
     	
     	// Because these are in the ActionBar,
@@ -288,6 +288,8 @@ public class VideoPlayerFragment extends Fragment implements
 	//------------------------------------------------------------------------------
 	@Override
 	public void onDetach(){
+		EpisodeUtil.clearEpisodes();
+		
 		super.onDetach();
 		
 		favoritesMode = false;
@@ -318,9 +320,6 @@ public class VideoPlayerFragment extends Fragment implements
     public void onPrepared(MediaPlayer mp) {
     	player.start();
     	player.seekTo(PrefUtils.getSeekTo(getActivity()));
-    	
-    	System.out.println("MOVING SEEK TO: " + PrefUtils.getSeekTo(getActivity()));
-    	
     	// stop spinning the progress wheel
     	pw.stopSpinning();
     	// and hide it
@@ -709,12 +708,13 @@ public class VideoPlayerFragment extends Fragment implements
 		}else if(recentsMode){
 			adapter.setDataSource(RecentUtil.getRecentsAsEpisodes());
 		}
+		
 		new CountDownTimer(1000, 1000) {
 		     public void onTick(long millisUntilFinished) { /** NOTHING */ }
 		     public void onFinish() {
 		    	 playEpisode(PrefUtils.getVideoIndex(getActivity()));
 		     }
-		  }.start();
+	    }.start();
 	}
 	//------------------------------------------------------------------------------
 }

@@ -63,7 +63,6 @@ public class LoadPodcastsTask extends AsyncTask<String, Void, Void> {
 	@Override
 	protected void onPostExecute(Void v){
 		// If not cancelled, deserialize
-		System.out.println(json);
 		Gson gson = new Gson();
 		Response response = gson.fromJson(json.toString(), Response.class);
 		if(!isCancelled()){

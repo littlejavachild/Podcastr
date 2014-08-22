@@ -15,12 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.jsoup.Jsoup;
-import org.jsoup.safety.Whitelist;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
+import android.os.Handler;
 import android.support.v4.app.FragmentManager;
 import android.util.Xml;
 
@@ -275,10 +275,9 @@ public class LoadEpisodesTask extends AsyncTask<String, Void, Void> {
 	@Override
 	protected void onPostExecute(Void v){
 		DialogUtil.hideLoadingDialog();
-		if(!isCancelled()){
-			EpisodeUtil.getEpisodes().addAll(episodes);
-			listener.onDataArrived();
-		}
+		EpisodeUtil.getEpisodes().addAll(episodes);
+		adapter.notifyDataSetChanged();
+		listener.onDataArrived();
 	}
 	//------------------------------------------------------------------------------
 	public static interface DataArrivedListener{
