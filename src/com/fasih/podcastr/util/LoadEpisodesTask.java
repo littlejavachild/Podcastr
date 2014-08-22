@@ -277,7 +277,6 @@ public class LoadEpisodesTask extends AsyncTask<String, Void, Void> {
 		DialogUtil.hideLoadingDialog();
 		if(!isCancelled()){
 			EpisodeUtil.getEpisodes().addAll(episodes);
-			adapter.notifyDataSetChanged();
 			listener.onDataArrived();
 		}
 	}

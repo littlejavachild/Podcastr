@@ -2312,6 +2312,1192 @@
 	       "category": "Misc",
 	       "logo": "http://www.partiallyexaminedlife.com/wp-content/uploads/powerpress/PEL_orange_1400x1400.jpg",
 	       "feed": "http://feeds.feedburner.com/partiallyexaminedlife/blog"
-	   }
+		},
+		{
+			"title": "Nerdzilla",
+			"description": "Two geeks look over the nerd news, review interesting stuff, argue about trivialities and meet an awesome guest",
+			"host": "backyard@your.abc.net.au (ABC Local radio)ABC Local",
+			"category": "ABC",
+			"logo": "http://www.abc.net.au/xmlpublic/radio/program_images/10001_1400x1400.jpg",
+			"feed": "http://www.abc.net.au/local/podcasts/nerdzilla.xml"
+		},
+		{
+			"title": "StarStuff with Stuart Gary",
+			"description": "Hosted by Stuart Gary, StarStuff takes us on a weekly journey across the universe to see the death of stars and the birth of new worlds. StarStuff's tour of the cosmos examines those ultimate questions: where do we come from?; and are we alone?  From Einstein's relativity theory to quantum mechanics, StarStuff reports on the latest news and discoveries in science, with a special focus on astronomy, space sciences and cosmology.",
+			"host": "",
+			"category": "ABC",
+			"logo": "http://www.abc.net.au/science/podcast/starstuff.jpg",
+			"feed": "http://abc.net.au/science/podcast/starstuff.xml"
+		},
+		{
+			"title": "AM - Full Program",
+			"description": "AM is Australia's most informative morning current affairs program. Each morning it covers the stories the other current affairs teams follow for the rest of the day.",
+			"host": "",
+			"category": "ABC",
+			"logo": "http://www.abc.net.au/am/rss/AM-1400x1400.jpg",
+			"feed": "http://abc.net.au/am/rss/amrss.xml"
+		},
+		{
+			"title": "Late Night Live - Full program podcast",
+			"description": "Long Nights LNL podcast gives you the whole of Late Night Live from start to finish in a continuous mp3 file, as Phillip Adams invites you to eavesdrop on his conversations with the world's brilliant and controversial thinkers.",
+			"host": "ABC Radio National",
+			"category": "ABC",
+			"logo": "http://www.abc.net.au/radionational/image/3657268-1x1-1400x1400.jpg",
+			"feed": "http://abc.net.au/rn/podcast/feeds/lnl.xml"
+		},
+		{
+			"title": "PM - Full Program",
+			"description": "ABC radio news and current affairs afternoon program reporting on Australia and the world.",
+			"host": "",
+			"category": "ABC",
+			"logo": "http://www.abc.net.au/pm/rss/PM-1400x1400.jpg",
+			"feed": "http://abc.net.au/pm/rss/pmrss.xml"
+		},
+		{
+			"title": "The Science Show - Full program podcast",
+			"description": "RN's science flagship: your essential source of what's making news in the complex world of scientific research, scandal and discovery. The Science Show with Robyn Williams is one of the longest running programs on Australian radio. One single audio file of each program - good for continuous listening.",
+			"host": "ABC Radio National",
+			"category": "ABC",
+			"logo": "http://www.abc.net.au/radionational/image/3657702-1x1-1400x1400.jpg",
+			"feed": "http://abc.net.au/rn/podcast/feeds/science.xml"
+		},
+		
+		
+		
+		
+		
+		
+		{
+			"title": "The Annabel Portcast",
+			"description": "As an integral part of Geoff Lloyd's hometime show on Absolute Radio, Annabel brings you her take on this lovely and random world in which we all live. From 'Annabel versus the Internet' to 'Pause for Port' and 'Annabel's All-Star Postbag' we think you'll love this daily of dose of gorgeousness.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/lloydcut/lloydcut_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=lloydcut"
+		},
+		{
+			"title": "Geoff Lloyd's Hometime Show",
+			"description": "The Hometime show is live on Absolute Radio weekdays from 5pm. If you can't listen then, download this podcast where Geoff Lloyd and his symposium talk about lots of interesting and funny stuff. Hey there's a bonus too, this contains special podcast-only material.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/lloyd/lloyd_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=lloyd"
+		},
+		{
+			"title": "Christian O'Connell Daily Choice Cuts",
+			"description": "The best bits from the Christian O'Connell Breakfast Show on Absolute Radio starring the OC, Richie, Mrs Doyle on travel, news hound Andrew Bailey and you the listener. Top guests on the podcasts include Ricky Gervais, David Tennant, The Stereophonics and Justin Lee Collins. If you like the podcast then listen live weekday mornings from 6am on DAB, SKY, Freeview and online at absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/oconnell/oconnell_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=oconnell"
+		},
+		{
+			"title": "Dan Benedictus on Absolute Radio 90s",
+			"description": "Every Sunday at 5pm Dan hosts The Slump on Absolute Radio 90s; a safe place for you to digest your Sunday roast, whilst listening to silly chatter, and music from the 90s. However, if you fell asleep in your post-roast stupor, then you can download this podcast instead.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/dan_benedictus/dan_benedictus_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=dan_benedictus"
+		},
+		{
+			"title": "Rob Beckett",
+			"description": "Rob Beckett hosts the Sunday edition of Rock N Roll Football on Absolute Radio. He's got goal updates, news and his views on life and the week in football. He's an Arsenal fan so that might mean he moans a lot.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/beckett/beckett_epc.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=beckett"
+		},
+		{
+			"title": "Ian Wright on Absolute Radio",
+			"description": "Wrighty is on Absolute Radio, Saturday afternoons from 5 with all of the big match reaction. Here's the full show podcast. Listen to Barclays Premier League commentaries on Absolute Radio every weekend. Get more at absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/ian_wright/ian_wright_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=ian_wright"
+		},
+		{
+			"title": "Frank Skinner on Absolute Radio",
+			"description": "Frank Skinner's on Absolute Radio every Saturday morning and you can enjoy the show's podcast right here.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/frankskinner/frankskinner_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=frankskinner"
+		},
+		{
+			"title": "Danny Wallace & Pete Donaldson",
+			"description": "Danny Wallace and Pete Donaldson guide you through the tricky world of being a modern man. Masters of Man Time with Just for Men is packed with utterly trivial information, but you might laugh (a bit).",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/Masters_of_Mantime/Masters_of_Mantime_epc.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=Masters_of_Mantime"
+		},
+		{
+			"title": "Pete Donaldson's Podcast",
+			"description": "Join Pete weeknights from 8pm for loads of great music and comedy guests plus his album of the week and live sessions. He doesn't always get chance to play the full interview on-air (because he muffs up) but here's your chance to hear the interviews in all of their unedited glory. Basically Kings of Leon, Tom Odell, Miles Kane and loads more...",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/pete_donaldson/pete_donaldson_epc.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=pete_donaldson"
+		},
+		{
+			"title": "The Kings of Leon Podcast",
+			"description": "The Kings of Leon talk to Absolute Radio's Geoff Lloyd about their at their Birmingham concert about thier amazing rise to fame, their love of the UK and playing live. We will also be adding some classic KOL stuff from when we've met the band at festivals or our studios and any new interviews too. For more details go to absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/kings_of_leon/kings_of_leon_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=kings_of_leon"
+		},
+		{
+			"title": "Isle of Wight Festival Videos",
+			"description": "Absolute Radio's Pete Donaldson and Sarah Champion are your backstage hosts giving you a unique view of the Isle of Wight Festival. They'll be bringing you the backstage rumours and chatting with the performers including the Kings of Leon.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/IsleOfWightVideos/IsleOfWightVideos_epc.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=IsleOfWightVideos"
+		},
+		{
+			"title": "Isle of Wight Festival Podcasts",
+			"description": "Absolute Radio's Pete Donaldson and Sarah Champion bring you backstage interviews with the biggest artists playing the 2014 Isle of Wight Festival.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/IsleOfWight/IsleOfWight_epc.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=IsleOfWight"
+		},
+		{
+			"title": "The Absolute Classic Rock Podcast",
+			"description": "Absolute Classic Rock plays the greatest classic rock songs of all time. If you love the likes of Led Zep, Queen, The Beatles, Rolling Stones then you'll love this. Loads of artists come through our doors for interviews and we'll podcast them. Subscribe and you'll get regular free content to download and listen to whenever you want.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/classic_rock/classic_rock_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=classic_rock"
+		},
+		{
+			"title": "Ricky Gervais talks to Absolute Radio",
+			"description": "Ricky Gervais is what some might say is a 'friend' of the Christian O'Connell breakfast show and he pops up every now and again. Hear the calls and studio chats. Get more at absoluteradio.co.uk - Oh, and we might add in the odd Stephen Merchant and Karl Pilkington interviews as well.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/ricky_gervais/ricky_gervais_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=ricky_gervais"
+		},
+		{
+			"title": "A Design For Life",
+			"description": "A Design For Life on Absolute Radio in partnership with FSCS. Absolute Radio presents a not entirely serious look at the important things in life including holidays, home, university days, marriage and more. The occasional series will featuring presenters and comedians from Absolute Radio and beyond, including Ian Wright, Mel Giedroyc, Geoff Lloyd, Annabel Port, Alun Cochrane, Pete Donaldson and Joe Wilkinson.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/design_for_life/design_for_life_epc.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=design_for_life"
+		},
+		{
+			"title": "Absolute Radio News",
+			"description": "The latest from the news team at Absolute Radio. Updated 6.00am to 7.00pm weekdays, and weekend mornings.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/news/news_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=news"
+		},
+		{
+			"title": "The Absolute Radio 60s Podcasts",
+			"description": "Subscribe here and you will be able to download and hear our biggest interviews and special programmes from presenters including Pete Mitchell, Geoff Lloyd and Chris Martin.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/absolute_60s/absolute_60s_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=absolute_60s"
+		},
+		{
+			"title": "Laughter Therapy with Emily Dean",
+			"description": "As someone brave enough to confess that some of her best friends are comics, Emily Dean has for most of her life, been on the receiving end of their legendary professional insight and even if their advice is not always right, (Frank Skinner once maintained, 'you can never be friends with someone once you've seen their genitals') at least it makes you laugh at your problems. We bring you this podcast so that you too can benefit from their widsom as well.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/emilydean/emilydean_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=emilydean"
+		},
+		{
+			"title": "The Absolute Radio 00s Podcast",
+			"description": "Absolute Radio 00s is the UK's only non-stop 00s radio station. You can enjoy it on DAB, SKY, Freesat and online at absoluteradio00s.com. Subscribe and enjoy the best interviews whenever you want to.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/absolute_radio_00s/absolute_radio_00s_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=absolute_radio_00s"
+		},
+		{
+			"title": "The Grand Theft Radio Show",
+			"description": "Lazlow gets his own radio show on the eve of the biggest game launch of 2013. He'll be chatting with listeners and playing some classic tracks from GTA games gone-by. Pete Donaldson will be desperately trying to keep things under control.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/Grandtheftradio/Grandtheftradio_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=Grandtheftradio"
+		},
+		{
+			"title": "The Manuscript",
+			"description": "Allow us to present to you The Manuscript: a new comedy panel show from Absolute Radio. Week by week, The Manuscript builds into a foolproof guide to being a modern man. The rulebook will be written by host Nick Hancock and guests including Clive Anderson, Jo Brand, Andy Zaltzman and Christian O'Connell, based off the week's news and their own experiences. The Manuscript is brought to you by Just For Men AutoStop: the foolproof way to get rid of grey.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/manuscript/manuscript_epc.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=manuscript"
+		},
+		{
+			"title": "The Absolute Radio 70s Podcasts",
+			"description": "Subscribe here and you will be able to download and hear our biggest interviews and special programmes from presenters including Martyn Lee, Andy Bush and more",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/absolute_70s/absolute_70s_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=absolute_70s"
+		},
+		{
+			"title": "The Absolute 80s Podcasts",
+			"description": "Absolute 80s is the UK's only non-stop 80s radio station. You can enjoy it on DAB, SKY, Freesat and online at absolute80s.com. Subscribe and enjoy the best interviews and special programmes from our presenters whenever you want to.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/absolute_80s/absolute_80s_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=absolute_80s"
+		},
+		{
+			"title": "The Rolling Stones Podcast",
+			"description": "The Rolling Stones are arguably the best rock band in the world ever. Here at Absolute Radio we've been delving through our archive to try and find some of the great interviews we'd done through the years with Mick and the boys. Subscribe here and we'll be uploading lots of new content.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/stones/stones_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=stones"
+		},
+		{
+			"title": "Film Fandango",
+			"description": "Danielle Ward (The Dave Gorman Show) and David Reed (The Penny Dreadfuls) discuss new releases and classic films with one of their comedy pals. Be warned - this is not a review show, it's meandering movie chat.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/fandango/fandango_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=fandango"
+		},
+		{
+			"title": "The Dave Gorman Podcast",
+			"description": "Comedian and author Dave Gorman has joined the Absolute Radio family and we love him. Here's your chance to re-live the best bits of his recent shows.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/dave_gorman/dave_gorman_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=dave_gorman"
+		},
+		{
+			"title": "The Led Zeppelin Podcast",
+			"description": "We've delved back into the Absolute Radio archives and found some great Robert Plant interviews and you can hear them here. There's also material from Robert's collaboration with Alison Krauss. Subcribe here so you don't miss any new interviews.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/robert_plant/robert_plant_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=robert_plant"
+		},
+		{
+			"title": "The Muse Podcast",
+			"description": "Muse are awesome. We all know that, but now you can enjoy some classic interviews we've found in the Absolute radio archives and subscribe here to hear any new interviews we will add when we next meet them. Get more real music at www.absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/muse/muse_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=muse"
+		},
+		{
+			"title": "The Blur Podcast",
+			"description": "Subscribe here and you will be able to download and hear our biggest interviews with Blur including a come back interview with Geoff Lloyd.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/blur/blur_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=blur"
+		},
+		{
+			"title": "Johnny Vaughan on Absolute Radio",
+			"description": "Johnny Vaughan joined Absolute Radio for the duration of the Olympics. Broadcasting live from BT London Live in Hyde Park every day. He had live music, guests, competitions and fun and you can have it in your pocket right now! Get more at www.absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/johnny_vaughan/johnny_vaughan_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=johnny_vaughan"
+		},
+		{
+			"title": "Rhys Darby on Absolute Radio",
+			"description": "Kiwi comedian Rhys Darby from Flight of the Conchords came into Absolute Radio to talk to Geoff Lloyd and here's the interview in full. We think he's dead funny. Geoff Lloyd's Hometime show is on Absolute Radio, weekdays at 5pm. Listen online at www.absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/rhys_darby/rhys_darby_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=rhys_darby"
+		},
+		{
+			"title": "The Coldplay Podcast",
+			"description": "Subscribe here and you will be able to download and hear our biggest interviews and special programmes with Coldplay including the time Chris Martin came in to Absolute Radio to talk to Christian O'Connell about their summer tours and their award winning album Viva La Vida or Death and all his Friends",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/coldplay/coldplay_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=coldplay"
+		},
+		{
+			"title": "Hamish & Andy at Absolute Radio",
+			"description": "Hamish and Andy popped into Absolute Radio to talk to the OC on the breakfast show. Here are the best bits - even better news is that in July they'll be covering his best bits show on Sunday afternoons. Get more at absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/hamish_andy/hamish_andy_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=hamish_andy"
+		},
+		{
+			"title": "The Absolute Radio 90s Podcasts",
+			"description": "Subscribe here and you will be able to download and hear our biggest interviews and special programmes from presenters including Christian O'Connell, Pete Donaldson, Vicki Blight and more",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/absolute_90s/absolute_90s_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=absolute_90s"
+		},
+		{
+			"title": "David Tennant on Absolute Radio",
+			"description": "David Tennant is a big friend of Absolute Radio's Christian O'Connell breakfast show. We've been through the archives to bring you some of the best interviews",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/drwho/drwho_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=drwho"
+		},
+		{
+			"title": "The Noel Gallagher and Oasis Podcast",
+			"description": "Subscribe here for some of the great interviews, old and new, that the boys have done with us here at Absolute Radio.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/oasis/oasis_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=oasis"
+		},
+		{
+			"title": "The Beatles Podcast",
+			"description": "John, Paul, George and Ringo are the most legendary music group in the world with their hits known by people of all ages. We've raided the Absolute Radio archive to bring you some classic interviews. Subscribe because we'll be adding more over the coming weeks and months.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/macca/macca_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=macca"
+		},
+		{
+			"title": "The Barry from Watford Podcast",
+			"description": "Barry from Watford was a caller to Iain Lee's show on Absolute Radio. He's an old man who's married to Margaret, is a bit doddery and he's got plenty of time on his hands and gets up to mischief. Subscribe to this podcast for the the best of Barry's calls.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/barry/barry_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=barry"
+		},
+		{
+			"title": "Iain Lee's Best Bits",
+			"description": "It's Simple. This is the best bits of the new Iain Lee show on Absolute Radio. We choose the highlights from the week and bundle them together for you to enjoy as and when you want. If you like it, why not listen to the full show podcast!",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/leechoice/leechoice_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=leechoice"
+		},
+		{
+			"title": "Iain Lee on Absolute Radio",
+			"description": "Iain Lee's show is not just his show, It's yours too. You call in, we all laugh, cry and argue - It's like a big family dinner where even that uncle who gives you rubbish pressies is invited...or something like that. Iain is also joined by his producer Eloise (she would play the cool aunt!)",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/lee/lee_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=lee"
+		},
+		{
+			"title": "The Queen Podcast",
+			"description": "Subscribe here for classic and new Queen interviews, including excerpts from Killer Queen, the Absolute Radio documentary presented by Al Murray.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/queen/queen_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=queen"
+		},
+		{
+			"title": "Rhod Gilbert talks to Absolute Radio",
+			"description": "The biggest Welsh god since Tom Jones, Rhod Gilbert popped into the Absolute Radio breakfast show. Here he is talking to Christian O Connell. Get more at absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/rhod_gilbert2/rhod_gilbert2_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=rhod_gilbert2"
+		},
+		{
+			"title": "Stephen Merchant talks to Absolute Radio",
+			"description": "Stephen Merchant came in to Absolute Radio to speak to Christian O'Connell about his new projects and working with Ricky and Karl. Subscribe here as we'll be adding any new interviews too.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/stephenmerchant/stephenmerchant_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=stephenmerchant"
+		},
+		{
+			"title": "The Kasabian Podcast",
+			"description": "Kasabian are one of Absolute Radio's favourite bands and so we've decided to make our interviews with the band available for all fans to enjoy. Subscribe to the channel and we'll be updating it lots. Get more real music at www.absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/kasabian/kasabian_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=kasabian"
+		},
+		{
+			"title": "The Snow Patrol Podcast",
+			"description": "We've delved into the Absolute Radio archives and this is your chance to hear our interviews with Gary Lightbody and the boys. We'll be uploading them all regularly so subscribe if you don't want to miss out",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/snow_patrol/snow_patrol_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=snow_patrol"
+		},
+		{
+			"title": "Ronnie Wood Show Podcast",
+			"description": "Subscribe here to listen to the best of the interviews in full from Ronnie Woods daily Sony Radio Award winning show on Absolute Classic Rock. Leave your comments for Ronnie and we'll pass them on.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/ronnie_wood/ronnie_wood_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=ronnie_wood"
+		},
+		{
+			"title": "The Mumford and Sons Podcast",
+			"description": "Absolute Radio loves Mumford and Sons, one of our favourite bands to emerge in 2009. In this podcast you can hear the first time they came into Golden Square and we'll also to adding to this podcast when we meet up with them again. Subscribe here so you don't miss out. More info at absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/mumford/mumford_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=mumford"
+		},
+		{
+			"title": "The Killers Podcast",
+			"description": "We've been chatting to the band about their upcoming Hard Rock Calling performance in London. There's also some classic Killers stuff from when we've met the band at festivals or our studios. For more details go to absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/the_killers/the_killers_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=the_killers"
+		},
+		{
+			"title": "The Beady Eye Podcast",
+			"description": "Liam Gallagher and Gem from Beady eye talk to Absolute Radio's Christian O'Connell",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/beadyeye/beadyeye_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=beadyeye"
+		},
+		{
+			"title": "The Elbow Podcast",
+			"description": "Hear exclusive podcast interviews from Guy Garvey and the boys as they enjoy their recent success following the Mercury Music Prize winning album The Seldom Seen Kid. Absolute Radio broadcast the Elbow story on-air but this is the full interview split into 5 podcasts.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/elbow/elbow_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=elbow"
+		},
+		{
+			"title": "Lee Mack on Absolute Radio",
+			"description": "Lee Mack's stood in for a bit for Frank Skinner on Absolute Radio. If you're a fan, then here's a podcast featuring the best bits of the shows. Get more at absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/lee_mack/lee_mack_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=lee_mack"
+		},
+		{
+			"title": "The Matt Berry Podcast",
+			"description": "Matt Berry is a familiar voice on Absolute Radio and here's your chance to download a podcast of what happened when we gave him his own show. He stood in for Geoff on a Sunday night with a mixture of guests, sessions and lots more. If you like him, let us know!",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/matt_berry/matt_berry_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=matt_berry"
+		},
+		{
+			"title": "The Keane Podcast",
+			"description": "Keane are one of the best British bands of the decade. We've been raiding the Absolute Radio archive to bring you some of the interviews we've done with the band. Hear Tom and the boys talking about their music, influences and much more.",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/keane/keane_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=keane"
+		},
+		{
+			"title": "Karl Pilkington talks to Absolute Radio",
+			"description": "Karl talks to Christian O'Connell about his new show 'Idiot Abroard'. He also muses over life in the shadow of Ricky and Stephen. Get more at absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/karl_pilkington/karl_pilkington_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=karl_pilkington"
+		},
+		{
+			"title": "The U2 Podcast",
+			"description": "Bono and The Edge from U2 came into Absolute Radio to talk to Christian O'Connell from the breakfast show about their new album, No Line on the Horizon. There's also some classic U2 stuff from when we've met the band at festivals or our studios and we'll be adding any new interviews as we get them too, so make sure to subscribe so you don't miss out. For more details go to absoluteradio.co.uk",
+			"host": "Absolute Radio",
+			"category": "Absolute Radio",
+			"logo": "http://podcast.timlradio.co.uk/u2/u2_lrg.jpg",
+			"feed": "http://network.absoluteradio.co.uk/core/podcasts/rss.php?name=u2"
+		},
+		{
+			"title": "Channel 9",
+			"description": "Channel 9 keeps you up to date with the latest news and behind the scenes info from Microsoft that developers love to keep up with. From LINQ to SilverLight – Watch videos and hear about all the cool technologies coming and the people behind them.",
+			"host": "Scott Klein",
+			"category": "Channel9",
+			"logo": "http://mschnlnine.vo.llnwd.net/d1/Dev/App_Themes/C9/images/feedimage.png",
+			"feed": "http://channel9.msdn.com/Feeds/RSS"
+		},
+		{
+			"title": "ESPN: ESPN FC",
+			"description": "Go inside the most popular sport in the world with the ESPN FC podcast.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/espn_fc_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=10672984"
+		},
+		{
+			"title": "Grantland Pop Culture",
+			"description": "Grantland Pop Culture is a varied collection of podcasts hosted by Grantland writers and friends of the site.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/grantland_popCulture_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9179868"
+		},
+		{
+			"title": "ESPN: PTI",
+			"description": "Tony Kornheiser and Michael Wilbon face off on the day's hot topics.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/pti_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2406595"
+		},
+		{
+			"title": "ESPN: The Paul Finebaum Show",
+			"description": "Paul Finebaum provides his unique takes on the SEC and the world of college football.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/paulFinebaum_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9560758"
+		},
+		{
+			"title": "ESPN: Around the Horn",
+			"description": "Host Tony Reali and four reporters from across the country debate the hottest issues of the day with points awarded for good arguments. In this sport of competitive banter, the winner gets 30 uninterrupted seconds to discuss the topic of their choice.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/aroundtheHorn_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2839445"
+		},
+		{
+			"title": "ESPN Radio: SVP & Russillo",
+			"description": "A daily best of SVP & Russillo on ESPN Radio.",
+			"host": "ESPN Radio",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/svpr_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=3028618"
+		},
+		{
+			"title": "His & Hers",
+			"description": "Michael Smith and Jemele Hill use their skill and personality to delve into a variety of topics from many different angles.",
+			"host": "null",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/his_hers_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=8898044"
+		},
+		{
+			"title": "ESPN: Olbermann",
+			"description": "Keith Olbermann ushers fans through the world of sports with a deep and witty dive into all of the latest stories. It's a provocative show presented from a bold perspective.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/olbermann_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9594536"
+		},
+		{
+			"title": "ESPN Radio: Thundering Herd",
+			"description": "A daily dose of the best of The Herd with Colin Cowherd.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/herd_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2799707"
+		},
+		{
+			"title": "Cheap Heat",
+			"description": "Grantlands TheMaskedMan, David Shoemaker, and Hot 97s Peter Rosenberg explore the crazy world of professional wrestling. It is the podcast for the modern mark.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/gln_cheap_heat_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=10116533"
+		},
+		
+		
+		{
+			"title": "ESPN: Numbers Never Lie",
+			"description": "Michael Smith and Jemele Hill use advanced statistics and analytics to settle the biggest debates in the world of sports.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/numbers_never_lie_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9528873"
+		},
+		{
+			"title": "ESPN Radio: Best of Mike and Mike",
+			"description": "A daily offering of the best of ESPN Radio's Mike and Mike.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/mm_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2445552"
+		},
+		{
+			"title": "ESPN: Football Today",
+			"description": "NFL updates, analysis and opinion from ESPN's team of experts.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/footballToday_statefarm_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2544457"
+		},
+		{
+			"title": "Championship Drive",
+			"description": "Championship Drive gives you an all-access pass inside the world of college football, utilizing ESPN's stable of reporters and analysts.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/espnu_cf_drpepper_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2557385"
+		},
+		{
+			"title": "ESPN: Baseball Tonight with Buster Olney",
+			"description": "ESPN MLB Insider Buster Olney leads the baseball discussion along with other top ESPN analysts.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/baseball_tonight_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2386164"
+		},
+		{
+			"title": "ESPN: Fantasy Focus Football",
+			"description": "ESPN Fantasy experts Matthew Berry and Nate Ravitz provide daily fantasy football player previews, game overviews, injury reports and strategy.",
+			"host": "ESPN Radio",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/focusFootball_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2942325"
+		},
+		{
+			"title": "ESPN: Fantasy Focus Baseball",
+			"description": "ESPN Fantasy experts Eric Karabell and Tristan Cockroft provide fantasy baseball player previews, game overviews, injury reports and strategy. ",
+			"host": "ESPN Radio",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/focusBaseball_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2544461"
+		},
+		{
+			"title": "ESPN: The B.S. Report with Bill Simmons",
+			"description": "Grantland's Bill Simmons discusses sports and pop culture with celebrities and media personalities.",
+			"host": "ESPN: B.S. Report",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/bs_report_1400_stamp.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2864045"
+		},
+		{
+			"title": "Sedano & Stink",
+			"description": "Jorge Sedano and Mark Schlereth share their thoughts on the biggest stories in sports, weekdays from 7-10 p.m. ET.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/sedano_&_stink_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9655466"
+		},
+		
+		
+		{
+			"title": "ESPN: Outside The Lines",
+			"description": "Outside the Lines has investigated trends and topics ranging from sports teams' hazing to the overseas labor practices of U.S. sneaker companies.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/otl_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=7128085"
+		},
+		{
+			"title": "ESPN: Fantasy Underground",
+			"description": "Chris Harris and Field Yates watch NFL film to find hidden trends, overrated performances and future stars, and then break them down for you in The Fantasy Underground.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/fantasy_underground_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=8375187"
+		},
+		{
+			"title": "ESPN: Behind the Bets with Chad Millman",
+			"description": "ESPN Insider Chad Millman explores the culture of sports gambling.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/podcast/behindBets_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=5395837"
+		},
+		{
+			"title": "ESPN Radio: Dari and Mel",
+			"description": "Dari Nowkhah and Mel Kiper Jr. join you every Saturday morning to cover the world of sports with the newsmakers of the day.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/darimel_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=7621447"
+		},
+		{
+			"title": "ESPN: The Sporting Life with Jeremy Schaap",
+			"description": "ESPN's Jeremy Schaap takes listeners on a listening experience full of investigative reporting and offbeat stories, all focused on sports. Digging deep into the popular stories of the day, Schaap focuses on great storytelling and impeccable research.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/sporting_life_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=8026447"
+		},
+		{
+			"title": "ESPN: Inside The Huddle with John Clayton",
+			"description": "ESPN's John Clayton takes you \"InsideTheHuddle\" each week with the latest NFL news.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/espnradio_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9328687"
+		},
+		{
+			"title": "ESPN: Listen Closely to Linda Cohn",
+			"description": "Linda Cohn shares her thoughts on the biggest topics and trends in the world of sports and beyond.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/listen_closely_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9716355"
+		},
+		{
+			"title": "ESPN: Marty and McGee",
+			"description": "ESPN's Marty Smith and Ryan McGee deliver a NASCAR-centric motorsports and music extravaganza.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/marty_mcgee_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9278666"
+		},
+		{
+			"title": "ESPN: Highly Questionable",
+			"description": "Dan Le Batard presents his \"questionable\" approach to sports commentary.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://espn.go.com/i/espnradio/stations/espn/podcasts/highlyQ_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=6962629"
+		},
+		{
+			"title": "Inside Out with Prim Siripipat",
+			"description": "Inside Out with Prim Siripipat delves into the psychological and social impact of sports on athletes.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/inside_out_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=10779329"
+		},
+		{
+			"title": "Capital Games with Andy Katz and Rick Klein",
+			"description": "Capital Games examines the crossroads of sports and politics.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/capital_games_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=10779261"
+		},
+		{
+			"title": "SportsBiz with Darren Rovell",
+			"description": "SportsBiz with Darren Rovell features an inside look at the business of sports.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/sports_biz_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=10779344"
+		},
+		{
+			"title": "ESPN: Real Talk with Jason Whitlock",
+			"description": "Where keeping it real goes right and wrong.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/realtalk_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=10264409"
+		},
+		{
+			"title": "ESPN: The Poker Edge",
+			"description": "ESPN.com poker editor Andrew Feldman brings you the latest news from the poker world and interviews the game's best players who provide strategy, analysis and commentary. ",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/podcast/images/pokeredge_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2509922"
+		},
+		{
+			"title": "ESPN: NBA Lockdown with Bruce Bowen",
+			"description": "ESPN's NBA Lockdown with Bruce Bowen covers all of the latest news, rumors and opinion in the NBA alongside ESPN's team of experts.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/nbaLockdown_kia_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=3634017"
+		},
+		{
+			"title": "ESPN: Tony Kornheiser",
+			"description": "Tony Kornheiser is back for another season of antics and NFL.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/tonyk_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=5543849"
+		},
+		{
+			"title": "ESPN: Hockey Today",
+			"description": "ESPN's weekly take on the NHL featuring experts Steve Levy, John Buccigross, Barry Melrose, Matthew Barnaby, Scott Burnside, Pierre LeBrun and more.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/podcast/hockeyToday_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2666118"
+		},
+		{
+			"title": "ESPNU: College Basketball",
+			"description": "Andy Katz and Seth Greenberg give you an all-access pass inside the world of college basketball.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/podcast/images/espnucb_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2689788"
+		},
+		{
+			"title": "E:60 Backstory",
+			"description": "E:60 Backstory",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/e60_backstory_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=10923060"
+		},
+		{
+			"title": "ESPN: Fantasy Focus Basketball",
+			"description": "Doug Kezirian, John Cregan and Tom Carpenter provide fantasy basketball player updates, injury news, strategy and more.",
+			"host": "ESPN Radio",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/podcast/focusBasketball_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=5730764"
+		},
+		{
+			"title": "ESPN The Magazine Podcast",
+			"description": "Editor-in-Chief Chad Millman takes listeners for a behind-the-scenes look at the stories behind the stories that make up ESPN The Magazine.",
+			"host": "ESPN ",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/espnMag_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=8313207"
+		},
+		{
+			"title": "ESPN: Coach Knight's Open Court with Rece Davis",
+			"description": "ESPN's Bob Knight and Rece Davis cover the world of college basketball.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/open_court_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=10293236"
+		},
+		{
+			"title": "ESPN: Behind The Dish with Keith Law",
+			"description": "ESPN's Keith Law delivers an insider's perspective on the game of baseball with guests from the front office of MLB teams along with writers and bloggers from across the country.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/behind_the_dish_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=9043211"
+		},
+		{
+			"title": "ESPN: Monday Night Preview",
+			"description": "Mike Tirico's Monday Night Preview breaks down the biggest game of the week. Which team will succeed in the spotlight?",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/stations/espn/podcasts/mnfp_1400.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=3569461"
+		},
+		{
+			"title": "ESPN: The Jayski Podcast",
+			"description": "Mark Garrow provides NASCAR news, rumors, stats and info.",
+			"host": "ESPN",
+			"category": "ESPN",
+			"logo": "http://a.espncdn.com/i/espnradio/podcast/jayski_300.jpg",
+			"feed": "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=3240517"
+		},
+		{
+			"title": "Hanselminutes",
+			"description": "Hanselminutes is a weekly audio talk show with noted web developer and technologist Scott Hanselman and hosted by Carl Franklin. Scott discusses utilities and tools, gives practical how-to advice, and discusses ASP.NET or Windows issues and workarounds.",
+			"host": "Scott Hanselman",
+			"category": "Misc",
+			"logo": "http://www.pwop.com/itunes_hanselminutes.jpg",
+			"feed": "http://pwop.com/feed.aspx?show=hanselminutes&filetype=master"
+		},
+		{
+			"title": "The Morning Stream",
+			"description": "The Morning Stream, Mon thru Thurs, every morning, with Scott Johnson and the Frogpants Network.  News, culture, politices and talk each and every day!",
+			"host": "Scott Johnson",
+			"category": "FrogPants Studios",
+			"logo": "http://frogpants.com/morningstream/morningstream.jpg",
+			"feed": "http://myextralife.com/ftp/radio/morningstream.xml"
+		},
+		{
+			"title": "The Diablo Show",
+			"description": "It's the Diablo Show, with Scott Johnson, creator and host of the top rated WoW show, The Instance.  If you love Diablo, then you're home.  Enjoy this look at the game and culture surounding everyone's favorite Prime Evil!",
+			"host": "Scott Johnson",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/ftp/radio/diabloshowart.jpg",
+			"feed": "http://myextralife.com/ftp/radio/diabloshow.xml"
+		},
+		{
+			"title": "The Therapy Show",
+			"description": "Wendi Dunford and Scott Johnson, brother and sister, take on the big issues of life!  Wendi is an actual therapist, so you can count on this stuff. :)",
+			"host": "Scott Johnson & Wendi Dunford",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/ftp/radio/therapy.jpg",
+			"feed": "http://myextralife.com/ftp/radio/therapy.xml"
+		},
+		{
+			"title": "Boop",
+			"description": "Join Scott Johnson for the latest episode of Boop:  The gaming news show from the Frogpants Network.  Tuesday's and Thursdays!",
+			"host": "Scott Johnson",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/ftp/radio/boop.jpg",
+			"feed": "http://myextralife.com/ftp/radio/boop.xml"
+		},
+		{
+			"title": "Comic Dorks!",
+			"description": "Comic books, and everything they touch.  Monthly, with Scott Johnson, Scott Kurtz, Stephen Schleicher, and Marc Spagnoulo! Only on the Frogpants Network.",
+			"host": "Scott Johnson",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/ftp/radio/comicdorks.jpg",
+			"feed": "http://myextralife.com/ftp/radio/comicdorks.xml"
+		},
+		{
+			"title": "AutoPilot!",
+			"description": "Join Scott Johnson & Tom Merritt as they watch all the great TV pilots of all time, so you don't have to! Think of it as Film Sack for TV!",
+			"host": "Scott Johnson & Tom Merritt",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/ftp/radio/autopilot_album.jpg",
+			"feed": "http://myextralife.com/ftp/radio/autopilot.xml"
+		},
+		{
+			"title": "Diary of a Cartoonist",
+			"description": "Scott Johnson talks about his life!",
+			"host": "Scott Johnson",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/ftp/radio/diary_art_01.jpg",
+			"feed": "http://myextralife.com/ftp/radio/diary.xml"
+		},
+		{
+			"title": "Film Sack",
+			"description": "Mining the depths of film entertainment for all mankind.  With Scott Johnson, Brian Dunaway, Randy Jordan, and Brian Ibbott.",
+			"host": "Scott Johnson",
+			"category": "FrogPants Studios",
+			"logo": "http://filmsack.com/filmsack.jpg",
+			"feed": "http://myextralife.com/ftp/radio/filmsack.xml"
+		},
+		{
+			"title": "Current Geek",
+			"description": "Current Geek, with Scott Johnson and Tom Merritt, covers the most interesting geeky stories with great guests and YOU! ",
+			"host": "Scott Johnson & Tom Merritt",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/ftp/radio/currentgeek.jpg",
+			"feed": "http://myextralife.com/ftp/radio/currentgeek.xml"
+		},
+		{
+			"title": "The Instance: World of Warcraft Podcast!",
+			"description": "The Instance: Weekly radio for fans and lovers of World of Warcraft. We don't take sides, we don't whine, we just give you the facts, news and tips that you want and need for your favorite online addiction. Come meet us at the stone for another Instance!",
+			"host": "Scott Johnson",
+			"category": "FrogPants Studios",
+			"logo": "http://www.myextralife.com/ftp/radio/instance_01.jpg",
+			"feed": "http://www.myextralife.com/ftp/radio/instance_rss.xml"
+		},
+		{
+			"title": "Final Score",
+			"description": "The best weekly stories in the world of video games, hosted by ExtraLife's Scott Johnson",
+			"host": "Scott Johnson",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/images/finalscore_album.jpg",
+			"feed": "http://myextralife.com/ftp/radio/finalscore.xml"
+		},
+		{
+			"title": "The Frogpants Spoiler Show",
+			"description": "We talk about movies and TV and stuff, and spoilers are always happening!  With Scott Johnson and Justin Robert Young",
+			"host": "Scott Johnson & Justin Robert Young",
+			"category": "FrogPants Studios",
+			"logo": "http://myextralife.com/ftp/radio/spoilershow.jpg",
+			"feed": "http://myextralife.com/ftp/radio/spoilershow.xml"
+		},
+		{
+			"title": "Coverville",
+			"description": "That Just About Covers It!The Cover Music Show",
+			"host": "Brian Ibbott",
+			"category": "FrogPants Studios",
+			"logo": "http://www.coverville.com/art/Coverville_AlbumArt_1400px.jpg",
+			"feed": "http://feeds.feedburner.com/coverville"
+		},
+		{
+			"title": "East Meets West - Podcast",
+			"description": "Where Roger and Tom meet.The always hilarious, sometimes random and definitely bizarre podcast of indeterminate topics.",
+			"host": "Roger Chang and Tom Merritt",
+			"category": "FrogPants Studios",
+			"logo": "http://www.subbrilliant.com/emw/wp-content/uploads/2008/08/emwgeneric1.thumbnail.jpg",
+			"feed": "http://feeds.feedburner.com/SubbrilliantBlog"
+		},
+		{
+			"title": "Critical Hit: A Dungeons and Dragons Campaign",
+			"description": "It's Lords of the Feywild, in this Dungeons and Dragons campaign.",
+			"host": "Major Spoilers Podcast Network",
+			"category": "FrogPants Studios",
+			"logo": "http://traffic.libsyn.com/majorspoilers/criticalhitlarge.jpg",
+			"feed": "http://www.majorspoilers.com/media/criticalhit.xml"
+		},
+		{
+			"title": "Nerd Parents",
+			"description": "We are group of friends and parents coming together in a positive space to discuss parenting in a nerdy world.Raising Kids in a Nerdy World",
+			"host": "nerdparents.com",
+			"category": "FrogPants Studios",
+			"logo": "http://nerdparents.com/wp-content/uploads/2014/01/Nerd-Parents300-e1389215276444.jpg",
+			"feed": "http://feeds.feedburner.com/NerdParents"
+		},
+		{
+			"title": "Daily Tech News Show",
+			"description": "On your side.",
+			"host": "Tom Merritt",
+			"category": "FrogPants Studios",
+			"logo": "http://www.dailytechnewsshow.com/wp-content/uploads/2014/01/DTNS_CoverArt1400x1400-TPC.png",
+			"feed": "http://feeds.feedburner.com/DailyTechNewsShow"
+		},
+		{
+			"title": "Comics Coast To Coast » Podcast",
+			"description": "A Weekly Comic Podcast With Brian Dunaway, Joel Duggan & Matthew Ducharme",
+			"host": "",
+			"category": "FrogPants Studios",
+			"logo": "",
+			"feed": "http://feeds.feedburner.com/ComicsCoastToCoast?option=com_podcast&feed=RSS2.0&no_html=1"
+		},
+		{
+			"title": "Wood Talk – Woodworking Podcast",
+			"description": "A woodworking audio show geared toward the modern fine woodworker. Join your hosts Marc Spagnuolo, Matt Vanderlist, and Shannon Rogers for a light-hearted look at the latest news, tips, and tricks from the world of woodworking.  Just a few dorks talking about woodworking!",
+			"host": "The Wood Whispererthewoodwhisperer@gmail.com (WoodTalkShow.com)",
+			"category": "FrogPants Studios",
+			"logo": "http://s3.amazonaws.com/tww_itunes/wtor_itunes.jpg",
+			"feed": "http://feeds.feedburner.com/woodtalkonline"
+		},
+		{
+			"title": "The Shakespeare Sound",
+			"description": "An audio podcast that Shakespeare himself would subscribe to!",
+			"host": "The Ministry of Shakespeare",
+			"category": "FrogPants Studios",
+			"logo": "http://ministryofshakespeare.squarespace.com/storage/itunesicon.jpg",
+			"feed": "http://www.ministryofshakespeare.com/the-ministry-of-shakespeare/rss.xml"
+		},
+		{
+			"title": "Ladies of Leet",
+			"description": "Join Nicole, Stephanie & Kim as they discuss video games from all areas; Hardcore to Casual, PC to Console and Expensive to Affordable. This podcast is fun conversation with some great tips & news for any gamer regardless of gender.Girls & Games",
+			"host": "LadiesofLeet.com",
+			"category": "FrogPants Studios",
+			"logo": "http://ladiesofleet.com/wp-content/uploads/2009/09/ladiesofleet2.jpg",
+			"feed": "http://feeds.feedburner.com/ladiesofleet"
+		},
+		{
+			"title": "FourCast (MP3)",
+			"description": "Join Scott Johnson and Tom Merritt to get short term, long term, and crazy predictions, as well as the always interesting FourCast Findings and FourCast QuickFire Questions segments. They are a little lazy, so they bring on two guests every episode and make them do the work. Although the show is no longer in production, you can enjoy episodes from the TWiT Archives. Four-dimensional views through time",
+			"host": "TWiTfourcastpodcast@gmail.com (Scott Johnson and Tom Merritt)",
+			"category": "FrogPants Studios",
+			"logo": "http://www.fourcastpodcast.com/storage/Fourcast-600.jpg",
+			"feed": "http://feeds.feedburner.com/fourcastpodcast/hxMY"
+		},
+		{
+			"title": "FSL Tonight",
+			"description": "The hot news and hot scoops on all things FSLThe hot news and hot scoops on all things FSL",
+			"host": "",
+			"category": "FrogPants Studios",
+			"logo": "http://www.subbrilliant.com/FSL/wp-content/uploads/2011/10/dragon_podcast400x400.jpg",
+			"feed": "http://feeds.feedburner.com/FslTonight"
+		},
+		{
+			"title": "Sword & Laser",
+			"description": "Read along with the Sword and Laser book club! From classic science fiction to the latest gritty fantasy, we cover it.",
+			"host": "Tom Merritt and Veronica Belmont",
+			"category": "FrogPants Studios",
+			"logo": "https://static.squarespace.com/static/50468d91c4aae834ae644e29/t/52c319f1e4b09bdc91f28a5d/1388517877151/sword-and-laser-1400-boing.png",
+			"feed": "http://feeds.feedburner.com/TheSwordAndLaser"
+		},
+		{
+			"title": "The AIE Podcast",
+			"description": "The Die Has Been Podcast.",
+			"host": "The AIE Podcast",
+			"category": "FrogPants Studios",
+			"logo": "http://theaiepodcast.com/wp-content/uploads/2013/01/AIE_Podcast_Logo_144-414.png",
+			"feed": "http://www.theaiepodcast.com/feed/podcast/"
+		},
+		{
+			"title": "Who's the Boss",
+			"description": "Ashley Paramore and Justin Robert Young discuss Doctor Who. And his travels. And his companions. And his TARDIS.",
+			"host": "Ashley Paramore and Justin Robert Young",
+			"category": "FrogPants Studios",
+			"logo": "http://dl.dropbox.com/u/27808041/whostheboss_01_01_02.jpg",
+			"feed": "https://dl.dropboxusercontent.com/u/27808041/whostheboss.xml"
+		},
+		{
+			"title": "StarCast: The StarCraft Podcast",
+			"description": "",
+			"host": "starcastshow@gmail.com (Garrett Weinzierl & Kyle Fergusson)Garrett Weinzierl & Kyle Fergusson",
+			"category": "FrogPants Studios",
+			"logo": "http://thestarcast.com/shows/starcast/art/itunesart_hots.jpg",
+			"feed": "http://feeds.feedburner.com/starcast_rss"
+		},
+		{
+			"title": "The Angry Chicken: A Hearthstone Podcast",
+			"description": "The Hearthstone Podcast",
+			"host": "Garrett Weinzierl",
+			"category": "FrogPants Studios",
+			"logo": "http://www.thestarcast.com/shows/tac/art/tac-itunes_art.jpg",
+			"feed": "http://feeds.feedburner.com/theangrychicken"
+		},
+		{
+			"title": "Today in Tech History with Tom Merritt",
+			"description": "Tom Merritt gives you a quick rundown of some of the important moments that happened in tech history on this day.Where tech has been so you know where it's going.",
+			"host": "Tom Merritt",
+			"category": "FrogPants Studios",
+			"logo": "http://www.tommerritt.com/wp-content/uploads/2014/01/TITHAlbumArt.jpg",
+			"feed": "http://feeds.feedburner.com/TomMerrittcomTodayInTechHistory"
+		},
+		{
+           "title": "Geek Radio Daily",
+           "description": "All the geek without the wait!Geek Radio Daily",
+           "host": "rotooutcast@gmail.com",
+           "category": "Geek Radio",
+           "logo": "http://www.geekradiodaily.com/wp-content/themes/abac2008/images/logo.png",
+           "feed": "http://feeds.feedburner.com/geekradiodaily"
+		},
+		{
+			"title": "Stuff You Should Know",
+			"description": "How do elevators work? How do black holes work? Join Josh and Chuck as they explore the Stuff You Should Know about everything from genes to the Galapagos in this podcast from HowStuffWorks.com.",
+			"host": "stuffpodcast@howstuffworks.com (Stuff You Should Know)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://podcasts.howstuffworks.com/hsw/podcasts/sysk/sysk-audio-1600.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/stuff-you-should-know.rss"
+		},
+		{
+			"title": "Stuff To Blow Your Mind",
+			"description": "What is the science of origami? Is there a mathematical equation for happiness? Join Robert and Julie for this week's episodes of Stuff To Blow Your Mind, a podcast by HowStuffWorks.com.",
+			"host": "sciencestuff@howstuffworks.com (Stuff To Blow Your Mind)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://podcasts.howstuffworks.com/hsw/podcasts/sciencelab/stbym-1400x1400.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/stuff-to-blow-your-mind.rss"
+		},
+		{
+			"title": "Stuff Mom Never Told You",
+			"description": "Women are far likelier to suffer from insomnia than men, but why? What's the science of curly hair and why are there so many cultural stereotypes regarding ringlets? Join Cristen and Caroline as they explore the fact, fiction and controversy surrounding the Stuff Mom Never Told You.",
+			"host": "momstuff@howstuffworks.com (Stuff Mom Never Told You)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://s.hswstatic.com/gif/stuffmomnevertoldyou_1600x1600.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/stuff-mom-never-told-you.rss"
+		},
+		{
+			"title": "Fw:Thinking",
+			"description": "It's about technology. It's about humanity. It's about our future. It's Fw:Thinking.",
+			"host": "fwthinking@discovery.comFw:Thinking",
+			"category": "HowStuffWorks",
+			"logo": "http://podcasts.howstuffworks.com/hsw/podcasts/fwthinking/fwdthinking-1200x1200-logo.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/fwthinking.rss"
+		},
+		{
+			"title": "CarStuff",
+			"description": "How do donk cars work? What's the future of connected cars? Join Scott and Ben as they take a closer look at all things automotive in CarStuff, a podcast by HowStuffWorks.com.",
+			"host": "highspeedstuff@howstuffworks.com (CarStuff)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://podcasts.howstuffworks.com/hsw/podcasts/carstuff/carstuff-logo-600x600.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/carstuff.rss"
+		},
+		{
+			"title": "The Stuff of Genius",
+			"description": "Have you ever had an idea that seems crazy, like instant noodles, a taser or a bendable drinking straw? Every invention starts out as an idea, and it only takes a bit of genius to make it a reality. Tune in and learn more in this podcast from HowStuffWorks.com.",
+			"host": "podcast@howstuffworks.com (HowStuffWorks.com)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://podcasts.howstuffworks.com/hsw/podcasts/sog/stog-logo.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/stuff-of-genius.rss"
+		},
+		{
+			"title": "Stuff They Don't Want You To Know",
+			"description": "From UFOs to psychic powers and government conspiracies, history is riddled with unexplained events. This week, get a closer look at the Stuff They Don't Want You To Know about the mob in this video podcast from HowStuffWorks.com.",
+			"host": "conspiracy@howstuffworks.com (Conspiracy)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://podcasts.howstuffworks.com/hsw/podcasts/conspiracy/conspiracy-logo.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/stuff-they-dont-want-you-to-know.rss"
+		},
+		{
+			"title": "Stuff You Missed in History Class",
+			"description": "What's the story of Andrew's Raid, also known as the Great Locomotive Chase? Join Holly and Tracy as they bring you the greatest and strangest Stuff You Missed In History Class in this podcast by HowStuffWorks.com.",
+			"host": "historypodcast@howstuffworks.com (Stuff You Missed In History Class)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://s.hswstatic.com/gif/symhc-new-logo-1600x1600.png",
+			"feed": "http://www.howstuffworks.com/podcasts/stuff-you-missed-in-history-class.rss"
+		},
+		{
+			"title": "BrainStuff",
+			"description": "How does cooking at high altitudes work? How does popcorn work? How do calorie meters work? Join Marshall Brain as he explores the science behind everything from microwave popcorn to metal detectors.",
+			"host": "podcast@howstuffworks.com (BrainStuff)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://podcasts.howstuffworks.com/hsw/podcasts/brainstuff/brainstuff-logo.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/brainstuff.rss"
+		},
+		{
+			"title": "TechStuff",
+			"description": "How do we make fire? What's the state of 3D printers and what's it like working with one? Learn the answer to these questions and more as Jonathan and Lauren explore the science behind all things tech in TechStuff, a podcast by HowStuffWorks.com.",
+			"host": "podcast@howstuffworks.com (HowStuffWorks.com)HowStuffWorks.com",
+			"category": "HowStuffWorks",
+			"logo": "http://podcasts.howstuffworks.com/hsw/podcasts/techstuff/techstuff-avatar-1600x1600.jpg",
+			"feed": "http://www.howstuffworks.com/podcasts/techstuff.rss"
+		}
     ]
 }

@@ -396,6 +396,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 					startActivity(Intent.createChooser(intent, "Open File..."));
 				}else if(index == 3){
 					PrefUtils.setVideoIndex(HomeActivity.this, 0);
+					PrefUtils.setSeekTo(HomeActivity.this, 0);
 					// Show the custom view for the video fragment context, yo!
 					setVideoFragmentActionBarView();
 					// we are showing the recent fragment
@@ -435,6 +436,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 					videoPlayerFragment.retrieveArgumentsAgain();
 				}else if(index == 4){
 					PrefUtils.setVideoIndex(HomeActivity.this, 0);
+					PrefUtils.setSeekTo(HomeActivity.this, 0);
 					// Show the custom view for the video fragment context, yo!
 					setVideoFragmentActionBarView();
 					
@@ -538,6 +540,9 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 	//------------------------------------------------------------------------------
 	@Override
 	public void onPodcastClicked(int index) {
+		PrefUtils.setSeekTo(this, 0);
+		PrefUtils.setVideoIndex(this, 0);
+		
 		fragment.restoreAll();
 		
 		// We arent showing the favorites or recents so we set them to false

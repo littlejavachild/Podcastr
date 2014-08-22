@@ -128,8 +128,8 @@ public class VideoPlayerFragment extends Fragment implements
 		if(!(favoritesMode || recentsMode)){
 			loadEpisodes.cancel(true);
 		}
-		player.stop();
-		player.reset();
+//		player.stop();
+//		player.reset();
 		// onStop, we keep the snapshot state. Not a complete reset
 		PrefUtils.setSeekTo(getActivity(), player.getCurrentPosition());
 		PrefUtils.setVideoIndex(getActivity(), PrefUtils.getVideoIndex(getActivity()));
@@ -164,9 +164,9 @@ public class VideoPlayerFragment extends Fragment implements
     	
     	// Because landscape mode only has a video player.
 		// If one of the TextView is null, all are null
-    	if(episodeTitle != null){
+    	if(episodeTitle != null && episodeDescription != null){
     		episodeTitle.setTypeface(roboto, Typeface.BOLD);
-        	episodeDescription.setTypeface(roboto, Typeface.BOLD);
+    		episodeDescription.setTypeface(roboto, Typeface.BOLD);
     	}
 	}
 	//------------------------------------------------------------------------------
@@ -239,7 +239,7 @@ public class VideoPlayerFragment extends Fragment implements
 		
 		// Because landscape mode only has a video player.
 		// If one of the TextView is null, all are null
-		if(episodeTitle != null){
+		if(episodeTitle != null && episodeDescription != null){
 			episodeTitle.setText(title);
 			episodeDescription.setText(description);
 			episodeTitle.setSelected(true);
@@ -256,7 +256,7 @@ public class VideoPlayerFragment extends Fragment implements
 		        File localFile = new File(path,fileName);
 		        Uri localSource = Uri.parse(localFile.getAbsolutePath());
 		        player.setDataSource(getActivity(), localSource);
-				player.prepare();
+				player.prepareAsync();
 			}else{
 				// We make the ProgressWheel visible, chances are that it may be invsible
 				pw.setVisibility(View.VISIBLE);
@@ -317,6 +317,10 @@ public class VideoPlayerFragment extends Fragment implements
     @Override
     public void onPrepared(MediaPlayer mp) {
     	player.start();
+    	player.seekTo(PrefUtils.getSeekTo(getActivity()));
+    	
+    	System.out.println("MOVING SEEK TO: " + PrefUtils.getSeekTo(getActivity()));
+    	
     	// stop spinning the progress wheel
     	pw.stopSpinning();
     	// and hide it
