@@ -4,17 +4,22 @@ package com.fasih.podcastr;
 import java.io.File;
 
 import android.app.Application;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 
+import com.fasih.podcastr.service.MusicService;
 import com.fasih.podcastr.util.Constants;
 import com.parse.Parse;
+import com.squareup.picasso.Picasso;
 
 public class PodcastrApplication extends Application {
 	private static PodcastrApplication singleton = null;
 	private static Typeface roboto = null;
 	private boolean homeActivityVisible = false;
 	private static MediaPlayer player = null;
+	private static Intent musicService = null;
 	//--------------------------------------------------------------------------------------------------
 	@Override
 	public void onCreate(){
@@ -27,8 +32,13 @@ public class PodcastrApplication extends Application {
 		Parse.enableLocalDatastore(this);
 		// The following line initialized Parse
 		Parse.initialize(this, "juecnERSHJiESim4for8CWwT5o7LUWCvgyOzYdx7", "VeJvVnI7B9llgRrc72ywYK14kI6C47aMeeY9nbqg");
+		
+		// Intent to use the MusicService
+		musicService = new Intent(getApplicationContext(), MusicService.class);
+		
 		createTypeface();
 		createDirectories();
+
 	}
 	//--------------------------------------------------------------------------------------------------
 	/**
@@ -77,6 +87,14 @@ public class PodcastrApplication extends Application {
 	//--------------------------------------------------------------------------------------------------
 	public MediaPlayer getMediaPlayer(){
 		return player;
+	}
+	//--------------------------------------------------------------------------------------------------
+	public void setMusicServiceIntent(Intent music){
+		musicService = music;
+	}
+	//--------------------------------------------------------------------------------------------------
+	public Intent getMusicServiceIntent(){
+		return musicService;
 	}
 	//--------------------------------------------------------------------------------------------------
 }

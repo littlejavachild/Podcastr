@@ -22,6 +22,7 @@
     <supports-screens android:largeScreens="true" />
     <supports-screens android:largeScreens="true" />
 	
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -39,6 +40,14 @@
             android:configChanges="orientation" android:immersive="true">
             
         </activity>
+     <!--
+         Because android:exported is set to "false",
+         the service is only available to this app.
+     -->
+    <service
+            android:name="com.fasih.podcastr.service.MusicService"
+            android:stopWithTask="false"
+            android:exported="false" />
     <meta-data android:name="com.crashlytics.ApiKey" android:value="4e762f224670ad9c95c7f665f5affdd018b987bc"/>
     </application>
 

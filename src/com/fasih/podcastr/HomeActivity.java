@@ -1,6 +1,5 @@
 package com.fasih.podcastr;
 
-import com.crashlytics.android.Crashlytics;
 import java.io.File;
 import java.util.List;
 
@@ -10,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -41,19 +41,19 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.crashlytics.android.Crashlytics;
 import com.fasih.podcastr.adapter.CategorySpinnerAdapter;
 import com.fasih.podcastr.adapter.NavigationDrawerAdapter;
 import com.fasih.podcastr.fragment.PodcastGridFragment;
 import com.fasih.podcastr.fragment.PodcastGridFragment.OnPodcastClickedListener;
 import com.fasih.podcastr.fragment.VideoPlayerFragment;
+import com.fasih.podcastr.service.MusicService;
 import com.fasih.podcastr.util.ActionBarUtil;
 import com.fasih.podcastr.util.Constants;
 import com.fasih.podcastr.util.FavoriteUtil;
 import com.fasih.podcastr.util.PodcastUtil;
 import com.fasih.podcastr.util.PrefUtils;
 import com.fasih.podcastr.util.RecentUtil;
-import com.fasih.podcastr.util.Response;
-import com.google.gson.Gson;
 
 public class HomeActivity extends FragmentActivity implements OnPodcastClickedListener{
 	private PodcastGridFragment fragment = null;
@@ -95,6 +95,7 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 	//------------------------------------------------------------------------------
 	@Override
 	public void onCreate(Bundle savedInstanceState){
+		
 		super.onCreate(savedInstanceState);
 		Crashlytics.start(this);
 		setContentView(R.layout.activity_home);
@@ -162,6 +163,11 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 		super.onPostCreate(savedInstanceState);
 		// Sync the toggle state after onRestoreInstanceState has occurred.
         drawerToggle.syncState();
+	}
+	//------------------------------------------------------------------------------
+	@Override
+	public void onStop(){
+		super.onStop();
 	}
 	//------------------------------------------------------------------------------
 	@Override
@@ -321,8 +327,6 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 				searchString.startAnimation(growInLength);
 				// Set focus on the EditText
 				searchString.requestFocus();
-				// Show the keyboard
-				showKeyboard();
 			}
 		});
 	}
@@ -340,26 +344,24 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 				categories.setVisibility(View.VISIBLE);
 				// Clear the search string
 				searchString.setText("");
-				// Hide keyboard
-				hideKeybaord();
 				fragment.restoreAll();
 			}
 		});
 	}
 	//------------------------------------------------------------------------------
-	private void hideKeybaord(){
-		if(searchString != null){
-			InputMethodManager imm = (InputMethodManager)getSystemService(
-				      Context.INPUT_METHOD_SERVICE);
-			imm.hideSoftInputFromWindow(searchString.getWindowToken(), 0);
-		}
-	}
-	//------------------------------------------------------------------------------
-	private void showKeyboard(){
-		InputMethodManager imm = (InputMethodManager)getSystemService(
-			      Context.INPUT_METHOD_SERVICE);
-		imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
-	}
+//	private void hideKeybaord(){
+//		if(searchString != null){
+//			InputMethodManager imm = (InputMethodManager)getSystemService(
+//				      Context.INPUT_METHOD_SERVICE);
+//			imm.hideSoftInputFromWindow(searchString.getWindowToken(), 0);
+//		}
+//	}
+//	//------------------------------------------------------------------------------
+//	private void showKeyboard(){
+//		InputMethodManager imm = (InputMethodManager)getSystemService(
+//			      Context.INPUT_METHOD_SERVICE);
+//		imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
+//	}
 	//------------------------------------------------------------------------------
 	private void setEditTextEditorActionListener(){
 		TextView.OnEditorActionListener editorListener = new TextView.OnEditorActionListener(){
@@ -395,8 +397,10 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 					intent.setDataAndType(selectedUri, "*/*"); 
 					startActivity(Intent.createChooser(intent, "Open File..."));
 				}else if(index == 3){
+					boolean temp = recentsFragmentShown;
 					PrefUtils.setVideoIndex(HomeActivity.this, 0);
 					PrefUtils.setSeekTo(HomeActivity.this, 0);
+//					PodcastrApplication.newInstance().getMediaPlayer().reset();
 					// Show the custom view for the video fragment context, yo!
 					setVideoFragmentActionBarView();
 					// we are showing the recent fragment
@@ -430,13 +434,19 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 						argsToVideoPlayerFragment.putBoolean(Constants.FAVORITES_FRAGMENT_SHOWN, favoritesFragmentShown);
 						argsToVideoPlayerFragment.putBoolean(Constants.RECENTS_FRAGMENT_SHOWN, recentsFragmentShown);
 					}
-					if(!isInBackStack(videoPlayerFragment)){
-						displayVideoPlayerFragment();
+					
+					if(temp == false){
+						if(!isInBackStack(videoPlayerFragment)){
+							displayVideoPlayerFragment();
+						}
+						videoPlayerFragment.retrieveArgumentsAgain();
 					}
-					videoPlayerFragment.retrieveArgumentsAgain();
+					
 				}else if(index == 4){
+					boolean temp = favoritesFragmentShown;
 					PrefUtils.setVideoIndex(HomeActivity.this, 0);
 					PrefUtils.setSeekTo(HomeActivity.this, 0);
+//					PodcastrApplication.newInstance().getMediaPlayer().reset();
 					// Show the custom view for the video fragment context, yo!
 					setVideoFragmentActionBarView();
 					
@@ -471,10 +481,12 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 						argsToVideoPlayerFragment.putBoolean(Constants.FAVORITES_FRAGMENT_SHOWN, favoritesFragmentShown);
 						argsToVideoPlayerFragment.putBoolean(Constants.RECENTS_FRAGMENT_SHOWN, recentsFragmentShown);
 					}
-					if(!isInBackStack(videoPlayerFragment)){
-						displayVideoPlayerFragment();
+					if(temp == false){
+						if(!isInBackStack(videoPlayerFragment)){
+							displayVideoPlayerFragment();
+						}
+						videoPlayerFragment.retrieveArgumentsAgain();
 					}
-					videoPlayerFragment.retrieveArgumentsAgain();
 				}else if(index == 5){
 					final String packageName = getPackageName();
 					Uri market = Uri.parse("market://details?id=" + packageName);

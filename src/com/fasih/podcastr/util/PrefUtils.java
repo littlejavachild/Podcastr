@@ -31,4 +31,17 @@ public class PrefUtils {
 		editor.commit();
 	}
 	//----------------------------------------------------------------------------------------
+	public static boolean getBuffering(Context con){
+		SharedPreferences prefs = con.getSharedPreferences(Constants.PREFS_FILE, 0);
+		boolean buffering = prefs.getBoolean(Constants.BUFFERING, false);
+		return buffering;
+	}
+	//----------------------------------------------------------------------------------------
+	public static void setBuffering(Context con, boolean isBuffering){
+		SharedPreferences prefs = con.getSharedPreferences(Constants.PREFS_FILE, 0);
+		SharedPreferences.Editor editor = prefs.edit();
+		editor.putBoolean(Constants.BUFFERING, isBuffering);
+		editor.commit();
+	}
+	//----------------------------------------------------------------------------------------
 }

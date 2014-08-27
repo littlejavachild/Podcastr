@@ -3,6 +3,8 @@ package com.fasih.podcastr.fragment;
 import java.io.File;
 import java.io.IOException;
 
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningServiceInfo;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.content.ActivityNotFoundException;
@@ -19,8 +21,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Environment;
-import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -39,6 +41,7 @@ import android.widget.Toast;
 import com.fasih.podcastr.PodcastrApplication;
 import com.fasih.podcastr.R;
 import com.fasih.podcastr.adapter.EpisodeAdapter;
+import com.fasih.podcastr.service.MusicService;
 import com.fasih.podcastr.util.Constants;
 import com.fasih.podcastr.util.Episode;
 import com.fasih.podcastr.util.EpisodeUtil;
@@ -82,9 +85,10 @@ public class VideoPlayerFragment extends Fragment implements
     private LoadEpisodesTask loadEpisodes;
     private EpisodeAdapter adapter = new EpisodeAdapter();
     
-    boolean favoritesMode = false;
-    boolean recentsMode = false;
+    private static boolean favoritesMode = false;
+    private static boolean recentsMode = false;
     
+    private boolean sharing = false;
   //------------------------------------------------------------------------------
 	public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		singleton = this;
@@ -98,6 +102,7 @@ public class VideoPlayerFragment extends Fragment implements
 		super.onResume();
 		// get references
 		init();
+		
 		// Because landscape mode has video player only.
 		// Hence, ListView will be null after init()
 		if(listOfEpisodes != null){
@@ -105,15 +110,39 @@ public class VideoPlayerFragment extends Fragment implements
 			setEpisodeOnItemClickListener();
 		}
 		
-		retrieveArgumentsAgain();
+		favoritesMode = getArguments().getBoolean(Constants.FAVORITES_FRAGMENT_SHOWN);
+		recentsMode = getArguments().getBoolean(Constants.RECENTS_FRAGMENT_SHOWN);
+		
+		// Stop any started services
+		if(MusicService.status == 1){
+			PrefUtils.setSeekTo(getActivity(), player.getCurrentPosition());
+			getActivity().stopService(PodcastrApplication.newInstance().getMusicServiceIntent());
+		}
 		
 		if(favoritesMode || recentsMode){
 			setPodcastTitle();
-			playEpisode(PrefUtils.getVideoIndex(getActivity()));
+//			PrefUtils.setSeekTo(getActivity(), PrefUtils.getSeekTo(getActivity()));
+			new CountDownTimer(500, 500) {
+			     public void onTick(long millisUntilFinished) { /** NOTHING */ }
+			     public void onFinish() {
+			    	 playEpisode(PrefUtils.getVideoIndex(getActivity()));
+			     }
+		    }.start();
 		}else{
 			retrieveArguments();
 			if(EpisodeUtil.getEpisodes().size() == 0){
 				getEpisodes();
+			}else{
+//				PrefUtils.setSeekTo(getActivity(), PrefUtils.getSeekTo(getActivity()));
+				if(listOfEpisodes != null){
+					listOfEpisodes.smoothScrollToPosition(PrefUtils.getVideoIndex(getActivity()));
+				}
+				new CountDownTimer(500, 500) {
+				     public void onTick(long millisUntilFinished) { /** NOTHING */ }
+				     public void onFinish() {
+				    	 playEpisode(PrefUtils.getVideoIndex(getActivity()));
+				     }
+			    }.start();
 			}
 		}
 		
@@ -125,16 +154,40 @@ public class VideoPlayerFragment extends Fragment implements
 	}
 	//------------------------------------------------------------------------------
 	@Override
+	public void onPause(){
+		super.onPause();
+	}
+	//------------------------------------------------------------------------------
+	@Override
 	public void onStop(){
 		super.onStop();
 		if(!(favoritesMode || recentsMode)){
 			loadEpisodes.cancel(true);
 		}
-//		player.stop();
-//		player.reset();
-		// onStop, we keep the snapshot state. Not a complete reset
+		
+		// Save a snapshot
 		PrefUtils.setSeekTo(getActivity(), player.getCurrentPosition());
 		PrefUtils.setVideoIndex(getActivity(), PrefUtils.getVideoIndex(getActivity()));
+		
+		MediaPlayer player = PodcastrApplication.newInstance().getMediaPlayer();
+		if(adapter.getCount() > 0){
+			Episode ep = (Episode) adapter.getItem(PrefUtils.getVideoIndex(getActivity()));
+			String title = ep.getTitle();
+			if(!ep.getEnclosureURL().contains(".mp4") && player.isPlaying()){ // MP3 Playing
+				Intent music = new Intent(getActivity(), MusicService.class);
+				music.putExtra(Constants.TITLE, title);
+				PodcastrApplication.newInstance().setMusicServiceIntent(music);
+				PrefUtils.setSeekTo(getActivity(), player.getCurrentPosition());
+				player.pause();
+				getActivity().startService(music);
+			}else if(ep.getEnclosureURL().contains(".mp4") && player.isPlaying()){ // MP4 Playing
+				PrefUtils.setSeekTo(getActivity(), player.getCurrentPosition());
+			}else if(!ep.getEnclosureURL().contains(".mp4") && !player.isPlaying()){
+				PrefUtils.setSeekTo(getActivity(), player.getCurrentPosition());
+			}else{
+				player.reset();
+			}
+		}
 	}
 	//------------------------------------------------------------------------------
 	private void init(){
@@ -167,13 +220,17 @@ public class VideoPlayerFragment extends Fragment implements
     	if(episodeTitle != null && episodeDescription != null){
     		episodeTitle.setTypeface(roboto, Typeface.BOLD);
     		episodeDescription.setTypeface(roboto, Typeface.BOLD);
+    		episodeTitle.setText("");
+			episodeDescription.setText("");
     	}
 	}
 	//------------------------------------------------------------------------------
 	private void retrieveArguments(){
 		arguments = getArguments();
 		int index = arguments.getInt(Constants.PODCAST_INDEX);
-		podcast = PodcastUtil.getPodcasts().get(index);
+		if(PodcastUtil.getPodcasts().size() > 0){
+			podcast = PodcastUtil.getPodcasts().get(index);
+		}
 	}
 	//------------------------------------------------------------------------------
 	private void getEpisodes(){
@@ -282,8 +339,6 @@ public class VideoPlayerFragment extends Fragment implements
 			recent.put(Constants.ENCLOSURE, episode.getEnclosureURL());
 			RecentUtil.addToRecents(recent);
 		}
-		
-		
 	}
 	//------------------------------------------------------------------------------
 	@Override
@@ -294,9 +349,12 @@ public class VideoPlayerFragment extends Fragment implements
 		
 		favoritesMode = false;
 		recentsMode = false;
-		
-		player.stop();
 		player.reset();
+		
+		// Stop the service
+		if(PodcastrApplication.newInstance().getMusicServiceIntent() != null){
+			getActivity().stopService(PodcastrApplication.newInstance().getMusicServiceIntent());
+		}
 	}
 	//------------------------------------------------------------------------------
     // Implement SurfaceHolder.Callback
@@ -427,6 +485,7 @@ public class VideoPlayerFragment extends Fragment implements
 			public void onClick(View v) {
 				
 				if(adapter.getCount() == 0){
+					setInitialButtonColor();
 					return;
 				}
 				
@@ -598,6 +657,8 @@ public class VideoPlayerFragment extends Fragment implements
 		share.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				PrefUtils.setSeekTo(getActivity(), player.getCurrentPosition());
+				player.pause();
 				shareEpisode();
 			}
 		});
@@ -695,26 +756,25 @@ public class VideoPlayerFragment extends Fragment implements
 	}
 	//------------------------------------------------------------------------------
 	public void retrieveArgumentsAgain(){
-		// TODO
-		if(player != null){
-			player.reset();
-		}
-		
-		// get the booleans
 		favoritesMode = getArguments().getBoolean(Constants.FAVORITES_FRAGMENT_SHOWN);
 		recentsMode = getArguments().getBoolean(Constants.RECENTS_FRAGMENT_SHOWN);
+		
 		if(favoritesMode){
-			adapter.setDataSource(FavoriteUtil.getFavoritesAsEpisodes());
+			adapter.setDataSource(FavoriteUtil.getFavoritesAsEpisodes());	
 		}else if(recentsMode){
 			adapter.setDataSource(RecentUtil.getRecentsAsEpisodes());
 		}
 		
-		new CountDownTimer(1000, 1000) {
-		     public void onTick(long millisUntilFinished) { /** NOTHING */ }
-		     public void onFinish() {
-		    	 playEpisode(PrefUtils.getVideoIndex(getActivity()));
-		     }
-	    }.start();
+		if(favoritesMode || recentsMode){
+			new CountDownTimer(500, 500) {
+			     public void onTick(long millisUntilFinished) { /** NOTHING */ }
+			     public void onFinish() {
+			    	playEpisode(PrefUtils.getVideoIndex(getActivity()));
+			     }
+		    }.start();	
+		}
 	}
 	//------------------------------------------------------------------------------
+	// http://www.framentos.com/en/android-tutorial/2012/02/20/how-to-create-a-custom-notification-on-android/
+	// http://stackoverflow.com/questions/600207/how-to-check-if-a-service-is-running-in-android
 }

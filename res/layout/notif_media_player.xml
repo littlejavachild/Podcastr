@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@android:color/black">
+    
+    <!-- Logo -->
+    <ImageView android:id="@+id/logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentLeft="true" />
+    
+    <!-- Media Buttons -->
+    <ImageButton android:id="@+id/dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:src="@drawable/ic_action_cancel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" 
+        android:layout_centerVertical="true"/>
+    
+    <ImageView android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_pause"
+        android:background="@android:color/transparent"
+        android:layout_toLeftOf="@id/dismiss"
+        android:layout_marginRight="15dp" 
+        android:layout_centerVertical="true"/>
+    
+    <!-- Episode Title -->
+    <TextView android:id="@+id/episode_title"
+        android:layout_toRightOf="@id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/pause"
+        android:typeface="sans"
+        android:textSize="16sp"
+        android:text="@android:string/untitled"
+        android:textColor="@android:color/white"
+       	android:singleLine="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

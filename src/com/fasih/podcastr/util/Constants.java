@@ -23,4 +23,7 @@ public interface Constants {
 	String GUID = "guid";
 	String ENCLOSURE = "enclosure";
 	
+	String FILENAME = "file_name";
+	String EXISTS_LOCALLY = "exists_locally";
+	String BUFFERING = "buffering";
 }
