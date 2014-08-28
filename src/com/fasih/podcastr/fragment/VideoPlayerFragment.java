@@ -88,7 +88,6 @@ public class VideoPlayerFragment extends Fragment implements
     private static boolean favoritesMode = false;
     private static boolean recentsMode = false;
     
-    private boolean sharing = false;
   //------------------------------------------------------------------------------
 	public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		singleton = this;

@@ -19,7 +19,8 @@ import com.fasih.podcastr.R;
 import com.fasih.podcastr.util.Constants;
 import com.fasih.podcastr.util.PrefUtils;
 
-public class MusicService extends Service{
+public class MusicService extends Service implements 
+										  MediaPlayer.OnCompletionListener{
 	
 	final static String NAME = "MusicService";
 	private NotificationManager mgr;
@@ -55,6 +56,7 @@ public class MusicService extends Service{
 	public int onStartCommand(Intent intent, int flags, int startId){
 		Log.d(NAME, "Making Request To Music Service in BG");
 		MediaPlayer player = PodcastrApplication.newInstance().getMediaPlayer();
+		player.setOnCompletionListener(this);
 		request = intent.getIntExtra(REQUEST_CODE, 0);
 		title = intent.getStringExtra(Constants.TITLE);
 		updateNotification();
@@ -106,14 +108,18 @@ public class MusicService extends Service{
 						         .setContent(rm)
 						         .build();
 		
-		NotificationManager mgr = (NotificationManager) getApplicationContext()
-								  .getSystemService(Context.NOTIFICATION_SERVICE);
+		if(mgr == null){
+			mgr = (NotificationManager) getApplicationContext()
+					  .getSystemService(Context.NOTIFICATION_SERVICE);
+		}
 		mgr.notify(NOTIFICATION_ID, notif);
 	}
 	//------------------------------------------------------------------------------
 	private void hideNotification(){
-		NotificationManager mgr = (NotificationManager) getApplicationContext()
-				   			    .getSystemService(Context.NOTIFICATION_SERVICE);
+		if(mgr == null){
+			mgr = (NotificationManager) getApplicationContext()
+	   			    .getSystemService(Context.NOTIFICATION_SERVICE);
+		}
 		mgr.cancel(NOTIFICATION_ID);
 	}
 	//------------------------------------------------------------------------------
@@ -142,6 +148,21 @@ public class MusicService extends Service{
         .build();
 		
 		mgr.notify(NOTIFICATION_ID, notif);
+	}
+	//------------------------------------------------------------------------------
+	@Override
+	public void onCompletion(MediaPlayer mp) {
+		rm.setImageViewResource(R.id.pause, R.drawable.ic_action_play);
+		
+		Notification notif =  new NotificationCompat.Builder(getApplicationContext())
+        .setOngoing(true)
+        .setSmallIcon(R.drawable.ic_launcher)
+        .setContent(rm)
+        .build();
+		
+		mgr.notify(NOTIFICATION_ID, notif);
+		
+		PrefUtils.setSeekTo(getApplicationContext(), 0);
 	}
 	//------------------------------------------------------------------------------
 }
