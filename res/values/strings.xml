@@ -49,4 +49,7 @@
 	
 	<!--  -->
 	<string name="enter_feed_url">Enter The Feed URL Here</string>
+	
+	<!--  -->
+	<string name="stopping_playback">Stopping Podcastr Due to Low Memory</string>
 </resources>

@@ -8,9 +8,13 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.fasih.podcastr.service.MusicService;
 import com.fasih.podcastr.util.Constants;
+import com.fasih.podcastr.util.FavoriteUtil;
+import com.fasih.podcastr.util.RecentUtil;
 import com.parse.Parse;
 import com.squareup.picasso.Picasso;
 
@@ -35,6 +39,9 @@ public class PodcastrApplication extends Application {
 		
 		// Intent to use the MusicService
 		musicService = new Intent(getApplicationContext(), MusicService.class);
+		
+		FavoriteUtil.loadFavoritesFromDatabase();
+		RecentUtil.loadRecentsFromDatabase();
 		
 		createTypeface();
 		createDirectories();
@@ -95,6 +102,12 @@ public class PodcastrApplication extends Application {
 	//--------------------------------------------------------------------------------------------------
 	public Intent getMusicServiceIntent(){
 		return musicService;
+	}
+	//--------------------------------------------------------------------------------------------------
+	@Override
+	public void onTrimMemory(int memory){
+		
+		
 	}
 	//--------------------------------------------------------------------------------------------------
 }

@@ -120,7 +120,12 @@ public class VideoPlayerFragment extends Fragment implements
 		
 		if(favoritesMode || recentsMode){
 			setPodcastTitle();
-//			PrefUtils.setSeekTo(getActivity(), PrefUtils.getSeekTo(getActivity()));
+			// restore state
+			if(favoritesMode){
+				adapter.setDataSource(FavoriteUtil.getFavoritesAsEpisodes());	
+			}else if(recentsMode){
+				adapter.setDataSource(RecentUtil.getRecentsAsEpisodes());
+			}
 			new CountDownTimer(500, 500) {
 			     public void onTick(long millisUntilFinished) { /** NOTHING */ }
 			     public void onFinish() {
@@ -132,7 +137,6 @@ public class VideoPlayerFragment extends Fragment implements
 			if(EpisodeUtil.getEpisodes().size() == 0){
 				getEpisodes();
 			}else{
-//				PrefUtils.setSeekTo(getActivity(), PrefUtils.getSeekTo(getActivity()));
 				if(listOfEpisodes != null){
 					listOfEpisodes.smoothScrollToPosition(PrefUtils.getVideoIndex(getActivity()));
 				}
@@ -711,7 +715,7 @@ public class VideoPlayerFragment extends Fragment implements
 	//------------------------------------------------------------------------------
 	private void refresh(){
 		// Step 1. Delete the locally stored XML file
-		String xmlFile = getXmlFileFromFeedUrl();
+		String xmlFile = podcast.getTitle() + ".xml";
 		File f = new File(Constants.DIR_XML, xmlFile);
 		if(f.delete())
 			System.out.println("Deleted: " + f.getAbsolutePath());
@@ -745,13 +749,6 @@ public class VideoPlayerFragment extends Fragment implements
 		File f = new File(path, fileName);
 		System.out.println("CHECKED LOCATION: " + f.getAbsolutePath());
 		return f.exists();
-	}
-	//------------------------------------------------------------------------------
-	private String getXmlFileFromFeedUrl(){
-		String feed = podcast.getFeed();
-		int indexOfSlash = feed.lastIndexOf("/");
-		String fileName = feed.substring(indexOfSlash) + ".xml";
-		return fileName;
 	}
 	//------------------------------------------------------------------------------
 	public void retrieveArgumentsAgain(){

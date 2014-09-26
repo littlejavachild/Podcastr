@@ -53,22 +53,13 @@ public class LoadEpisodesTask extends AsyncTask<String, Void, Void> {
 	@Override
 	protected Void doInBackground(String... arg0) {
 		EpisodeUtil.clearEpisodes();
-		// We want to avoid repeated parsing and fetching
-		// So
-//		if(EpisodeUtil.getEpisodesFor().equals(arg0[0])){
-//			return null;
-//		}
 		EpisodeUtil.setEpisodesFor(arg0[0]);
-//		String fileName = getFileNameFromUrl(arg0[0]) + ".xml";
 		String fileName = arg0[1] + ".xml";
-		System.out.println("***FILENAME: ***" + fileName);
 		File xmlFile = new File(Constants.DIR_XML, fileName);
 		
-//		System.out.println("arg0 " + arg0[0]);
-//		System.out.println("fileName " + fileName);
-//		System.out.println("Absolute Path: " + xmlFile.getAbsolutePath());
-		
 		if(xmlFile.exists()){
+			System.out.println("XML File Exists");
+			System.out.println("Stored File: " + xmlFile.getAbsolutePath());
 			// If file exists, we will parse the XML from the file
 			// instead from over the network
 			try {
@@ -81,6 +72,8 @@ public class LoadEpisodesTask extends AsyncTask<String, Void, Void> {
 		}else{
 			// Else we first read the file from the network ,save it locally,
 			// and then parse the XML
+			System.out.println("XML File Does Not Exist");
+			System.out.println("Stored File: " + xmlFile.getAbsolutePath());
 			try{
 				xmlFile.createNewFile();
 			}catch(Exception e){

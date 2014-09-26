@@ -144,9 +144,6 @@ public class HomeActivity extends FragmentActivity implements OnPodcastClickedLi
 				searchString.setText(searchText);
 			}
 		}
-
-		FavoriteUtil.loadFavoritesFromDatabase();
-		RecentUtil.loadRecentsFromDatabase();
 	}
 	//------------------------------------------------------------------------------
 	@Override

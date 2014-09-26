@@ -5,6 +5,7 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -57,19 +58,21 @@ public class MusicService extends Service implements
 		Log.d(NAME, "Making Request To Music Service in BG");
 		MediaPlayer player = PodcastrApplication.newInstance().getMediaPlayer();
 		player.setOnCompletionListener(this);
-		request = intent.getIntExtra(REQUEST_CODE, 0);
-		title = intent.getStringExtra(Constants.TITLE);
-		updateNotification();
-		if(request == PAUSE){
-			// Toggle Play and Pause
-			if(player.isPlaying()){
-				player.pause();
-			}else{
-				player.start();
+		if(intent != null){
+			request = intent.getIntExtra(REQUEST_CODE, 0);
+			title = intent.getStringExtra(Constants.TITLE);
+			updateNotification();
+			if(request == PAUSE){
+				// Toggle Play and Pause
+				if(player.isPlaying()){
+					player.pause();
+				}else{
+					player.start();
+				}
+			}else if(request == DISMISS){
+				hideNotification();
+				stopSelf();
 			}
-		}else if(request == DISMISS){
-			hideNotification();
-			stopSelf();
 		}
 		return START_STICKY;
 	}
